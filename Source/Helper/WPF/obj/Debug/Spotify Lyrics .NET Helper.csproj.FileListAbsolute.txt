@@ -1,0 +1,5 @@
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\bin\Debug\Spotify_Lyrics.NET_Helper.exe
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\bin\Debug\Spotify_Lyrics.NET_Helper.pdb
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\obj\Debug\Spotify Lyrics .NET Helper.csprojAssemblyReference.cache
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\obj\Debug\Spotify_Lyrics.NET_Helper.exe
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\obj\Debug\Spotify_Lyrics.NET_Helper.pdb

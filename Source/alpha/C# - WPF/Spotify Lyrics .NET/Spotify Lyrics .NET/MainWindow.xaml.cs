@@ -19,8 +19,8 @@ namespace Spotify_Lyrics.NET
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string appVERSION = "v1.5.0-alpha";
-        const string appBUILD = "20.08.2019"; // DD.MM.YYYY
+        const string appVERSION = "v1.5.0";
+        const string appBUILD = "05.10.2019"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
 
@@ -89,17 +89,29 @@ namespace Spotify_Lyrics.NET
                 topModeBtnFlag.Visibility = Visibility.Visible;
                 topModeBtn.ToolTip = "Disable \"Always on Top\"";
             }
+            else
+            {
+                topModeBtn.ToolTip = "Enable \"Always on Top\"";
+            }
             if (Properties.Settings.Default.theme == 1)
             {
                 darkModeBtnText.Foreground = spotifyGreen;
                 darkModeBtnFlag.Visibility = Visibility.Visible;
                 darkModeBtn.ToolTip = "Disable \"Dark mode\"";
+            } 
+            else
+            {
+                darkModeBtn.ToolTip = "Enable \"Dark mode\"";
             }
             if (Properties.Settings.Default.boldFont)
             {
                 boldFontBtnText.Foreground = spotifyGreen;
                 boldFontBtnFlag.Visibility = Visibility.Visible;
                 boldFontBtn.ToolTip = "Disable \"Bold font\"";
+            }
+            else
+            {
+                boldFontBtn.ToolTip = "Enable \"Bold font\"";
             }
             if (Properties.Settings.Default.width > 0)
             {
@@ -807,6 +819,11 @@ namespace Spotify_Lyrics.NET
                     }
                 }
             }
+        }
+
+        private void focusModeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
