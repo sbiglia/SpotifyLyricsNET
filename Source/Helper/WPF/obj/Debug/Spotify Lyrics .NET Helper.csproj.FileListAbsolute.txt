@@ -1,5 +1,16 @@
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\bin\Debug\Spotify_Lyrics.NET_Helper.exe
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\bin\Debug\Spotify_Lyrics.NET_Helper.pdb
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\obj\Debug\Spotify Lyrics .NET Helper.csprojAssemblyReference.cache
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\obj\Debug\Spotify_Lyrics.NET_Helper.exe
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WPF\obj\Debug\Spotify_Lyrics.NET_Helper.pdb
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\Spotify Lyrics .NET Helper\bin\Debug\Spotify_Lyrics.NET_Helper.exe
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\Spotify Lyrics .NET Helper\bin\Debug\Spotify_Lyrics.NET_Helper.pdb
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\Spotify Lyrics .NET Helper\obj\Debug\Spotify Lyrics .NET Helper.csprojAssemblyReference.cache
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\Spotify Lyrics .NET Helper\obj\Debug\Spotify_Lyrics.NET_Helper.MainForm.resources
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\Spotify Lyrics .NET Helper\obj\Debug\Spotify_Lyrics.NET_Helper.Properties.Resources.resources
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\Spotify Lyrics .NET Helper\obj\Debug\Spotify Lyrics .NET Helper.csproj.GenerateResource.cache
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\Spotify Lyrics .NET Helper\obj\Debug\Spotify_Lyrics.NET_Helper.exe
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\Spotify Lyrics .NET Helper\obj\Debug\Spotify_Lyrics.NET_Helper.pdb
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\bin\Debug\Spotify_Lyrics.NET_Helper.exe
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\bin\Debug\Spotify_Lyrics.NET_Helper.pdb
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\obj\Debug\Spotify Lyrics .NET Helper.csprojAssemblyReference.cache
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\obj\Debug\Spotify_Lyrics.NET_Helper.MainForm.resources
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\obj\Debug\Spotify_Lyrics.NET_Helper.Properties.Resources.resources
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\obj\Debug\Spotify Lyrics .NET Helper.csproj.GenerateResource.cache
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\obj\Debug\Spotify_Lyrics.NET_Helper.exe
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\WPF\obj\Debug\Spotify_Lyrics.NET_Helper.pdb
