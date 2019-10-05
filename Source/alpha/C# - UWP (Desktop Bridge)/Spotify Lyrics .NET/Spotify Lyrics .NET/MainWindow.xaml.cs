@@ -137,6 +137,17 @@ namespace Spotify_Lyrics.NET
             {
                 boldFontBtn.ToolTip = "Enable \"Bold font\"";
             }
+            filesysH.updateLaunchFlag(Properties.Settings.Default.launchFlag);
+            if (Properties.Settings.Default.launchFlag)
+            {
+                launchFlagBtnText.Foreground = spotifyGreen;
+                launchFlagBtnFlag.Visibility = Visibility.Visible;
+                launchFlagBtn.ToolTip = "Disable \"Launch with Spotify\"";
+            }
+            else
+            {
+                launchFlagBtn.ToolTip = "Enable \"Launch with Spotify\"";
+            }
             if (Properties.Settings.Default.width > 0)
             {
                 this.Width = Properties.Settings.Default.width;
@@ -854,7 +865,27 @@ namespace Spotify_Lyrics.NET
 
         private void launchFlagBtn_Click(object sender, RoutedEventArgs e)
         {
+            // Save launch flag status
+            if (settingsLoaded)
+            {
+                if (Properties.Settings.Default.launchFlag)
+                {
+                    launchFlagBtnText.Foreground = textColor2;
+                    launchFlagBtnFlag.Visibility = Visibility.Collapsed;
+                    launchFlagBtn.ToolTip = "Enable \"Launch with Spotify\"";
+                    Properties.Settings.Default.launchFlag = false;
+                }
+                else
+                {
+                    launchFlagBtnText.Foreground = spotifyGreen;
+                    launchFlagBtnFlag.Visibility = Visibility.Visible;
+                    launchFlagBtn.ToolTip = "Disable \"Launch with Spotify\"";
+                    Properties.Settings.Default.launchFlag = true;
+                }
+                Properties.Settings.Default.Save();
 
+                filesysH.updateLaunchFlag(Properties.Settings.Default.launchFlag);
+            }
         }
     }
 }

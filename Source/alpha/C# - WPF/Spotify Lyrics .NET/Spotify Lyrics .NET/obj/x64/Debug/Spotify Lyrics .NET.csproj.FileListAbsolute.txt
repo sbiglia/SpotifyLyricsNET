@@ -106,3 +106,5 @@ D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - WPF\Spotify Lyrics 
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify Lyrics .NET.csproj.GenerateResource.cache
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify Lyrics .NET.csproj.Fody.CopyLocal.cache
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify Lyrics .NET.csproj.CopyComplete
+D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify Lyrics .NET.csproj.ResolveComReference.cache

@@ -183,7 +183,7 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="focusModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
+                        <TextBlock x:Name="focusModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
                     </Grid>
 
                     <Ellipse x:Name="focusModeBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
@@ -198,7 +198,7 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="launchFlagBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
+                        <TextBlock x:Name="launchFlagBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
                     </Grid>
 
                     <Ellipse x:Name="launchFlagBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />

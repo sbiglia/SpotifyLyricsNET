@@ -237,5 +237,8 @@
   <ItemGroup>
     <Resource Include="SpotifyLyricsNET-logo-v1.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spotify_Lyrics.NET_Helper_UWP.exe" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

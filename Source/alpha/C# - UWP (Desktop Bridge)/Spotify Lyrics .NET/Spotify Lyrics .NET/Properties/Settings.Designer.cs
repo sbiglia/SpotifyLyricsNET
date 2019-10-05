@@ -157,7 +157,7 @@ namespace Spotify_Lyrics.NET.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool launchFlag {
             get {
                 return ((bool)(this["launchFlag"]));
