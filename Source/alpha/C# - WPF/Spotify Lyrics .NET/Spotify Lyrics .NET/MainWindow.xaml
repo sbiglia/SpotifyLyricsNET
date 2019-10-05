@@ -168,6 +168,7 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0" VerticalAlignment="Center" Margin="18,10,10,10">
@@ -189,7 +190,22 @@
                 </Grid>
             </Button>
 
-            <Button x:Name="boldFontBtn" Grid.Column="2" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Bold font&quot;" Click="BoldFontBtn_Click">
+            <Button x:Name="launchFlagBtn" Grid.Column="2" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Launch with Spotify&quot;" Click="launchFlagBtn_Click">
+                <Grid VerticalAlignment="Center" Margin="10,8,10,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="19"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" VerticalAlignment="Bottom">
+                        <TextBlock x:Name="launchFlagBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
+                    </Grid>
+
+                    <Ellipse x:Name="launchFlagBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
+                </Grid>
+            </Button>
+
+            <Button x:Name="boldFontBtn" Grid.Column="3" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Bold font&quot;" Click="BoldFontBtn_Click">
                 <Grid VerticalAlignment="Center" Margin="10,8,10,10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="25"/>
@@ -204,7 +220,7 @@
                 </Grid>
             </Button>
 
-            <Grid Grid.Column="3">
+            <Grid Grid.Column="4">
                 <!-- Text formatting -->
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
@@ -247,7 +263,7 @@
                 </Grid>
             </Grid>
 
-            <Button x:Name="darkModeBtn" Grid.Column="4" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Disable &quot;Dark Mode&quot;" Click="DarkModeBtn_Click">
+            <Button x:Name="darkModeBtn" Grid.Column="5" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Disable &quot;Dark Mode&quot;" Click="DarkModeBtn_Click">
                 <Grid VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,8,10,10">
                     <!-- Dark theme -->
                     <Grid.RowDefinitions>
@@ -263,7 +279,7 @@
                 </Grid>
             </Button>
 
-            <Button x:Name="topModeBtn" Grid.Column="5" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Always on Top&quot;" Click="TopModeBtn_Click">
+            <Button x:Name="topModeBtn" Grid.Column="6" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Always on Top&quot;" Click="TopModeBtn_Click">
                 <Grid VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,8,18,10">
                     <!-- Always on Top -->
                     <Grid.RowDefinitions>

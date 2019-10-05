@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'spotify-lyrics-net-v1-5';
   src:
-    url('fonts/spotify-lyrics-net-v1-5.ttf?q5ehxu') format('truetype'),
-    url('fonts/spotify-lyrics-net-v1-5.woff?q5ehxu') format('woff'),
-    url('fonts/spotify-lyrics-net-v1-5.svg?q5ehxu#spotify-lyrics-net-v1-5') format('svg');
+    url('fonts/spotify-lyrics-net-v1-5.ttf?c9uobm') format('truetype'),
+    url('fonts/spotify-lyrics-net-v1-5.woff?c9uobm') format('woff'),
+    url('fonts/spotify-lyrics-net-v1-5.svg?c9uobm#spotify-lyrics-net-v1-5') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-expand:before {
+  content: "\e914";
+}
 .icon-spotify:before {
   content: "\e913";
 }

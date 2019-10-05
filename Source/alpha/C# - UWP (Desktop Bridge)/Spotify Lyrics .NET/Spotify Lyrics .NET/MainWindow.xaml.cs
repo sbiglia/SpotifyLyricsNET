@@ -618,11 +618,6 @@ namespace Spotify_Lyrics.NET
                             cover.EndInit();
                             coverImage.Source = cover;
                             coverImage.Visibility = Visibility.Visible;
-
-                            SolidColorBrush dominantColor = new SolidColorBrush(getDominantColor(cover));
-                            mainGrid.Background = dominantColor;
-                            menuGrid.Background = dominantColor;
-                            bodyGrid.Background = dominantColor;
                         }
                         else if (coverImage.Visibility == Visibility.Visible)
                         {
@@ -852,50 +847,14 @@ namespace Spotify_Lyrics.NET
             }
         }
 
-        private System.Windows.Media.Color getDominantColor(BitmapImage bmpImg)
+        private void focusModeBtn_Click(object sender, RoutedEventArgs e)
         {
-            //Used for tally
-            int r = 0;
-            int g = 0;
-            int b = 0;
 
-            int total = 0;
-
-            Bitmap bmp = BitmapImage2Bitmap(bmpImg);
-
-            for (int x = 0; x < bmp.Width; x++)
-            {
-                for (int y = 0; y < bmp.Height; y++)
-                {
-                    System.Drawing.Color clr = bmp.GetPixel(x, y);
-
-                    r += clr.R;
-                    g += clr.G;
-                    b += clr.B;
-
-                    total++;
-                }
-            }
-
-            //Calculate average
-            r /= total;
-            g /= total;
-            b /= total;
-
-            return System.Windows.Media.Color.FromRgb((byte)r, (byte)g, (byte)b);
         }
 
-        private Bitmap BitmapImage2Bitmap(BitmapImage bitmapImage)
+        private void launchFlagBtn_Click(object sender, RoutedEventArgs e)
         {
-            using (MemoryStream outStream = new MemoryStream())
-            {
-                BitmapEncoder enc = new BmpBitmapEncoder();
-                enc.Frames.Add(BitmapFrame.Create(bitmapImage));
-                enc.Save(outStream);
-                System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(outStream);
 
-                return new Bitmap(bitmap);
-            }
         }
     }
 }

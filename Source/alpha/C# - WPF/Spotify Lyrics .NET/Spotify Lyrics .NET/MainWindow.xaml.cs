@@ -825,5 +825,10 @@ namespace Spotify_Lyrics.NET
         {
 
         }
+
+        private void launchFlagBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
