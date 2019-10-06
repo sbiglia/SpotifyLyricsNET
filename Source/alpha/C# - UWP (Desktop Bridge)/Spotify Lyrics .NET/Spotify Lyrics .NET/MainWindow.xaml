@@ -161,7 +161,7 @@
         </Grid>
 
         <!-- Exit Focus Mode -->
-        <Grid x:Name="exitFocusGrid" Grid.Row="3" Background="Transparent" Height="0" VerticalAlignment="Bottom">
+        <Grid x:Name="exitFocusGrid" Grid.Row="3" Background="Transparent" Height="0" Width="55" HorizontalAlignment="Left" VerticalAlignment="Bottom">
             <Button x:Name="exitFocusModeBtn" HorizontalAlignment="Left" Grid.Column="1" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Disable &quot;Focus mode&quot;" Click="exitFocusModeBtn_Click">
                 <Grid VerticalAlignment="Center" Margin="15,8,10,10">
                     <Grid.RowDefinitions>

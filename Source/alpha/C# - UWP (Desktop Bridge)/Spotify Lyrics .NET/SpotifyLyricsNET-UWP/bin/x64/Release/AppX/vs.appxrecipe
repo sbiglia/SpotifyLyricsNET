@@ -31,7 +31,7 @@
     <AppXManifest Include="D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-06T13:06:07.069</Modified>
+      <Modified>2019-10-06T13:37:23.900</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -375,7 +375,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x64\Release\Spotify_Lyrics.NET.exe">
       <PackagePath>Spotify Lyrics .NET\Spotify_Lyrics.NET.exe</PackagePath>
-      <Modified>2019-10-06T13:06:05.778</Modified>
+      <Modified>2019-10-06T13:37:22.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x64\Release\Spotify_Lyrics.NET.exe.config">
       <PackagePath>Spotify Lyrics .NET\Spotify_Lyrics.NET.exe.config</PackagePath>
