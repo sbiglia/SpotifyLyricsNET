@@ -109,5 +109,15 @@ namespace Spotify_Lyrics.NET.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Byte[].
+        /// </summary>
+        internal static byte[] Spotify_Lyrics_NET_Helper {
+            get {
+                object obj = ResourceManager.GetObject("Spotify_Lyrics_NET_Helper", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

@@ -11,6 +11,8 @@ using Spotify_Lyrics.NET.API;
 using System.Windows.Media.Imaging;
 using System.Threading.Tasks;
 using System.Windows.Documents;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Spotify_Lyrics.NET
 {
@@ -19,8 +21,8 @@ namespace Spotify_Lyrics.NET
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string appVERSION = "v1.4.1";
-        const string appBUILD = "20.08.2019"; // DD.MM.YYYY
+        const string appVERSION = "v1.5.0";
+        const string appBUILD = "06.10.2019"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
 
@@ -89,17 +91,40 @@ namespace Spotify_Lyrics.NET
                 topModeBtnFlag.Visibility = Visibility.Visible;
                 topModeBtn.ToolTip = "Disable \"Always on Top\"";
             }
+            else
+            {
+                topModeBtn.ToolTip = "Enable \"Always on Top\"";
+            }
             if (Properties.Settings.Default.theme == 1)
             {
                 darkModeBtnText.Foreground = spotifyGreen;
                 darkModeBtnFlag.Visibility = Visibility.Visible;
                 darkModeBtn.ToolTip = "Disable \"Dark mode\"";
+            } 
+            else
+            {
+                darkModeBtn.ToolTip = "Enable \"Dark mode\"";
             }
             if (Properties.Settings.Default.boldFont)
             {
                 boldFontBtnText.Foreground = spotifyGreen;
                 boldFontBtnFlag.Visibility = Visibility.Visible;
                 boldFontBtn.ToolTip = "Disable \"Bold font\"";
+            }
+            else
+            {
+                boldFontBtn.ToolTip = "Enable \"Bold font\"";
+            }
+            filesysH.updateLaunchFlag(Properties.Settings.Default.launchFlag);
+            if (Properties.Settings.Default.launchFlag)
+            {
+                launchFlagBtnText.Foreground = spotifyGreen;
+                launchFlagBtnFlag.Visibility = Visibility.Visible;
+                launchFlagBtn.ToolTip = "Disable \"Launch with Spotify\"";
+            }
+            else
+            {
+                launchFlagBtn.ToolTip = "Enable \"Launch with Spotify\"";
             }
             if (Properties.Settings.Default.width > 0)
             {
@@ -170,6 +195,8 @@ namespace Spotify_Lyrics.NET
             if (!Properties.Settings.Default.boldFont) boldFontBtnText.Foreground = textColor2;
             if (themeID == 0) darkModeBtnText.Foreground = textColor2;
             if (!Properties.Settings.Default.topMost) topModeBtnText.Foreground = textColor2;
+            if (!Properties.Settings.Default.launchFlag) launchFlagBtnText.Foreground = textColor2;
+            focusModeBtnText.Foreground = textColor2;
             countLabel.Foreground = textColor2;
             gradient0.Color = bgColor.Color;
             gradient1.Color = Color.FromArgb(0, bgColor.Color.R, bgColor.Color.G, bgColor.Color.B);
@@ -806,6 +833,51 @@ namespace Spotify_Lyrics.NET
                         isMarkedFlag = true;
                     }
                 }
+            }
+        }
+
+        private void focusModeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DoubleAnimation animationHeader = new DoubleAnimation(95, 0, TimeSpan.FromSeconds(0.2));
+            headerGrid.BeginAnimation(Rectangle.HeightProperty, animationHeader);
+            DoubleAnimation animationExitFocus = new DoubleAnimation(0, 62, TimeSpan.FromSeconds(0.2));
+            exitFocusGrid.BeginAnimation(Rectangle.HeightProperty, animationExitFocus);
+            DoubleAnimation animationFooter = new DoubleAnimation(62, 0, TimeSpan.FromSeconds(0.2));
+            footerGrid.BeginAnimation(Rectangle.HeightProperty, animationFooter);
+        }
+
+        private void exitFocusModeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DoubleAnimation animationHeader = new DoubleAnimation(0, 95, TimeSpan.FromSeconds(0.2));
+            headerGrid.BeginAnimation(Rectangle.HeightProperty, animationHeader);
+            DoubleAnimation animationExitFocus = new DoubleAnimation(62, 0, TimeSpan.FromSeconds(0.2));
+            exitFocusGrid.BeginAnimation(Rectangle.HeightProperty, animationExitFocus);
+            DoubleAnimation animationFooter = new DoubleAnimation(0, 62, TimeSpan.FromSeconds(0.2));
+            footerGrid.BeginAnimation(Rectangle.HeightProperty, animationFooter);
+        }
+
+        private void launchFlagBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // Save launch flag status
+            if (settingsLoaded)
+            {
+                if (Properties.Settings.Default.launchFlag)
+                {
+                    launchFlagBtnText.Foreground = textColor2;
+                    launchFlagBtnFlag.Visibility = Visibility.Collapsed;
+                    launchFlagBtn.ToolTip = "Enable \"Launch with Spotify\"";
+                    Properties.Settings.Default.launchFlag = false;
+                }
+                else
+                {
+                    launchFlagBtnText.Foreground = spotifyGreen;
+                    launchFlagBtnFlag.Visibility = Visibility.Visible;
+                    launchFlagBtn.ToolTip = "Disable \"Launch with Spotify\"";
+                    Properties.Settings.Default.launchFlag = true;
+                }
+                Properties.Settings.Default.Save();
+
+                filesysH.updateLaunchFlag(Properties.Settings.Default.launchFlag);
             }
         }
     }
