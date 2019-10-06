@@ -23,7 +23,7 @@ namespace Spotify_Lyrics.NET.API
             geniusClient = new GeniusClient("W0knrrPmfODbCT-Oe26Uimx8GJSqszwKyh34soM0oQuNRSppLmlOuHffrO8YD0iL");
         }
 
-        public async Task getLyrics(string artist, string song, string lyricsURL = "", string coverImg = "", string songId = "")
+        public async Task getLyrics(string artist, string song, string lyricsURL = "", string coverImg = "", string songId = "") 
         {
             if (lyricsURL.Length == 0)
             {

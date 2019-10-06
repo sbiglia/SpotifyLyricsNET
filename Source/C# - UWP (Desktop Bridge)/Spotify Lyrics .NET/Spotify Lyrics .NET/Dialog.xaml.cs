@@ -7,13 +7,18 @@ namespace Spotify_Lyrics.NET
 {
     public partial class Dialog : Window
     {
-        public Dialog()
+        public Dialog(string version)
         {
             InitializeComponent();
+
+            this.dialogTitle.Text = version.Trim().Replace("\n", "") + " is now available!";
+            newVersion = version;
             loadTheme(Properties.Settings.Default.theme);
 
             this.Show();
         }
+
+        private string newVersion = "";
 
         private SolidColorBrush bgColor = new SolidColorBrush();
         private SolidColorBrush bgColor2 = new SolidColorBrush();
@@ -27,21 +32,21 @@ namespace Spotify_Lyrics.NET
             switch (themeID)
             {
                 case 0: // Light
-                    {
-                        bgColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                        bgColor2 = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                        textColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
-                        textColor2 = new SolidColorBrush(Color.FromRgb(10, 10, 10));
-                        break;
-                    }
+                {
+                    bgColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                    bgColor2 = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                    textColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
+                    textColor2 = new SolidColorBrush(Color.FromRgb(10, 10, 10));
+                    break;
+                }
                 case 1: // Dark
-                    {
-                        bgColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
-                        bgColor2 = new SolidColorBrush(Color.FromRgb(61, 61, 61));
-                        textColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                        textColor2 = new SolidColorBrush(Color.FromRgb(179, 179, 179));
-                        break;
-                    }
+                {
+                    bgColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
+                    bgColor2 = new SolidColorBrush(Color.FromRgb(61, 61, 61));
+                    textColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                    textColor2 = new SolidColorBrush(Color.FromRgb(179, 179, 179));
+                    break;
+                }
             }
 
             // Set colors
@@ -52,23 +57,12 @@ namespace Spotify_Lyrics.NET
 
         private void NoBtn_Click(object sender, RoutedEventArgs e)
         {
-            Properties.Settings.Default.reviewFlag = true;
-            Properties.Settings.Default.Save();
             this.Close();
         }
 
         private void YesBtn_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("ms-windows-store://review/?ProductId=9NBHSJ3WW3MJ");
-            Properties.Settings.Default.reviewFlag = true;
-            Properties.Settings.Default.Save();
-            this.Close();
-        }
-
-        private void PostponeBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Properties.Settings.Default.reviewCount = 10;
-            Properties.Settings.Default.Save();
+            Process.Start(new ProcessStartInfo(new Uri("https://github.com/JakubSteplowski/SpotifyLyricsNET/releases/tag/" + newVersion).AbsoluteUri));
             this.Close();
         }
     }

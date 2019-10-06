@@ -85,7 +85,7 @@ namespace Spotify_Lyrics.NET.API
                         break;
                     }
                 }
-                catch (Exception ex) { break; }
+                catch (Exception ex) { break;  }
             }
 
             return lyricsText;

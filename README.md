@@ -1,9 +1,9 @@
 ![](/Screenshots/SpotifyLyricsNET-logo-v1.png)
 # Spotify Lyrics .NET
-![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.4.1-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.4.2-green.svg?style=flat)
+![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.5.0-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.5.0-green.svg?style=flat)
 > Get the lyrics of the song you're listening to on Spotify
 
-![](/Screenshots/SpotifyLyricsNET-v1.4.0.png)
+![](/Screenshots/SpotifyLyricsNET-v1.5.0.png)
 
 # Requirements
 ## To use the software:
@@ -26,6 +26,12 @@ Download the latest version from the [Releases](https://github.com/JakubSteplows
 
 > Notes:<br>
 > Date format: DD/MM/YYYY
+
+>v1.5.0 (06/10/2019):
+>- Added "Launch with Spotify"
+>- Added "Focus mode"
+>- Fixed UI glitches<br>
+>*(the source of this version is available only in C#)*
 
 >v1.4.1 (20/08/2019):
 >- Fixed bug that caused crash if you tried to mark as "correct" missing lyrics
