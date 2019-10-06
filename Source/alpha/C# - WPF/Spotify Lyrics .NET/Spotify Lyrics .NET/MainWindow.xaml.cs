@@ -11,6 +11,8 @@ using Spotify_Lyrics.NET.API;
 using System.Windows.Media.Imaging;
 using System.Threading.Tasks;
 using System.Windows.Documents;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Spotify_Lyrics.NET
 {
@@ -20,7 +22,7 @@ namespace Spotify_Lyrics.NET
     public partial class MainWindow : Window
     {
         const string appVERSION = "v1.5.0";
-        const string appBUILD = "05.10.2019"; // DD.MM.YYYY
+        const string appBUILD = "06.10.2019"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
 
@@ -193,6 +195,8 @@ namespace Spotify_Lyrics.NET
             if (!Properties.Settings.Default.boldFont) boldFontBtnText.Foreground = textColor2;
             if (themeID == 0) darkModeBtnText.Foreground = textColor2;
             if (!Properties.Settings.Default.topMost) topModeBtnText.Foreground = textColor2;
+            if (!Properties.Settings.Default.launchFlag) launchFlagBtnText.Foreground = textColor2;
+            focusModeBtnText.Foreground = textColor2;
             countLabel.Foreground = textColor2;
             gradient0.Color = bgColor.Color;
             gradient1.Color = Color.FromArgb(0, bgColor.Color.R, bgColor.Color.G, bgColor.Color.B);
@@ -834,7 +838,22 @@ namespace Spotify_Lyrics.NET
 
         private void focusModeBtn_Click(object sender, RoutedEventArgs e)
         {
+            DoubleAnimation animationHeader = new DoubleAnimation(95, 0, TimeSpan.FromSeconds(0.2));
+            headerGrid.BeginAnimation(Rectangle.HeightProperty, animationHeader);
+            DoubleAnimation animationExitFocus = new DoubleAnimation(0, 62, TimeSpan.FromSeconds(0.2));
+            exitFocusGrid.BeginAnimation(Rectangle.HeightProperty, animationExitFocus);
+            DoubleAnimation animationFooter = new DoubleAnimation(62, 0, TimeSpan.FromSeconds(0.2));
+            footerGrid.BeginAnimation(Rectangle.HeightProperty, animationFooter);
+        }
 
+        private void exitFocusModeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DoubleAnimation animationHeader = new DoubleAnimation(0, 95, TimeSpan.FromSeconds(0.2));
+            headerGrid.BeginAnimation(Rectangle.HeightProperty, animationHeader);
+            DoubleAnimation animationExitFocus = new DoubleAnimation(62, 0, TimeSpan.FromSeconds(0.2));
+            exitFocusGrid.BeginAnimation(Rectangle.HeightProperty, animationExitFocus);
+            DoubleAnimation animationFooter = new DoubleAnimation(0, 62, TimeSpan.FromSeconds(0.2));
+            footerGrid.BeginAnimation(Rectangle.HeightProperty, animationFooter);
         }
 
         private void launchFlagBtn_Click(object sender, RoutedEventArgs e)

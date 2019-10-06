@@ -181,7 +181,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        
         <Style x:Key="RoundCorner" TargetType="{x:Type Button}">
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -255,7 +255,7 @@
             <Setter Property="TextElement.FontFamily" Value="Resources/#Circular Medium" />
         </Style>
         <Style x:Key="IconFont">
-            <Setter Property="TextElement.FontFamily" Value="Resources/#spotify-lyrics-net-v1-4" />
+            <Setter Property="TextElement.FontFamily" Value="Resources/#spotify-lyrics-net-v1-5" />
         </Style>
     </Application.Resources>
 </Application>

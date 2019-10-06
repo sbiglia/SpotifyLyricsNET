@@ -15,7 +15,7 @@
             <!-- Menu -->
             <RowDefinition Height="auto"/>
             <!-- Header -->
-            <RowDefinition Height="95"/>
+            <RowDefinition Height="auto"/>
             <!-- Body -->
             <RowDefinition Height="1*"/>
             <!-- Footer -->
@@ -42,7 +42,7 @@
         </Grid>
 
         <!-- Header -->
-        <Grid x:Name="headerGrid" Grid.Row="2">
+        <Grid x:Name="headerGrid" Grid.Row="2" Height="95">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="1*"/>
@@ -138,7 +138,7 @@
         <!-- Body -->
         <Grid x:Name="bodyGrid" Grid.Row="3" Background="#181818">
             <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
-                <ListView Padding="0,10,0,0" x:Name="lyricsView" Background="Transparent" BorderThickness="0"/>
+                <ListView Padding="0,15,0,0" x:Name="lyricsView" Background="Transparent" BorderThickness="0"/>
             </ScrollViewer>
 
             <Grid Height="20" Margin="0,0,17,0" VerticalAlignment="Top">
@@ -160,8 +160,26 @@
             </Grid>
         </Grid>
 
+        <!-- Exit Focus Mode -->
+        <Grid x:Name="exitFocusGrid" Grid.Row="3" Background="Transparent" Height="0" VerticalAlignment="Bottom">
+            <Button x:Name="exitFocusModeBtn" HorizontalAlignment="Left" Grid.Column="1" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Disable &quot;Focus mode&quot;" Click="exitFocusModeBtn_Click">
+                <Grid VerticalAlignment="Center" Margin="15,8,10,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="19"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" VerticalAlignment="Bottom">
+                        <TextBlock x:Name="exitFocusModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#39b85b"/>
+                    </Grid>
+
+                    <Ellipse x:Name="exitFocusModeBtnFlag" Visibility="Visible" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
+                </Grid>
+            </Button>
+        </Grid>
+
         <!-- Footer -->
-        <Grid x:Name="footerGrid" Grid.Row="4" Background="#181818">
+        <Grid x:Name="footerGrid" Grid.Row="4" Background="#181818" Height="62" VerticalAlignment="Bottom">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="auto"/>

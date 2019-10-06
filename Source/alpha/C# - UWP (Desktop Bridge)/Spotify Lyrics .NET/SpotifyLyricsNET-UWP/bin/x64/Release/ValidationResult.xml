@@ -1,69 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="it-IT" OVERALL_RESULT="PASS" VERSION="10.0.18362.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" APP_NAME="2238JakubSteplowski.SpotifyLyrics.NET" APP_VERSION="1.4.2.0" OSVERSION="10.0.18362.0" OS="Microsoft Windows 10 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1040" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="28/08/2019 01:22:21" ID="9441e62bd5fda673fa469b8a57283945">
+<REPORT xml:lang="it-IT" OVERALL_RESULT="PASS" VERSION="10.0.18362.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" APP_NAME="2238JakubSteplowski.SpotifyLyrics.NET" APP_VERSION="1.5.0.0" OSVERSION="10.0.18362.0" OS="Microsoft Windows 10 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1040" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="06/10/2019 02:31:45" ID="3a9c367091a52c1290e0137ff2808f62">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="3" TITLE="File con firma digitale - Test" RATIONALE="Una firma digitale Authenticode consente agli utenti di verificare che il software sia originale. Consente inoltre di rilevare se un file è stato alterato (ad esempio, infettato da un virus).">
-      <TEST INDEX="2" NAME="Installa file eseguibili e driver firmati" DESCRIPTION="Installa file eseguibili e driver firmati." EXECUTIONTIME="00h:00m:04s.32ms" OPTIONAL="TRUE">
+      <TEST INDEX="2" NAME="Installa file eseguibili e driver firmati" DESCRIPTION="Installa file eseguibili e driver firmati." EXECUTIONTIME="00h:00m:03s.26ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="6" TITLE="Controllo account utente - Test" RATIONALE="Per eseguire la maggior parte delle applicazioni non è necessario disporre dei privilegi di amministratore, ma è sufficiente accedere come utente standard. Le applicazioni Windows devono avere un manifesto (incorporato o esterno) che ne definisca il livello di esecuzione e indichi così al sistema operativo i privilegi necessari per la loro esecuzione.">
-      <TEST INDEX="11" NAME="Livello di esecuzione per Controllo account utente" DESCRIPTION="Le applicazioni Windows® devono avere un manifesto (incorporato o esterno) che ne definisca il livello di esecuzione e indichi così al sistema operativo i privilegi necessari per la loro esecuzione." EXECUTIONTIME="00h:00m:01s.32ms" OPTIONAL="TRUE">
+      <TEST INDEX="11" NAME="Livello di esecuzione per Controllo account utente" DESCRIPTION="Le applicazioni Windows® devono avere un manifesto (incorporato o esterno) che ne definisca il livello di esecuzione e indichi così al sistema operativo i privilegi necessari per la loro esecuzione." EXECUTIONTIME="00h:00m:01s.07ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="12" TITLE="Test conformità pacchetto" RATIONALE="Nel manifesto del pacchetto mancano uno o più attributi necessari.">
-      <TEST INDEX="77" NAME="Conteggio applicazioni" DESCRIPTION="Un pacchetto non può definire più app nel manifesto." EXECUTIONTIME="00h:00m:01s.62ms" OPTIONAL="TRUE">
+      <TEST INDEX="77" NAME="Conteggio applicazioni" DESCRIPTION="Un pacchetto non può definire più app nel manifesto." EXECUTIONTIME="00h:00m:01s.35ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="31" NAME="Manifesto dell'app" DESCRIPTION="Il manifesto dell'app deve includere voci valide in tutti i campi obbligatori." EXECUTIONTIME="00h:00m:02s.36ms" OPTIONAL="FALSE">
+      <TEST INDEX="31" NAME="Manifesto dell'app" DESCRIPTION="Il manifesto dell'app deve includere voci valide in tutti i campi obbligatori." EXECUTIONTIME="00h:00m:02s.13ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="87" NAME="Verbi di associazione file" DESCRIPTION="Convalida del registro di sistema per cui non sono installati verbi di associazione file registrati." EXECUTIONTIME="00h:00m:01s.67ms" OPTIONAL="TRUE">
+      <TEST INDEX="87" NAME="Verbi di associazione file" DESCRIPTION="Convalida del registro di sistema per cui non sono installati verbi di associazione file registrati." EXECUTIONTIME="00h:00m:01s.34ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="86" NAME="Controlli del Registro di sistema" DESCRIPTION="Convalida del registro di sistema per cui i driver e i servizi NT non sono installati." EXECUTIONTIME="00h:00m:01s.24ms" OPTIONAL="TRUE">
+      <TEST INDEX="86" NAME="Controlli del Registro di sistema" DESCRIPTION="Convalida del registro di sistema per cui i driver e i servizi NT non sono installati." EXECUTIONTIME="00h:00m:00s.99ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="90" NAME="Pacchetti di risorse" DESCRIPTION="Verifica la presenza di file di tipo PE nei pacchetti di risorse." EXECUTIONTIME="00h:00m:01s.42ms" OPTIONAL="FALSE">
+      <TEST INDEX="90" NAME="Pacchetti di risorse" DESCRIPTION="Verifica la presenza di file di tipo PE nei pacchetti di risorse." EXECUTIONTIME="00h:00m:01s.26ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="14" TITLE="Funzionalità di sicurezza di Windows - Test" RATIONALE="Le applicazioni devono acconsentire esplicitamente alle funzionalità di Sicurezza di Windows.">
-      <TEST INDEX="70" NAME="Analisi file esclusi" DESCRIPTION="Analisi dell'applicazione per rilevare i file non sicuri noti" EXECUTIONTIME="00h:00m:01s.61ms" OPTIONAL="FALSE">
+      <TEST INDEX="70" NAME="Analisi file esclusi" DESCRIPTION="Analisi dell'applicazione per rilevare i file non sicuri noti" EXECUTIONTIME="00h:00m:01s.34ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="62" NAME="Firma del codice privato" DESCRIPTION="Il pacchetto dell'app non deve contenere file di chiave per la firma del codice privato." EXECUTIONTIME="00h:00m:02s.06ms" OPTIONAL="FALSE">
+      <TEST INDEX="62" NAME="Firma del codice privato" DESCRIPTION="Il pacchetto dell'app non deve contenere file di chiave per la firma del codice privato." EXECUTIONTIME="00h:00m:01s.64ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="API Supportate - Test" RATIONALE="L'applicazione deve fare riferimento esclusivamente alle API consentite da Windows SDK per le app di Windows Store.">
-      <TEST INDEX="38" NAME="API supportate" DESCRIPTION="L'app di Windows Store deve utilizzare esclusivamente le API della piattaforma supportata." EXECUTIONTIME="00h:00m:01s.83ms" OPTIONAL="FALSE">
+      <TEST INDEX="38" NAME="API supportate" DESCRIPTION="L'app di Windows Store deve utilizzare esclusivamente le API della piattaforma supportata." EXECUTIONTIME="00h:00m:01s.60ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="Risorse del manifesto dell'app - Test" RATIONALE="È necessario definire risorse valide nel file resources.pri per il manifesto di pacchetto app , così come per le specifiche di pacchetto app e lo schema manifesto app.">
-      <TEST INDEX="45" NAME="Risorse dell'app" DESCRIPTION="Nel file resources.pri devono esserci risorse valide definite per il pacchetto." EXECUTIONTIME="00h:00m:01s.05ms" OPTIONAL="TRUE">
+      <TEST INDEX="45" NAME="Risorse dell'app" DESCRIPTION="Nel file resources.pri devono esserci risorse valide definite per il pacchetto." EXECUTIONTIME="00h:00m:00s.91ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="61" NAME="Personalizzazione" DESCRIPTION="L'app non deve utilizzare le immagini predefinite compresse dai campioni di Windows SDK o Visual Studio." EXECUTIONTIME="00h:00m:03s.01ms" OPTIONAL="FALSE">
+      <TEST INDEX="61" NAME="Personalizzazione" DESCRIPTION="L'app non deve utilizzare le immagini predefinite compresse dai campioni di Windows SDK o Visual Studio." EXECUTIONTIME="00h:00m:02s.52ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Configurazione debug - Test" RATIONALE="L'app non deve installare alcun file binario di debug.">
-      <TEST INDEX="46" NAME="Configurazione di debug" DESCRIPTION="L'app non deve installare alcun file binario di debug." EXECUTIONTIME="00h:00m:02s.95ms" OPTIONAL="TRUE">
+      <TEST INDEX="46" NAME="Configurazione di debug" DESCRIPTION="L'app non deve installare alcun file binario di debug." EXECUTIONTIME="00h:00m:02s.62ms" OPTIONAL="TRUE">
         <MESSAGES>
           <MESSAGE TEXT="Il file binario Genius.dll è stato creato in modalità debug." />
         </MESSAGES>
@@ -71,47 +71,47 @@
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="Test delle funzionalità dell'app" RATIONALE="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento.">
-      <TEST INDEX="91" NAME="Funzionalità aziendali" DESCRIPTION="Controlla se nel pacchetto sono presenti funzionalità solo aziendali (ad esempio, pacchetti di modifica)." EXECUTIONTIME="00h:00m:01s.54ms" OPTIONAL="FALSE">
+      <TEST INDEX="91" NAME="Funzionalità aziendali" DESCRIPTION="Controlla se nel pacchetto sono presenti funzionalità solo aziendali (ad esempio, pacchetti di modifica)." EXECUTIONTIME="00h:00m:01s.10ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="52" NAME="Funzionalità speciali" DESCRIPTION="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento." EXECUTIONTIME="00h:00m:01s.38ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="Funzionalità speciali" DESCRIPTION="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento." EXECUTIONTIME="00h:00m:01s.17ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Convalida dei metadati per Windows Runtime" RATIONALE="I metadati devono essere conformi e coerenti indipendentemente dalla loro origine.">
-      <TEST INDEX="56" NAME="Attributo ExclusiveTo" DESCRIPTION="Una classe non deve implementare un'interfaccia contrassegnata come ExclusiveTo per un'altra classe." EXECUTIONTIME="00h:00m:11s.43ms" OPTIONAL="FALSE">
+      <TEST INDEX="56" NAME="Attributo ExclusiveTo" DESCRIPTION="Una classe non deve implementare un'interfaccia contrassegnata come ExclusiveTo per un'altra classe." EXECUTIONTIME="00h:00m:11s.40ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="57" NAME="Percorso del tipo" DESCRIPTION="I tipi devono essere definiti nel file di metadati con il più lungo spazio dei nomi corrispondente." EXECUTIONTIME="00h:00m:00s.95ms" OPTIONAL="FALSE">
+      <TEST INDEX="57" NAME="Percorso del tipo" DESCRIPTION="I tipi devono essere definiti nel file di metadati con il più lungo spazio dei nomi corrispondente." EXECUTIONTIME="00h:00m:00s.74ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="55" NAME="Distinzione maiuscole/minuscole per il nome del tipo" DESCRIPTION="Lo spazio dei nomi e i nomi del tipo non devono differire solo per la combinazione di maiuscole e minuscole." EXECUTIONTIME="00h:00m:00s.95ms" OPTIONAL="FALSE">
+      <TEST INDEX="55" NAME="Distinzione maiuscole/minuscole per il nome del tipo" DESCRIPTION="Lo spazio dei nomi e i nomi del tipo non devono differire solo per la combinazione di maiuscole e minuscole." EXECUTIONTIME="00h:00m:00s.84ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="54" NAME="Correttezza per il nome del tipo" DESCRIPTION="Lo spazio dei nomi Windows può contenere solo tipi di sistemi e lo spazio dei nomi globale può non contenere alcun tipo." EXECUTIONTIME="00h:00m:00s.86ms" OPTIONAL="FALSE">
+      <TEST INDEX="54" NAME="Correttezza per il nome del tipo" DESCRIPTION="Lo spazio dei nomi Windows può contenere solo tipi di sistemi e lo spazio dei nomi globale può non contenere alcun tipo." EXECUTIONTIME="00h:00m:00s.75ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="58" NAME="Correttezza per i metadati generali" DESCRIPTION="I file dei metadati devono soddisfare diversi requisiti per essere validi e corretti." EXECUTIONTIME="00h:00m:11s.20ms" OPTIONAL="TRUE">
+      <TEST INDEX="58" NAME="Correttezza per i metadati generali" DESCRIPTION="I file dei metadati devono soddisfare diversi requisiti per essere validi e corretti." EXECUTIONTIME="00h:00m:11s.11ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="53" NAME="Proprietà" DESCRIPTION="Impossibile utilizzare le proprietà di sola scrittura e indicizzatore. I metodi Get e Set corrispondenti devono essere dello stesso tipo." EXECUTIONTIME="00h:00m:00s.93ms" OPTIONAL="FALSE">
+      <TEST INDEX="53" NAME="Proprietà" DESCRIPTION="Impossibile utilizzare le proprietà di sola scrittura e indicizzatore. I metodi Get e Set corrispondenti devono essere dello stesso tipo." EXECUTIONTIME="00h:00m:00s.73ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="Test integrità pacchetto" RATIONALE="Convalida dei contenuti del pacchetto dell'app per accertarne la correttezza.">
-      <TEST INDEX="89" NAME="Utilizzo file di archivio" DESCRIPTION="I pacchetti non devono contenere i file PE all'interno dei file di archivio." EXECUTIONTIME="00h:00m:01s.71ms" OPTIONAL="TRUE">
+      <TEST INDEX="89" NAME="Utilizzo file di archivio" DESCRIPTION="I pacchetti non devono contenere i file PE all'interno dei file di archivio." EXECUTIONTIME="00h:00m:01s.43ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="88" NAME="Eseguibili bloccati" DESCRIPTION="Rileva se sono presenti riferimenti per elaborare API di avvio ed eseguibili bloccati" EXECUTIONTIME="00h:00m:02s.41ms" OPTIONAL="TRUE">
+      <TEST INDEX="88" NAME="Eseguibili bloccati" DESCRIPTION="Rileva se sono presenti riferimenti per elaborare API di avvio ed eseguibili bloccati" EXECUTIONTIME="00h:00m:01s.97ms" OPTIONAL="TRUE">
         <MESSAGES>
           <MESSAGE TEXT="Il file Spotify Lyrics .NET\Spotify_Lyrics.NET.exe contiene un riferimento a un &quot;Avvio del processo&quot; correlato all'API System.Diagnostics.Process.Start" />
           <MESSAGE TEXT="Il file HtmlAgilityPack.dll contiene un riferimento eseguibile bloccato a &quot;reg&quot;." />
@@ -121,7 +121,7 @@
         </MESSAGES>
         <RESULT><![CDATA[FAIL]]></RESULT>
       </TEST>
-      <TEST INDEX="63" NAME="File appropriati per la piattaforma" DESCRIPTION="L'app non deve installare file non corrispondenti all'architettura del processore di destinazione." EXECUTIONTIME="00h:00m:01s.70ms" OPTIONAL="TRUE">
+      <TEST INDEX="63" NAME="File appropriati per la piattaforma" DESCRIPTION="L'app non deve installare file non corrispondenti all'architettura del processore di destinazione." EXECUTIONTIME="00h:00m:01s.80ms" OPTIONAL="TRUE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -129,12 +129,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="2238JakubSteplowski.SpotifyLyrics.NET" Type="Application" Source="AppxPackage" Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" Version="1.4.2.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.18362" RootDirPath="C:\Windows\temp\appcert_6C70\2238JakubSteplowski.SpotifyLyrics.NET_1.4.2.0_x64__76k8dzmm3mrer" Id="0000616b8b6c8a37a650b6e77eef066c306f00000904" HiddenArp="false">
+      <Program Name="2238JakubSteplowski.SpotifyLyrics.NET" Type="Application" Source="AppxPackage" Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" Version="1.5.0.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.18362" RootDirPath="C:\Windows\temp\appcert_1D2C\2238JakubSteplowski.SpotifyLyrics.NET_1.5.0.0_x64__76k8dzmm3mrer" Id="000022265897c9fffcbafbd3af21558f9ec000000904" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="2238JakubSteplowski.SpotifyLyrics.NET_1.4.2.0_x64__76k8dzmm3mrer">
+            <PackageManifest PackageFullName="2238JakubSteplowski.SpotifyLyrics.NET_1.5.0.0_x64__76k8dzmm3mrer">
               <Package>
-                <Identity Name="2238JakubSteplowski.SpotifyLyrics.NET" Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" Version="1.4.2.0" ProcessorArchitecture="x64"></Identity>
+                <Identity Name="2238JakubSteplowski.SpotifyLyrics.NET" Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" Version="1.5.0.0" ProcessorArchitecture="x64"></Identity>
                 <Properties>
                   <DisplayName>Spotify Lyrics .NET</DisplayName>
                   <PublisherDisplayName>Jakub Steplowski</PublisherDisplayName>
@@ -164,9 +164,9 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="2238JakubSteplowski.SpotifyLyrics.NET_76k8dzmm3mrer">
               <Bundle SchemaVersion="4.0">
-                <Identity Name="2238JakubSteplowski.SpotifyLyrics.NET" Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" Version="1.4.2.0"></Identity>
+                <Identity Name="2238JakubSteplowski.SpotifyLyrics.NET" Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" Version="1.5.0.0"></Identity>
                 <Packages>
-                  <Package Type="application" Version="1.4.2.0" Architecture="x64" FileName="SpotifyLyricsNET-UWP_1.4.2.0_x64.appx" Offset="67" Size="2314203">
+                  <Package Type="application" Version="1.5.0.0" Architecture="x64" FileName="SpotifyLyricsNET-UWP_1.5.0.0_x64.appx" Offset="67" Size="2374030">
                     <Resources>
                       <Resource Language="EN-US"></Resource>
                       <Resource Scale="200"></Resource>
@@ -176,7 +176,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="application" Version="1.4.2.0" Architecture="x86" FileName="SpotifyLyricsNET-UWP_1.4.2.0_x86.appx" Offset="2314361" Size="2314351">
+                  <Package Type="application" Version="1.5.0.0" Architecture="x86" FileName="SpotifyLyricsNET-UWP_1.5.0.0_x86.appx" Offset="2374188" Size="2374140">
                     <Resources>
                       <Resource Language="EN-US"></Resource>
                       <Resource Scale="200"></Resource>
@@ -193,35 +193,35 @@
         </Indicators>
         <StaticProperties>
           <Files Id="">
-            <File Id="0000db09e50814199705253916e992741336580679b3" Name="Genius.dll" ProductName="genius" CompanyName="prajjwal" ProductVersion="1.1.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.1.0.0" Size="122880" SizeOfImage="122880" PeHeaderHash="010104bd5e7f5af03afa20a8fcc2c6b687cb6fd445e7" PeChecksum="0" CrcChecksum="1964094034" BinProductVersion="1.1.0" BinFileVersion="1.1.0.0" FileDescription="genius" LegalCopyright="copyright 2017" LinkDate="12/16/2071 00:34:46" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\genius.dll" />
-            <File Id="00008cf0c1834a2149f3aed6176584bd4f1ee1ef4671" Name="HtmlAgilityPack.dll" ProductName="html agility pack" CompanyName="zzz projects inc." ProductVersion="1.8.11" VerLanguage="0" SwitchBackContext="0" FileVersion="1.8.11" Size="155648" SizeOfImage="155648" PeHeaderHash="0101ac07e49b095fafd723a4b0e2053bb3d2279d5434" PeChecksum="144853" CrcChecksum="-1249634856" BinProductVersion="1.8.11" BinFileVersion="1.8.11.0" FileDescription="html agility pack - release" LegalCopyright="copyright © zzz projects inc." LinkDate="12/05/2018 00:16:19" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\htmlagilitypack.dll" />
-            <File Id="0000afa308c0166d8cbdd1d5e6fdaa8c9b87eb9184e7" Name="Microsoft.Win32.Primitives.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="01017fb9df00550b30276f10e246539a8a0b877042b4" PeChecksum="75261" CrcChecksum="-277339997" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="microsoft.win32.primitives" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:36:46" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\microsoft.win32.primitives.dll" />
-            <File Id="00002fb0be100de03680fc4309c9fa5a29e69397a980" Name="Newtonsoft.Json.dll" ProductName="json.net" CompanyName="newtonsoft" ProductVersion="10.0.3" VerLanguage="0" SwitchBackContext="0" FileVersion="10.0.3.21018" Size="679936" SizeOfImage="679936" PeHeaderHash="0101170ece4cc0ccf21d04f78aef4f5110033352cbfd" PeChecksum="675292" CrcChecksum="-623439399" BinProductVersion="10.0.3" BinFileVersion="10.0.3.21018" FileDescription="json.net" LegalCopyright="copyright © james newton-king 2008" LinkDate="06/10/2061 13:14:05" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\newtonsoft.json.dll" />
-            <File Id="00008336ef4a9493f971678682b2eaed8cba519dbe5e" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1247244836" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\resources.pri" />
-            <File Id="00009498d8f1d6f5be3baadeb30a35d9cfd7a9e272b9" Name="Spotify_Lyrics.NET.exe" ProductName="spotify lyrics .net" CompanyName="" ProductVersion="1.4.2.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.4.2.0" Size="2310144" SizeOfImage="2310144" PeHeaderHash="0101d18d53a5b0f30802dcf1e5b103cc6e3e56f03545" PeChecksum="0" CrcChecksum="-1176651174" BinProductVersion="1.4.2.0" BinFileVersion="1.4.2.0" FileDescription="spotify lyrics .net" LegalCopyright="mit license - copyright © 2019 jakub stęplowski" LinkDate="04/11/2079 10:07:25" BinaryType="pe64_clr_64" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\spotify_lyrics.net.exe" />
-            <File Id="0000c9a0c7200ad55960a1e1824b04718cbf6ca84581" Name="System.AppContext.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.23123.0" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.23123.0" Size="32768" SizeOfImage="32768" PeHeaderHash="0101b1720c487912d2e80aaad534692df3400c30ed77" PeChecksum="49440" CrcChecksum="41428977" BinProductVersion="4.6.23123.0" BinFileVersion="4.6.23123.0" FileDescription="system.appcontext" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="07/23/2015 04:02:02" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.appcontext.dll" />
-            <File Id="0000b5102629939ebdd4bcd0f407a92828dee5f2b565" Name="System.Console.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="40960" SizeOfImage="40960" PeHeaderHash="0101064f3a8d87f8573523ecf3dc0267950a5267f11a" PeChecksum="63248" CrcChecksum="912004124" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.console" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:36:47" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.console.dll" />
-            <File Id="000030ae8c8e57bcabe27ba675fa84d4da6af3c10ead" Name="System.Globalization.Calendars.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="010151f4af15a7ca4143289dea1a9cadb702b8515a68" PeChecksum="72984" CrcChecksum="1218921861" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.globalization.calendars" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:17" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.globalization.calendars.dll" />
-            <File Id="0000629ce95c12b21678d877359ec4552d431c1cfbab" Name="System.IO.Compression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="122880" SizeOfImage="122880" PeHeaderHash="0101e7a16bf6478bbbe4ee4b2b73414018d23cc3c5ff" PeChecksum="155812" CrcChecksum="2108133400" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.io.compression" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:22" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.io.compression.dll" />
-            <File Id="000099d6c187de8510206a93d2eed9c65e65e0c86e72" Name="System.IO.Compression.ZipFile.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="0101af497bd2f244ad89d6981534978590c6bfebfa0a" PeChecksum="59683" CrcChecksum="-1177026988" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.io.compression.zipfile" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:23" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.io.compression.zipfile.dll" />
-            <File Id="00008374975ca07a300021ef0acaa4f908d5bfb102fb" Name="System.IO.FileSystem.Primitives.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="010103bad5957a2654ee6a72ecef748bbcb4453e4cbd" PeChecksum="49496" CrcChecksum="1732523162" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.io.filesystem.primitives" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:30" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.io.filesystem.primitives.dll" />
-            <File Id="0000b46ad93384323ed4aa88e8af3cdee208a88f1f6d" Name="System.IO.FileSystem.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="01010f6246bb6bb7010c4d78e08076e9b69b39882ac5" PeChecksum="35605" CrcChecksum="-42954712" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.io.filesystem" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:32" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.io.filesystem.dll" />
-            <File Id="000087a01c2fb168e3ac26d7861599a0d981698c1a08" Name="System.Net.Http.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.25705.01. commit hash: 9d2a5b01b1abf6e1e4e41277f34d545949fcf316" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.25705.01" Size="204800" SizeOfImage="204800" PeHeaderHash="0101a941ad3caddcb872b89e5e3bd6747047cc4322c9" PeChecksum="260095" CrcChecksum="-1996703313" BinProductVersion="4.6.25705.01. commit hash: 9d2a5b01b1abf6e1e4e41277f34d545949fcf316" BinFileVersion="4.6.25705.1" FileDescription="system.net.http" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="09/05/2017 21:42:04" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.net.http.dll" />
-            <File Id="000000278d53e59026cd8c22889773466fef27d52bbf" Name="System.Net.Sockets.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="57344" SizeOfImage="57344" PeHeaderHash="0101136acf105d3853686809f6b76a6814be0e5b9147" PeChecksum="76773" CrcChecksum="-1685338692" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.net.sockets" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:38:11" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.net.sockets.dll" />
-            <File Id="00004e490d7ec139a6cde53e3932d3122a48aa379904" Name="System.Runtime.InteropServices.RuntimeInformation.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="40960" SizeOfImage="40960" PeHeaderHash="0101a9fceedf28e7b0b3068e61859f6db5ae8438b58d" PeChecksum="73400" CrcChecksum="-604186563" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.runtime.interopservices.runtimeinformation" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:38:45" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.runtime.interopservices.runtimeinformation.dll" />
-            <File Id="00005bfb6b352c33b3cf292100223e14af7b54b9cb83" Name="System.Runtime.WindowsRuntime.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.0.30319.18020" VerLanguage="0" SwitchBackContext="0" FileVersion="4.0.30319.18020" Size="40960" SizeOfImage="40960" PeHeaderHash="010147c7cb04dec8674c00035d092197949cdd83cc3b" PeChecksum="75894" CrcChecksum="2004077552" BinProductVersion="4.0.30319.18020" BinFileVersion="4.0.30319.18020" FileDescription="system.runtime.windowsruntime.dll" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="09/26/2012 07:21:54" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.runtime.windowsruntime.dll" />
-            <File Id="0000413c96c3ae407532db4c1ce3085a8f99675a8ad4" Name="System.Security.Cryptography.Algorithms.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="49152" SizeOfImage="49152" PeHeaderHash="0101e6addfb00b6c94f7846ea0e44c8300027f82c64f" PeChecksum="98206" CrcChecksum="-515996744" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.security.cryptography.algorithms" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:07" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.security.cryptography.algorithms.dll" />
-            <File Id="0000a0f2c03cb813317460133de80231d7b1fb62dcc5" Name="System.Security.Cryptography.Encoding.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="0101d3939b7b141d271ab614ae6943a3353675742396" PeChecksum="79410" CrcChecksum="-1193181776" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.security.cryptography.encoding" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:16" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.security.cryptography.encoding.dll" />
-            <File Id="000062a622557cc0d6fced9c1a14be28dbc39e9bd6fc" Name="System.Security.Cryptography.Primitives.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="01017ed9bcb12df337715bbd020bf96919f81d7b5c9c" PeChecksum="78053" CrcChecksum="-625350262" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.security.cryptography.primitives" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:17" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.security.cryptography.primitives.dll" />
-            <File Id="00004beb5c11208affad40bdac6672a7b0b7b4558e7b" Name="System.Security.Cryptography.X509Certificates.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="49152" SizeOfImage="49152" PeHeaderHash="010190a6f548cc99d471866c67aedc618d6a6a9e1d42" PeChecksum="46493" CrcChecksum="-26797518" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.security.cryptography.x509certificates" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:24" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.security.cryptography.x509certificates.dll" />
-            <File Id="0000765c9e4d36b4f2986514c1ab24b5e5e56afff448" Name="System.Xml.ReaderWriter.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="01012cd38e221ab88339be2381d551ee02b93b5eadac" PeChecksum="86218" CrcChecksum="1234452407" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.xml.readerwriter" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:51" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_6c70\2238jakubsteplowski.spotifylyrics.net_1.4.2.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.xml.readerwriter.dll" />
+            <File Id="0000db09e50814199705253916e992741336580679b3" Name="Genius.dll" ProductName="genius" CompanyName="prajjwal" ProductVersion="1.1.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.1.0.0" Size="122880" SizeOfImage="122880" PeHeaderHash="010104bd5e7f5af03afa20a8fcc2c6b687cb6fd445e7" PeChecksum="0" CrcChecksum="1964094034" BinProductVersion="1.1.0" BinFileVersion="1.1.0.0" FileDescription="genius" LegalCopyright="copyright 2017" LinkDate="12/16/2071 00:34:46" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\genius.dll" />
+            <File Id="00008cf0c1834a2149f3aed6176584bd4f1ee1ef4671" Name="HtmlAgilityPack.dll" ProductName="html agility pack" CompanyName="zzz projects inc." ProductVersion="1.8.11" VerLanguage="0" SwitchBackContext="0" FileVersion="1.8.11" Size="155648" SizeOfImage="155648" PeHeaderHash="0101ac07e49b095fafd723a4b0e2053bb3d2279d5434" PeChecksum="144853" CrcChecksum="-1249634856" BinProductVersion="1.8.11" BinFileVersion="1.8.11.0" FileDescription="html agility pack - release" LegalCopyright="copyright © zzz projects inc." LinkDate="12/05/2018 00:16:19" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\htmlagilitypack.dll" />
+            <File Id="0000afa308c0166d8cbdd1d5e6fdaa8c9b87eb9184e7" Name="Microsoft.Win32.Primitives.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="01017fb9df00550b30276f10e246539a8a0b877042b4" PeChecksum="75261" CrcChecksum="-277339997" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="microsoft.win32.primitives" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:36:46" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\microsoft.win32.primitives.dll" />
+            <File Id="00002fb0be100de03680fc4309c9fa5a29e69397a980" Name="Newtonsoft.Json.dll" ProductName="json.net" CompanyName="newtonsoft" ProductVersion="10.0.3" VerLanguage="0" SwitchBackContext="0" FileVersion="10.0.3.21018" Size="679936" SizeOfImage="679936" PeHeaderHash="0101170ece4cc0ccf21d04f78aef4f5110033352cbfd" PeChecksum="675292" CrcChecksum="-623439399" BinProductVersion="10.0.3" BinFileVersion="10.0.3.21018" FileDescription="json.net" LegalCopyright="copyright © james newton-king 2008" LinkDate="06/10/2061 13:14:05" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\newtonsoft.json.dll" />
+            <File Id="00008336ef4a9493f971678682b2eaed8cba519dbe5e" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1247244836" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\resources.pri" />
+            <File Id="0000ab974a9ebbad32acec2199da02591bd9a8c1c216" Name="Spotify_Lyrics.NET.exe" ProductName="spotify lyrics .net" CompanyName="" ProductVersion="1.5.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.5.0.0" Size="2547712" SizeOfImage="2547712" PeHeaderHash="0101f866270093d74d060e0e227c1c053197e2e21e89" PeChecksum="0" CrcChecksum="-1573292228" BinProductVersion="1.5.0.0" BinFileVersion="1.5.0.0" FileDescription="spotify lyrics .net" LegalCopyright="mit license - copyright © 2019 jakub stęplowski" LinkDate="09/05/2067 01:20:11" BinaryType="pe64_clr_64" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\spotify_lyrics.net.exe" />
+            <File Id="0000c9a0c7200ad55960a1e1824b04718cbf6ca84581" Name="System.AppContext.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.23123.0" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.23123.0" Size="32768" SizeOfImage="32768" PeHeaderHash="0101b1720c487912d2e80aaad534692df3400c30ed77" PeChecksum="49440" CrcChecksum="41428977" BinProductVersion="4.6.23123.0" BinFileVersion="4.6.23123.0" FileDescription="system.appcontext" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="07/23/2015 04:02:02" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.appcontext.dll" />
+            <File Id="0000b5102629939ebdd4bcd0f407a92828dee5f2b565" Name="System.Console.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="40960" SizeOfImage="40960" PeHeaderHash="0101064f3a8d87f8573523ecf3dc0267950a5267f11a" PeChecksum="63248" CrcChecksum="912004124" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.console" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:36:47" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.console.dll" />
+            <File Id="000030ae8c8e57bcabe27ba675fa84d4da6af3c10ead" Name="System.Globalization.Calendars.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="010151f4af15a7ca4143289dea1a9cadb702b8515a68" PeChecksum="72984" CrcChecksum="1218921861" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.globalization.calendars" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:17" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.globalization.calendars.dll" />
+            <File Id="000099d6c187de8510206a93d2eed9c65e65e0c86e72" Name="System.IO.Compression.ZipFile.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="0101af497bd2f244ad89d6981534978590c6bfebfa0a" PeChecksum="59683" CrcChecksum="-1177026988" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.io.compression.zipfile" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:23" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.io.compression.zipfile.dll" />
+            <File Id="0000629ce95c12b21678d877359ec4552d431c1cfbab" Name="System.IO.Compression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="122880" SizeOfImage="122880" PeHeaderHash="0101e7a16bf6478bbbe4ee4b2b73414018d23cc3c5ff" PeChecksum="155812" CrcChecksum="2108133400" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.io.compression" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:22" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.io.compression.dll" />
+            <File Id="0000b46ad93384323ed4aa88e8af3cdee208a88f1f6d" Name="System.IO.FileSystem.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="01010f6246bb6bb7010c4d78e08076e9b69b39882ac5" PeChecksum="35605" CrcChecksum="-42954712" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.io.filesystem" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:32" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.io.filesystem.dll" />
+            <File Id="00008374975ca07a300021ef0acaa4f908d5bfb102fb" Name="System.IO.FileSystem.Primitives.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="010103bad5957a2654ee6a72ecef748bbcb4453e4cbd" PeChecksum="49496" CrcChecksum="1732523162" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.io.filesystem.primitives" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:37:30" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.io.filesystem.primitives.dll" />
+            <File Id="000087a01c2fb168e3ac26d7861599a0d981698c1a08" Name="System.Net.Http.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.25705.01. commit hash: 9d2a5b01b1abf6e1e4e41277f34d545949fcf316" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.25705.01" Size="204800" SizeOfImage="204800" PeHeaderHash="0101a941ad3caddcb872b89e5e3bd6747047cc4322c9" PeChecksum="260095" CrcChecksum="-1996703313" BinProductVersion="4.6.25705.01. commit hash: 9d2a5b01b1abf6e1e4e41277f34d545949fcf316" BinFileVersion="4.6.25705.1" FileDescription="system.net.http" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="09/05/2017 21:42:04" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.net.http.dll" />
+            <File Id="000000278d53e59026cd8c22889773466fef27d52bbf" Name="System.Net.Sockets.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="57344" SizeOfImage="57344" PeHeaderHash="0101136acf105d3853686809f6b76a6814be0e5b9147" PeChecksum="76773" CrcChecksum="-1685338692" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.net.sockets" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:38:11" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.net.sockets.dll" />
+            <File Id="00004e490d7ec139a6cde53e3932d3122a48aa379904" Name="System.Runtime.InteropServices.RuntimeInformation.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="40960" SizeOfImage="40960" PeHeaderHash="0101a9fceedf28e7b0b3068e61859f6db5ae8438b58d" PeChecksum="73400" CrcChecksum="-604186563" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.runtime.interopservices.runtimeinformation" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:38:45" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.runtime.interopservices.runtimeinformation.dll" />
+            <File Id="00005bfb6b352c33b3cf292100223e14af7b54b9cb83" Name="System.Runtime.WindowsRuntime.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.0.30319.18020" VerLanguage="0" SwitchBackContext="0" FileVersion="4.0.30319.18020" Size="40960" SizeOfImage="40960" PeHeaderHash="010147c7cb04dec8674c00035d092197949cdd83cc3b" PeChecksum="75894" CrcChecksum="2004077552" BinProductVersion="4.0.30319.18020" BinFileVersion="4.0.30319.18020" FileDescription="system.runtime.windowsruntime.dll" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="09/26/2012 07:21:54" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.runtime.windowsruntime.dll" />
+            <File Id="000062a622557cc0d6fced9c1a14be28dbc39e9bd6fc" Name="System.Security.Cryptography.Primitives.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="01017ed9bcb12df337715bbd020bf96919f81d7b5c9c" PeChecksum="78053" CrcChecksum="-625350262" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.security.cryptography.primitives" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:17" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.security.cryptography.primitives.dll" />
+            <File Id="0000413c96c3ae407532db4c1ce3085a8f99675a8ad4" Name="System.Security.Cryptography.Algorithms.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="49152" SizeOfImage="49152" PeHeaderHash="0101e6addfb00b6c94f7846ea0e44c8300027f82c64f" PeChecksum="98206" CrcChecksum="-515996744" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.security.cryptography.algorithms" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:07" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.security.cryptography.algorithms.dll" />
+            <File Id="00004beb5c11208affad40bdac6672a7b0b7b4558e7b" Name="System.Security.Cryptography.X509Certificates.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="49152" SizeOfImage="49152" PeHeaderHash="010190a6f548cc99d471866c67aedc618d6a6a9e1d42" PeChecksum="46493" CrcChecksum="-26797518" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.security.cryptography.x509certificates" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:24" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.security.cryptography.x509certificates.dll" />
+            <File Id="0000a0f2c03cb813317460133de80231d7b1fb62dcc5" Name="System.Security.Cryptography.Encoding.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="0101d3939b7b141d271ab614ae6943a3353675742396" PeChecksum="79410" CrcChecksum="-1193181776" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.security.cryptography.encoding" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:16" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.security.cryptography.encoding.dll" />
+            <File Id="0000765c9e4d36b4f2986514c1ab24b5e5e56afff448" Name="System.Xml.ReaderWriter.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" VerLanguage="0" SwitchBackContext="0" FileVersion="4.6.24705.01" Size="32768" SizeOfImage="32768" PeHeaderHash="01012cd38e221ab88339be2381d551ee02b93b5eadac" PeChecksum="86218" CrcChecksum="1234452407" BinProductVersion="4.6.24705.01. commit hash: 4d1af962ca0fede10beb01d197367c2f90e92c97" BinFileVersion="4.6.24705.1" FileDescription="system.xml.readerwriter" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="11/05/2016 04:39:51" BinaryType="pe32_clr_il" LowerCaseLongPath="c:\windows\temp\appcert_1d2c\2238jakubsteplowski.spotifylyrics.net_1.5.0.0_x64__76k8dzmm3mrer\spotify lyrics .net\system.xml.readerwriter.dll" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Max" Id="C:\Windows\temp\appcert_6C70\2238JakubSteplowski.SpotifyLyrics.NET_1.4.2.0_x64__76k8dzmm3mrer">
+    <AitStaticAnalysis ProgramId="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Max" Id="C:\Windows\temp\appcert_1D2C\2238JakubSteplowski.SpotifyLyrics.NET_1.5.0.0_x64__76k8dzmm3mrer">
       <AitFile ErrorCode="0" Name="System.Net.Sockets.dll" Id="000000278d53e59026cd8c22889773466fef27d52bbf">
         <AitCategory Id="ApiStatic">
           <AitFeature Name="mscoree.dll!_CorDllMain" />
@@ -3238,367 +3238,6 @@
           <AitFeature Name="System.Xml.Xsl.XsltArgumentList.AddParam" />
         </AitCategory>
       </AitFile>
-      <AitFile FrameworkMoniker=".NETFramework,Version=v4.6.1" ErrorCode="0" Name="Spotify_Lyrics.NET.exe" Id="00009498d8f1d6f5be3baadeb30a35d9cfd7a9e272b9">
-        <AitCategory Id="Com">
-          <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000002}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000003}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000004}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000005}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000006}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000007}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000008}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000011}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000012}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000014}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000015}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000017}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000018}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000019}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000020}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000021}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000022}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000023}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000024}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000025}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000026}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000027}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000028}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000029}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000030}" />
-        </AitCategory>
-        <AitCategory Id="DotNet">
-          <AitFeature Name="System.Boolean" />
-          <AitFeature Name="System.Char" />
-          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
-          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
-          <AitFeature Name="System.Collections.Generic.IEnumerable`1" />
-          <AitFeature Name="System.Collections.Generic.IEnumerator`1" />
-          <AitFeature Name="System.Collections.Generic.List`1" />
-          <AitFeature Name="System.Collections.IEnumerable" />
-          <AitFeature Name="System.Collections.IEnumerable.GetEnumerator" />
-          <AitFeature Name="System.Collections.IEnumerator" />
-          <AitFeature Name="System.Collections.IEnumerator.MoveNext" />
-          <AitFeature Name="System.Collections.IEnumerator.get_Current" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute..ctor" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableState" />
-          <AitFeature Name="System.Configuration.ApplicationSettingsBase" />
-          <AitFeature Name="System.Configuration.ApplicationSettingsBase..ctor" />
-          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute" />
-          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute..ctor" />
-          <AitFeature Name="System.Configuration.SettingsBase" />
-          <AitFeature Name="System.Configuration.SettingsBase.Save" />
-          <AitFeature Name="System.Configuration.SettingsBase.Synchronized" />
-          <AitFeature Name="System.Configuration.SettingsBase.get_Item" />
-          <AitFeature Name="System.Configuration.SettingsBase.set_Item" />
-          <AitFeature Name="System.Configuration.UserScopedSettingAttribute" />
-          <AitFeature Name="System.Configuration.UserScopedSettingAttribute..ctor" />
-          <AitFeature Name="System.Convert" />
-          <AitFeature Name="System.Convert.ToInt32" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
-          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute..ctor" />
-          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
-          <AitFeature Name="System.Diagnostics.Process" />
-          <AitFeature Name="System.Diagnostics.Process.GetProcessesByName" />
-          <AitFeature Name="System.Diagnostics.Process.Start" />
-          <AitFeature Name="System.Diagnostics.Process.get_MainWindowTitle" />
-          <AitFeature Name="System.Diagnostics.ProcessStartInfo" />
-          <AitFeature Name="System.Diagnostics.ProcessStartInfo..ctor" />
-          <AitFeature Name="System.Environment" />
-          <AitFeature Name="System.Environment.GetFolderPath" />
-          <AitFeature Name="System.Environment.get_NewLine" />
-          <AitFeature Name="System.EventArgs" />
-          <AitFeature Name="System.EventHandler" />
-          <AitFeature Name="System.EventHandler..ctor" />
-          <AitFeature Name="System.Exception" />
-          <AitFeature Name="System.Globalization.CultureInfo" />
-          <AitFeature Name="System.IDisposable" />
-          <AitFeature Name="System.IDisposable.Dispose" />
-          <AitFeature Name="System.IO.Directory" />
-          <AitFeature Name="System.IO.Directory.CreateDirectory" />
-          <AitFeature Name="System.IO.Directory.Exists" />
-          <AitFeature Name="System.IO.DirectoryInfo" />
-          <AitFeature Name="System.IO.File" />
-          <AitFeature Name="System.IO.File.AppendAllText" />
-          <AitFeature Name="System.IO.File.CreateText" />
-          <AitFeature Name="System.IO.File.Delete" />
-          <AitFeature Name="System.IO.File.Exists" />
-          <AitFeature Name="System.IO.File.ReadAllLines" />
-          <AitFeature Name="System.IO.File.WriteAllLines" />
-          <AitFeature Name="System.IO.Stream" />
-          <AitFeature Name="System.IO.StreamReader" />
-          <AitFeature Name="System.IO.StreamReader..ctor" />
-          <AitFeature Name="System.IO.StreamWriter" />
-          <AitFeature Name="System.IO.TextReader" />
-          <AitFeature Name="System.IO.TextReader.Close" />
-          <AitFeature Name="System.IO.TextReader.ReadToEnd" />
-          <AitFeature Name="System.Int32" />
-          <AitFeature Name="System.Linq.Enumerable" />
-          <AitFeature Name="System.Linq.Enumerable.Count" />
-          <AitFeature Name="System.Linq.Enumerable.ToList" />
-          <AitFeature Name="System.Net.HttpWebResponse" />
-          <AitFeature Name="System.Net.SecurityProtocolType" />
-          <AitFeature Name="System.Net.ServicePointManager" />
-          <AitFeature Name="System.Net.ServicePointManager.set_Expect100Continue" />
-          <AitFeature Name="System.Net.ServicePointManager.set_SecurityProtocol" />
-          <AitFeature Name="System.Net.WebRequest" />
-          <AitFeature Name="System.Net.WebRequest.Create" />
-          <AitFeature Name="System.Net.WebRequest.GetResponse" />
-          <AitFeature Name="System.Net.WebRequest.set_ContentType" />
-          <AitFeature Name="System.Net.WebRequest.set_Method" />
-          <AitFeature Name="System.Net.WebResponse" />
-          <AitFeature Name="System.Net.WebResponse.GetResponseStream" />
-          <AitFeature Name="System.Net.WebUtility" />
-          <AitFeature Name="System.Net.WebUtility.HtmlEncode" />
-          <AitFeature Name="System.Object" />
-          <AitFeature Name="System.Object..ctor" />
-          <AitFeature Name="System.Object.ToString" />
-          <AitFeature Name="System.Reflection.Assembly" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
-          <AitFeature Name="System.Resources.ResourceManager" />
-          <AitFeature Name="System.Resources.ResourceManager..ctor" />
-          <AitFeature Name="System.Resources.ResourceManager.GetObject" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Create" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetException" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.get_Task" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter.GetResult" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter.get_IsCompleted" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter`1" />
-          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
-          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
-          <AitFeature Name="System.RuntimeTypeHandle" />
-          <AitFeature Name="System.STAThreadAttribute" />
-          <AitFeature Name="System.STAThreadAttribute..ctor" />
-          <AitFeature Name="System.String" />
-          <AitFeature Name="System.String.Concat" />
-          <AitFeature Name="System.String.Contains" />
-          <AitFeature Name="System.String.IndexOf" />
-          <AitFeature Name="System.String.Replace" />
-          <AitFeature Name="System.String.Split" />
-          <AitFeature Name="System.String.Substring" />
-          <AitFeature Name="System.String.ToLower" />
-          <AitFeature Name="System.String.Trim" />
-          <AitFeature Name="System.String.get_Length" />
-          <AitFeature Name="System.String.op_Equality" />
-          <AitFeature Name="System.String.op_Inequality" />
-          <AitFeature Name="System.Text.ASCIIEncoding" />
-          <AitFeature Name="System.Text.ASCIIEncoding..ctor" />
-          <AitFeature Name="System.Text.Encoding" />
-          <AitFeature Name="System.Text.Encoding.GetBytes" />
-          <AitFeature Name="System.Threading.Tasks.Task" />
-          <AitFeature Name="System.Threading.Tasks.Task.GetAwaiter" />
-          <AitFeature Name="System.Threading.Tasks.Task`1" />
-          <AitFeature Name="System.TimeSpan" />
-          <AitFeature Name="System.TimeSpan.FromMilliseconds" />
-          <AitFeature Name="System.Type" />
-          <AitFeature Name="System.Type.GetTypeFromHandle" />
-          <AitFeature Name="System.Type.get_Assembly" />
-          <AitFeature Name="System.Uri" />
-          <AitFeature Name="System.Uri..ctor" />
-          <AitFeature Name="System.Uri.EscapeDataString" />
-          <AitFeature Name="System.Uri.IsWellFormedUriString" />
-          <AitFeature Name="System.Uri.get_AbsoluteUri" />
-          <AitFeature Name="System.UriKind" />
-          <AitFeature Name="System.ValueType" />
-          <AitFeature Name="System.Windows.Application" />
-          <AitFeature Name="System.Windows.Application..ctor" />
-          <AitFeature Name="System.Windows.Application.FindResource" />
-          <AitFeature Name="System.Windows.Application.LoadComponent" />
-          <AitFeature Name="System.Windows.Application.Run" />
-          <AitFeature Name="System.Windows.Application.get_Current" />
-          <AitFeature Name="System.Windows.Application.set_StartupUri" />
-          <AitFeature Name="System.Windows.Controls.Button" />
-          <AitFeature Name="System.Windows.Controls.ContentControl" />
-          <AitFeature Name="System.Windows.Controls.ContentControl.get_Content" />
-          <AitFeature Name="System.Windows.Controls.ContentControl.set_Content" />
-          <AitFeature Name="System.Windows.Controls.Grid" />
-          <AitFeature Name="System.Windows.Controls.Grid..ctor" />
-          <AitFeature Name="System.Windows.Controls.Image" />
-          <AitFeature Name="System.Windows.Controls.Image.set_Source" />
-          <AitFeature Name="System.Windows.Controls.ItemCollection" />
-          <AitFeature Name="System.Windows.Controls.ItemCollection.Add" />
-          <AitFeature Name="System.Windows.Controls.ItemCollection.Clear" />
-          <AitFeature Name="System.Windows.Controls.ItemsControl" />
-          <AitFeature Name="System.Windows.Controls.ItemsControl.get_Items" />
-          <AitFeature Name="System.Windows.Controls.ListView" />
-          <AitFeature Name="System.Windows.Controls.ListViewItem" />
-          <AitFeature Name="System.Windows.Controls.ListViewItem..ctor" />
-          <AitFeature Name="System.Windows.Controls.Panel" />
-          <AitFeature Name="System.Windows.Controls.Panel.get_Children" />
-          <AitFeature Name="System.Windows.Controls.Panel.set_Background" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase.add_Click" />
-          <AitFeature Name="System.Windows.Controls.ScrollViewer" />
-          <AitFeature Name="System.Windows.Controls.ScrollViewer.ScrollToTop" />
-          <AitFeature Name="System.Windows.Controls.ScrollViewer.ScrollToVerticalOffset" />
-          <AitFeature Name="System.Windows.Controls.ScrollViewer.get_VerticalOffset" />
-          <AitFeature Name="System.Windows.Controls.TextBlock" />
-          <AitFeature Name="System.Windows.Controls.TextBlock..ctor" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.get_Inlines" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_FontSize" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_FontStretch" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_Foreground" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_LineHeight" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_Padding" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_Text" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_TextAlignment" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_TextWrapping" />
-          <AitFeature Name="System.Windows.Controls.UIElementCollection" />
-          <AitFeature Name="System.Windows.Controls.UIElementCollection.Add" />
-          <AitFeature Name="System.Windows.Controls.UIElementCollection.get_Item" />
-          <AitFeature Name="System.Windows.DependencyObject" />
-          <AitFeature Name="System.Windows.Documents.Hyperlink" />
-          <AitFeature Name="System.Windows.Documents.Hyperlink..ctor" />
-          <AitFeature Name="System.Windows.Documents.Hyperlink.add_RequestNavigate" />
-          <AitFeature Name="System.Windows.Documents.Hyperlink.set_NavigateUri" />
-          <AitFeature Name="System.Windows.Documents.Inline" />
-          <AitFeature Name="System.Windows.Documents.InlineCollection" />
-          <AitFeature Name="System.Windows.Documents.InlineCollection.Add" />
-          <AitFeature Name="System.Windows.Documents.LineBreak" />
-          <AitFeature Name="System.Windows.Documents.LineBreak..ctor" />
-          <AitFeature Name="System.Windows.Documents.Run" />
-          <AitFeature Name="System.Windows.Documents.Run..ctor" />
-          <AitFeature Name="System.Windows.Documents.Run.set_Text" />
-          <AitFeature Name="System.Windows.Documents.Span" />
-          <AitFeature Name="System.Windows.Documents.Span.get_Inlines" />
-          <AitFeature Name="System.Windows.Documents.TextElement" />
-          <AitFeature Name="System.Windows.Documents.TextElement.set_FontSize" />
-          <AitFeature Name="System.Windows.Documents.TextElement.set_Foreground" />
-          <AitFeature Name="System.Windows.Documents.TextElementCollection`1" />
-          <AitFeature Name="System.Windows.FontStretch" />
-          <AitFeature Name="System.Windows.FontStretches" />
-          <AitFeature Name="System.Windows.FontStretches.get_UltraExpanded" />
-          <AitFeature Name="System.Windows.FrameworkContentElement" />
-          <AitFeature Name="System.Windows.FrameworkContentElement.set_Style" />
-          <AitFeature Name="System.Windows.FrameworkElement" />
-          <AitFeature Name="System.Windows.FrameworkElement.add_Loaded" />
-          <AitFeature Name="System.Windows.FrameworkElement.add_SizeChanged" />
-          <AitFeature Name="System.Windows.FrameworkElement.get_ActualWidth" />
-          <AitFeature Name="System.Windows.FrameworkElement.get_Height" />
-          <AitFeature Name="System.Windows.FrameworkElement.get_Parent" />
-          <AitFeature Name="System.Windows.FrameworkElement.get_Width" />
-          <AitFeature Name="System.Windows.FrameworkElement.set_Height" />
-          <AitFeature Name="System.Windows.FrameworkElement.set_HorizontalAlignment" />
-          <AitFeature Name="System.Windows.FrameworkElement.set_Style" />
-          <AitFeature Name="System.Windows.FrameworkElement.set_ToolTip" />
-          <AitFeature Name="System.Windows.FrameworkElement.set_Width" />
-          <AitFeature Name="System.Windows.HorizontalAlignment" />
-          <AitFeature Name="System.Windows.Input.MouseWheelEventArgs" />
-          <AitFeature Name="System.Windows.Input.MouseWheelEventArgs.get_Delta" />
-          <AitFeature Name="System.Windows.Input.MouseWheelEventHandler" />
-          <AitFeature Name="System.Windows.Input.MouseWheelEventHandler..ctor" />
-          <AitFeature Name="System.Windows.Markup.IComponentConnector" />
-          <AitFeature Name="System.Windows.Markup.IComponentConnector.Connect" />
-          <AitFeature Name="System.Windows.Media.Brush" />
-          <AitFeature Name="System.Windows.Media.Color" />
-          <AitFeature Name="System.Windows.Media.Color.FromArgb" />
-          <AitFeature Name="System.Windows.Media.Color.FromRgb" />
-          <AitFeature Name="System.Windows.Media.Color.get_B" />
-          <AitFeature Name="System.Windows.Media.Color.get_G" />
-          <AitFeature Name="System.Windows.Media.Color.get_R" />
-          <AitFeature Name="System.Windows.Media.Colors" />
-          <AitFeature Name="System.Windows.Media.Colors.get_Gray" />
-          <AitFeature Name="System.Windows.Media.GradientStop" />
-          <AitFeature Name="System.Windows.Media.GradientStop.set_Color" />
-          <AitFeature Name="System.Windows.Media.ImageSource" />
-          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage" />
-          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage..ctor" />
-          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage.BeginInit" />
-          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage.EndInit" />
-          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage.set_UriSource" />
-          <AitFeature Name="System.Windows.Media.SolidColorBrush" />
-          <AitFeature Name="System.Windows.Media.SolidColorBrush..ctor" />
-          <AitFeature Name="System.Windows.Media.SolidColorBrush.get_Color" />
-          <AitFeature Name="System.Windows.Navigation.RequestNavigateEventArgs" />
-          <AitFeature Name="System.Windows.Navigation.RequestNavigateEventArgs.get_Uri" />
-          <AitFeature Name="System.Windows.Navigation.RequestNavigateEventHandler" />
-          <AitFeature Name="System.Windows.Navigation.RequestNavigateEventHandler..ctor" />
-          <AitFeature Name="System.Windows.ResourceDictionaryLocation" />
-          <AitFeature Name="System.Windows.RoutedEventArgs" />
-          <AitFeature Name="System.Windows.RoutedEventArgs.set_Handled" />
-          <AitFeature Name="System.Windows.RoutedEventHandler" />
-          <AitFeature Name="System.Windows.RoutedEventHandler..ctor" />
-          <AitFeature Name="System.Windows.Shapes.Ellipse" />
-          <AitFeature Name="System.Windows.SizeChangedEventHandler" />
-          <AitFeature Name="System.Windows.SizeChangedEventHandler..ctor" />
-          <AitFeature Name="System.Windows.Style" />
-          <AitFeature Name="System.Windows.TextAlignment" />
-          <AitFeature Name="System.Windows.TextWrapping" />
-          <AitFeature Name="System.Windows.ThemeInfoAttribute" />
-          <AitFeature Name="System.Windows.ThemeInfoAttribute..ctor" />
-          <AitFeature Name="System.Windows.Thickness" />
-          <AitFeature Name="System.Windows.Thickness..ctor" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer..ctor" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.Start" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.add_Tick" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.set_Interval" />
-          <AitFeature Name="System.Windows.UIElement" />
-          <AitFeature Name="System.Windows.UIElement.UpdateLayout" />
-          <AitFeature Name="System.Windows.UIElement.add_PreviewMouseWheel" />
-          <AitFeature Name="System.Windows.UIElement.get_IsEnabled" />
-          <AitFeature Name="System.Windows.UIElement.get_Visibility" />
-          <AitFeature Name="System.Windows.UIElement.set_IsEnabled" />
-          <AitFeature Name="System.Windows.UIElement.set_Opacity" />
-          <AitFeature Name="System.Windows.UIElement.set_Visibility" />
-          <AitFeature Name="System.Windows.Visibility" />
-          <AitFeature Name="System.Windows.Window" />
-          <AitFeature Name="System.Windows.Window..ctor" />
-          <AitFeature Name="System.Windows.Window.Close" />
-          <AitFeature Name="System.Windows.Window.Show" />
-          <AitFeature Name="System.Windows.Window.add_LocationChanged" />
-          <AitFeature Name="System.Windows.Window.get_Left" />
-          <AitFeature Name="System.Windows.Window.get_Top" />
-          <AitFeature Name="System.Windows.Window.set_Left" />
-          <AitFeature Name="System.Windows.Window.set_Top" />
-          <AitFeature Name="System.Windows.Window.set_Topmost" />
-        </AitCategory>
-      </AitFile>
       <AitFile ErrorCode="0" Name="System.IO.Compression.ZipFile.dll" Id="000099d6c187de8510206a93d2eed9c65e65e0c86e72">
         <AitCategory Id="ApiStatic">
           <AitFeature Name="mscoree.dll!_CorDllMain" />
@@ -3705,6 +3344,380 @@
           <AitFeature Name="System.Security.Permissions.SecurityPermissionAttribute..ctor" />
           <AitFeature Name="System.Security.UnverifiableCodeAttribute" />
           <AitFeature Name="System.Security.UnverifiableCodeAttribute..ctor" />
+        </AitCategory>
+      </AitFile>
+      <AitFile FrameworkMoniker=".NETFramework,Version=v4.6.1" ErrorCode="0" Name="Spotify_Lyrics.NET.exe" Id="0000ab974a9ebbad32acec2199da02591bd9a8c1c216">
+        <AitCategory Id="Com">
+          <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000002}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000003}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000004}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000005}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000006}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000007}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000008}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000011}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000012}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000014}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000015}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000017}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000018}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000020}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000021}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000022}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000023}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000024}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000025}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000027}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000028}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000030}" />
+        </AitCategory>
+        <AitCategory Id="ApiDynamic">
+          <AitFeature Name="mscoree.dll!_CorExeMain" />
+        </AitCategory>
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Boolean" />
+          <AitFeature Name="System.Char" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
+          <AitFeature Name="System.Collections.Generic.IEnumerable`1" />
+          <AitFeature Name="System.Collections.Generic.IEnumerator`1" />
+          <AitFeature Name="System.Collections.Generic.List`1" />
+          <AitFeature Name="System.Collections.IEnumerable" />
+          <AitFeature Name="System.Collections.IEnumerable.GetEnumerator" />
+          <AitFeature Name="System.Collections.IEnumerator" />
+          <AitFeature Name="System.Collections.IEnumerator.MoveNext" />
+          <AitFeature Name="System.Collections.IEnumerator.get_Current" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute..ctor" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableState" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase..ctor" />
+          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute" />
+          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute..ctor" />
+          <AitFeature Name="System.Configuration.SettingsBase" />
+          <AitFeature Name="System.Configuration.SettingsBase.Save" />
+          <AitFeature Name="System.Configuration.SettingsBase.Synchronized" />
+          <AitFeature Name="System.Configuration.SettingsBase.get_Item" />
+          <AitFeature Name="System.Configuration.SettingsBase.set_Item" />
+          <AitFeature Name="System.Configuration.UserScopedSettingAttribute" />
+          <AitFeature Name="System.Configuration.UserScopedSettingAttribute..ctor" />
+          <AitFeature Name="System.Convert" />
+          <AitFeature Name="System.Convert.ToInt32" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.Process" />
+          <AitFeature Name="System.Diagnostics.Process.GetProcessesByName" />
+          <AitFeature Name="System.Diagnostics.Process.Start" />
+          <AitFeature Name="System.Diagnostics.Process.get_MainWindowTitle" />
+          <AitFeature Name="System.Diagnostics.ProcessStartInfo" />
+          <AitFeature Name="System.Diagnostics.ProcessStartInfo..ctor" />
+          <AitFeature Name="System.Environment" />
+          <AitFeature Name="System.Environment.GetFolderPath" />
+          <AitFeature Name="System.Environment.get_NewLine" />
+          <AitFeature Name="System.EventArgs" />
+          <AitFeature Name="System.EventHandler" />
+          <AitFeature Name="System.EventHandler..ctor" />
+          <AitFeature Name="System.Exception" />
+          <AitFeature Name="System.Globalization.CultureInfo" />
+          <AitFeature Name="System.IDisposable" />
+          <AitFeature Name="System.IDisposable.Dispose" />
+          <AitFeature Name="System.IO.Directory" />
+          <AitFeature Name="System.IO.Directory.CreateDirectory" />
+          <AitFeature Name="System.IO.Directory.Exists" />
+          <AitFeature Name="System.IO.DirectoryInfo" />
+          <AitFeature Name="System.IO.File" />
+          <AitFeature Name="System.IO.File.AppendAllText" />
+          <AitFeature Name="System.IO.File.Create" />
+          <AitFeature Name="System.IO.File.CreateText" />
+          <AitFeature Name="System.IO.File.Delete" />
+          <AitFeature Name="System.IO.File.Exists" />
+          <AitFeature Name="System.IO.File.ReadAllLines" />
+          <AitFeature Name="System.IO.File.WriteAllBytes" />
+          <AitFeature Name="System.IO.File.WriteAllLines" />
+          <AitFeature Name="System.IO.FileStream" />
+          <AitFeature Name="System.IO.Stream" />
+          <AitFeature Name="System.IO.StreamReader" />
+          <AitFeature Name="System.IO.StreamReader..ctor" />
+          <AitFeature Name="System.IO.StreamWriter" />
+          <AitFeature Name="System.IO.TextReader" />
+          <AitFeature Name="System.IO.TextReader.Close" />
+          <AitFeature Name="System.IO.TextReader.ReadToEnd" />
+          <AitFeature Name="System.Int32" />
+          <AitFeature Name="System.Int32.ToString" />
+          <AitFeature Name="System.Linq.Enumerable" />
+          <AitFeature Name="System.Linq.Enumerable.Count" />
+          <AitFeature Name="System.Linq.Enumerable.ToList" />
+          <AitFeature Name="System.Net.HttpWebResponse" />
+          <AitFeature Name="System.Net.SecurityProtocolType" />
+          <AitFeature Name="System.Net.ServicePointManager" />
+          <AitFeature Name="System.Net.ServicePointManager.set_Expect100Continue" />
+          <AitFeature Name="System.Net.ServicePointManager.set_SecurityProtocol" />
+          <AitFeature Name="System.Net.WebRequest" />
+          <AitFeature Name="System.Net.WebRequest.Create" />
+          <AitFeature Name="System.Net.WebRequest.GetResponse" />
+          <AitFeature Name="System.Net.WebRequest.set_ContentType" />
+          <AitFeature Name="System.Net.WebRequest.set_Method" />
+          <AitFeature Name="System.Net.WebResponse" />
+          <AitFeature Name="System.Net.WebResponse.GetResponseStream" />
+          <AitFeature Name="System.Net.WebUtility" />
+          <AitFeature Name="System.Net.WebUtility.HtmlEncode" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Object.ToString" />
+          <AitFeature Name="System.Reflection.Assembly" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Resources.ResourceManager" />
+          <AitFeature Name="System.Resources.ResourceManager..ctor" />
+          <AitFeature Name="System.Resources.ResourceManager.GetObject" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Create" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetException" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder.get_Task" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter.GetResult" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter.get_IsCompleted" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter`1" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+          <AitFeature Name="System.RuntimeTypeHandle" />
+          <AitFeature Name="System.STAThreadAttribute" />
+          <AitFeature Name="System.STAThreadAttribute..ctor" />
+          <AitFeature Name="System.String" />
+          <AitFeature Name="System.String.Concat" />
+          <AitFeature Name="System.String.Contains" />
+          <AitFeature Name="System.String.IndexOf" />
+          <AitFeature Name="System.String.Replace" />
+          <AitFeature Name="System.String.Split" />
+          <AitFeature Name="System.String.Substring" />
+          <AitFeature Name="System.String.ToLower" />
+          <AitFeature Name="System.String.Trim" />
+          <AitFeature Name="System.String.get_Length" />
+          <AitFeature Name="System.String.op_Equality" />
+          <AitFeature Name="System.String.op_Inequality" />
+          <AitFeature Name="System.Text.ASCIIEncoding" />
+          <AitFeature Name="System.Text.ASCIIEncoding..ctor" />
+          <AitFeature Name="System.Text.Encoding" />
+          <AitFeature Name="System.Text.Encoding.GetBytes" />
+          <AitFeature Name="System.Threading.Tasks.Task" />
+          <AitFeature Name="System.Threading.Tasks.Task.GetAwaiter" />
+          <AitFeature Name="System.Threading.Tasks.Task`1" />
+          <AitFeature Name="System.TimeSpan" />
+          <AitFeature Name="System.TimeSpan.FromMilliseconds" />
+          <AitFeature Name="System.TimeSpan.FromSeconds" />
+          <AitFeature Name="System.Type" />
+          <AitFeature Name="System.Type.GetTypeFromHandle" />
+          <AitFeature Name="System.Type.get_Assembly" />
+          <AitFeature Name="System.Uri" />
+          <AitFeature Name="System.Uri..ctor" />
+          <AitFeature Name="System.Uri.EscapeDataString" />
+          <AitFeature Name="System.Uri.IsWellFormedUriString" />
+          <AitFeature Name="System.Uri.get_AbsoluteUri" />
+          <AitFeature Name="System.UriKind" />
+          <AitFeature Name="System.ValueType" />
+          <AitFeature Name="System.Windows.Application" />
+          <AitFeature Name="System.Windows.Application..ctor" />
+          <AitFeature Name="System.Windows.Application.FindResource" />
+          <AitFeature Name="System.Windows.Application.LoadComponent" />
+          <AitFeature Name="System.Windows.Application.Run" />
+          <AitFeature Name="System.Windows.Application.get_Current" />
+          <AitFeature Name="System.Windows.Application.set_StartupUri" />
+          <AitFeature Name="System.Windows.Controls.Button" />
+          <AitFeature Name="System.Windows.Controls.ContentControl" />
+          <AitFeature Name="System.Windows.Controls.ContentControl.get_Content" />
+          <AitFeature Name="System.Windows.Controls.ContentControl.set_Content" />
+          <AitFeature Name="System.Windows.Controls.Grid" />
+          <AitFeature Name="System.Windows.Controls.Grid..ctor" />
+          <AitFeature Name="System.Windows.Controls.Image" />
+          <AitFeature Name="System.Windows.Controls.Image.set_Source" />
+          <AitFeature Name="System.Windows.Controls.ItemCollection" />
+          <AitFeature Name="System.Windows.Controls.ItemCollection.Add" />
+          <AitFeature Name="System.Windows.Controls.ItemCollection.Clear" />
+          <AitFeature Name="System.Windows.Controls.ItemsControl" />
+          <AitFeature Name="System.Windows.Controls.ItemsControl.get_Items" />
+          <AitFeature Name="System.Windows.Controls.ListView" />
+          <AitFeature Name="System.Windows.Controls.ListViewItem" />
+          <AitFeature Name="System.Windows.Controls.ListViewItem..ctor" />
+          <AitFeature Name="System.Windows.Controls.Panel" />
+          <AitFeature Name="System.Windows.Controls.Panel.get_Children" />
+          <AitFeature Name="System.Windows.Controls.Panel.set_Background" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase.add_Click" />
+          <AitFeature Name="System.Windows.Controls.ScrollViewer" />
+          <AitFeature Name="System.Windows.Controls.ScrollViewer.ScrollToTop" />
+          <AitFeature Name="System.Windows.Controls.ScrollViewer.ScrollToVerticalOffset" />
+          <AitFeature Name="System.Windows.Controls.ScrollViewer.get_VerticalOffset" />
+          <AitFeature Name="System.Windows.Controls.TextBlock" />
+          <AitFeature Name="System.Windows.Controls.TextBlock..ctor" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.get_Inlines" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_FontSize" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_FontStretch" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_Foreground" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_LineHeight" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_Padding" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_Text" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_TextAlignment" />
+          <AitFeature Name="System.Windows.Controls.TextBlock.set_TextWrapping" />
+          <AitFeature Name="System.Windows.Controls.UIElementCollection" />
+          <AitFeature Name="System.Windows.Controls.UIElementCollection.Add" />
+          <AitFeature Name="System.Windows.Controls.UIElementCollection.get_Item" />
+          <AitFeature Name="System.Windows.DependencyObject" />
+          <AitFeature Name="System.Windows.DependencyProperty" />
+          <AitFeature Name="System.Windows.Documents.Hyperlink" />
+          <AitFeature Name="System.Windows.Documents.Hyperlink..ctor" />
+          <AitFeature Name="System.Windows.Documents.Hyperlink.add_RequestNavigate" />
+          <AitFeature Name="System.Windows.Documents.Hyperlink.set_NavigateUri" />
+          <AitFeature Name="System.Windows.Documents.Inline" />
+          <AitFeature Name="System.Windows.Documents.InlineCollection" />
+          <AitFeature Name="System.Windows.Documents.InlineCollection.Add" />
+          <AitFeature Name="System.Windows.Documents.LineBreak" />
+          <AitFeature Name="System.Windows.Documents.LineBreak..ctor" />
+          <AitFeature Name="System.Windows.Documents.Run" />
+          <AitFeature Name="System.Windows.Documents.Run..ctor" />
+          <AitFeature Name="System.Windows.Documents.Run.set_Text" />
+          <AitFeature Name="System.Windows.Documents.Span" />
+          <AitFeature Name="System.Windows.Documents.Span.get_Inlines" />
+          <AitFeature Name="System.Windows.Documents.TextElement" />
+          <AitFeature Name="System.Windows.Documents.TextElement.set_FontSize" />
+          <AitFeature Name="System.Windows.Documents.TextElement.set_Foreground" />
+          <AitFeature Name="System.Windows.Documents.TextElementCollection`1" />
+          <AitFeature Name="System.Windows.Duration" />
+          <AitFeature Name="System.Windows.Duration.op_Implicit" />
+          <AitFeature Name="System.Windows.FontStretch" />
+          <AitFeature Name="System.Windows.FontStretches" />
+          <AitFeature Name="System.Windows.FontStretches.get_UltraExpanded" />
+          <AitFeature Name="System.Windows.FrameworkContentElement" />
+          <AitFeature Name="System.Windows.FrameworkContentElement.set_Style" />
+          <AitFeature Name="System.Windows.FrameworkElement" />
+          <AitFeature Name="System.Windows.FrameworkElement.HeightProperty" />
+          <AitFeature Name="System.Windows.FrameworkElement.add_Loaded" />
+          <AitFeature Name="System.Windows.FrameworkElement.add_SizeChanged" />
+          <AitFeature Name="System.Windows.FrameworkElement.get_ActualWidth" />
+          <AitFeature Name="System.Windows.FrameworkElement.get_Height" />
+          <AitFeature Name="System.Windows.FrameworkElement.get_Parent" />
+          <AitFeature Name="System.Windows.FrameworkElement.get_Width" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_Height" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_HorizontalAlignment" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_Style" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_ToolTip" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_Width" />
+          <AitFeature Name="System.Windows.HorizontalAlignment" />
+          <AitFeature Name="System.Windows.Input.MouseWheelEventArgs" />
+          <AitFeature Name="System.Windows.Input.MouseWheelEventArgs.get_Delta" />
+          <AitFeature Name="System.Windows.Input.MouseWheelEventHandler" />
+          <AitFeature Name="System.Windows.Input.MouseWheelEventHandler..ctor" />
+          <AitFeature Name="System.Windows.Markup.IComponentConnector" />
+          <AitFeature Name="System.Windows.Markup.IComponentConnector.Connect" />
+          <AitFeature Name="System.Windows.Media.Animation.AnimationTimeline" />
+          <AitFeature Name="System.Windows.Media.Animation.DoubleAnimation" />
+          <AitFeature Name="System.Windows.Media.Animation.DoubleAnimation..ctor" />
+          <AitFeature Name="System.Windows.Media.Brush" />
+          <AitFeature Name="System.Windows.Media.Color" />
+          <AitFeature Name="System.Windows.Media.Color.FromArgb" />
+          <AitFeature Name="System.Windows.Media.Color.FromRgb" />
+          <AitFeature Name="System.Windows.Media.Color.get_B" />
+          <AitFeature Name="System.Windows.Media.Color.get_G" />
+          <AitFeature Name="System.Windows.Media.Color.get_R" />
+          <AitFeature Name="System.Windows.Media.Colors" />
+          <AitFeature Name="System.Windows.Media.Colors.get_Gray" />
+          <AitFeature Name="System.Windows.Media.GradientStop" />
+          <AitFeature Name="System.Windows.Media.GradientStop.set_Color" />
+          <AitFeature Name="System.Windows.Media.ImageSource" />
+          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage" />
+          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage..ctor" />
+          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage.BeginInit" />
+          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage.EndInit" />
+          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage.set_UriSource" />
+          <AitFeature Name="System.Windows.Media.SolidColorBrush" />
+          <AitFeature Name="System.Windows.Media.SolidColorBrush..ctor" />
+          <AitFeature Name="System.Windows.Media.SolidColorBrush.get_Color" />
+          <AitFeature Name="System.Windows.Navigation.RequestNavigateEventArgs" />
+          <AitFeature Name="System.Windows.Navigation.RequestNavigateEventArgs.get_Uri" />
+          <AitFeature Name="System.Windows.Navigation.RequestNavigateEventHandler" />
+          <AitFeature Name="System.Windows.Navigation.RequestNavigateEventHandler..ctor" />
+          <AitFeature Name="System.Windows.ResourceDictionaryLocation" />
+          <AitFeature Name="System.Windows.RoutedEventArgs" />
+          <AitFeature Name="System.Windows.RoutedEventArgs.set_Handled" />
+          <AitFeature Name="System.Windows.RoutedEventHandler" />
+          <AitFeature Name="System.Windows.RoutedEventHandler..ctor" />
+          <AitFeature Name="System.Windows.Shapes.Ellipse" />
+          <AitFeature Name="System.Windows.SizeChangedEventHandler" />
+          <AitFeature Name="System.Windows.SizeChangedEventHandler..ctor" />
+          <AitFeature Name="System.Windows.Style" />
+          <AitFeature Name="System.Windows.TextAlignment" />
+          <AitFeature Name="System.Windows.TextWrapping" />
+          <AitFeature Name="System.Windows.ThemeInfoAttribute" />
+          <AitFeature Name="System.Windows.ThemeInfoAttribute..ctor" />
+          <AitFeature Name="System.Windows.Thickness" />
+          <AitFeature Name="System.Windows.Thickness..ctor" />
+          <AitFeature Name="System.Windows.Threading.DispatcherTimer" />
+          <AitFeature Name="System.Windows.Threading.DispatcherTimer..ctor" />
+          <AitFeature Name="System.Windows.Threading.DispatcherTimer.Start" />
+          <AitFeature Name="System.Windows.Threading.DispatcherTimer.add_Tick" />
+          <AitFeature Name="System.Windows.Threading.DispatcherTimer.set_Interval" />
+          <AitFeature Name="System.Windows.UIElement" />
+          <AitFeature Name="System.Windows.UIElement.BeginAnimation" />
+          <AitFeature Name="System.Windows.UIElement.UpdateLayout" />
+          <AitFeature Name="System.Windows.UIElement.add_PreviewMouseWheel" />
+          <AitFeature Name="System.Windows.UIElement.get_IsEnabled" />
+          <AitFeature Name="System.Windows.UIElement.get_Visibility" />
+          <AitFeature Name="System.Windows.UIElement.set_IsEnabled" />
+          <AitFeature Name="System.Windows.UIElement.set_Opacity" />
+          <AitFeature Name="System.Windows.UIElement.set_Visibility" />
+          <AitFeature Name="System.Windows.Visibility" />
+          <AitFeature Name="System.Windows.Window" />
+          <AitFeature Name="System.Windows.Window..ctor" />
+          <AitFeature Name="System.Windows.Window.Close" />
+          <AitFeature Name="System.Windows.Window.Show" />
+          <AitFeature Name="System.Windows.Window.add_LocationChanged" />
+          <AitFeature Name="System.Windows.Window.get_Left" />
+          <AitFeature Name="System.Windows.Window.get_Top" />
+          <AitFeature Name="System.Windows.Window.set_Left" />
+          <AitFeature Name="System.Windows.Window.set_Top" />
+          <AitFeature Name="System.Windows.Window.set_Topmost" />
         </AitCategory>
       </AitFile>
       <AitFile ErrorCode="0" Name="Microsoft.Win32.Primitives.dll" Id="0000afa308c0166d8cbdd1d5e6fdaa8c9b87eb9184e7">
