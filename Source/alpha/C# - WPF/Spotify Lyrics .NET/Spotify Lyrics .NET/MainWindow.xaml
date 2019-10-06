@@ -137,7 +137,7 @@
         <!-- Body -->
         <Grid x:Name="bodyGrid" Grid.Row="3" Background="#181818">
             <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
-                <ListView Padding="0,15,0,0" x:Name="lyricsView" Background="Transparent" BorderThickness="0"/>
+                <ListView Padding="0,15,0,0" x:Name="lyricsView" Background="Transparent" BorderThickness="0" VerticalAlignment="Center"/>
             </ScrollViewer>
 
             <Grid Height="20" Margin="0,0,17,0" VerticalAlignment="Top">
