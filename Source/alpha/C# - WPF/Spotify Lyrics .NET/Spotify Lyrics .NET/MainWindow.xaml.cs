@@ -22,7 +22,7 @@ namespace Spotify_Lyrics.NET
     public partial class MainWindow : Window
     {
         const string appVERSION = "v1.5.1";
-        const string appBUILD = "06.10.2019"; // DD.MM.YYYY
+        const string appBUILD = "08.10.2019"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
 
@@ -284,11 +284,19 @@ namespace Spotify_Lyrics.NET
             ((ScrollViewer)lyricsView.Parent).ScrollToTop();
         }
 
-        private void addToLyricsView(string s, bool error = false)
+        private void addToLyricsView(string s, bool error = false, bool topCenter = true)
         {
             ListViewItem lContainer = new ListViewItem();
             lContainer.IsEnabled = false;
             lContainer.HorizontalAlignment = HorizontalAlignment.Center;
+
+            if (s.Contains("\r\n") && s.Length > 4)
+            {
+                if (s.Substring(s.Length - 2, 2) == "\r\n")
+                {
+                    s = s.Substring(0, s.Length - 2);
+                }
+            }
 
             Grid lGrid = new Grid();
             lGrid.Width = this.Width - 50;
@@ -318,6 +326,11 @@ namespace Spotify_Lyrics.NET
             lGrid.Children.Add(lString);
             lContainer.Content = lGrid;
             lyricsView.Items.Add(lContainer);
+
+            if (topCenter)
+                lyricsView.VerticalAlignment = VerticalAlignment.Top;
+            else
+                lyricsView.VerticalAlignment = VerticalAlignment.Center;
         }
 
         private void ListViewScrollViewer_PreviewMouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
@@ -616,7 +629,7 @@ namespace Spotify_Lyrics.NET
                         if (lyricsText.Trim().Length > 0)
                         {
                             clearLyricsView();
-                            addToLyricsView(lyricsText);
+                            addToLyricsView(lyricsText, false, true);
                         }
                         else
                         {
