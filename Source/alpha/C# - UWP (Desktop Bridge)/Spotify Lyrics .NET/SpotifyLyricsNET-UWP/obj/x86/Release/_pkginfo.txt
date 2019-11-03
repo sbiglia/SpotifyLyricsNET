@@ -1,1 +1,1 @@
-D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\AppPackages\SpotifyLyricsNET-UWP_1.5.0.0_Test\SpotifyLyricsNET-UWP_1.5.0.0_x86_x64.appxbundle
+D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\AppPackages\SpotifyLyricsNET-UWP_1.5.1.0_Test\SpotifyLyricsNET-UWP_1.5.1.0_x86_x64.appxbundle

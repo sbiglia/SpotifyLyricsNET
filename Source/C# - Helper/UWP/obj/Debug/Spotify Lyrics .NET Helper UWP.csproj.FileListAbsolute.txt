@@ -1,8 +1,5 @@
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\UWP\Spotify Lyrics .NET Helper UWP\bin\Debug\Spotify_Lyrics.NET_Helper_UWP.exe
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\UWP\Spotify Lyrics .NET Helper UWP\bin\Debug\Spotify_Lyrics.NET_Helper_UWP.pdb
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\UWP\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify Lyrics .NET Helper UWP.csprojAssemblyReference.cache
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\UWP\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify_Lyrics.NET_Helper_UWP.MainForm.resources
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\UWP\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify_Lyrics.NET_Helper_UWP.Properties.Resources.resources
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\UWP\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify Lyrics .NET Helper UWP.csproj.GenerateResource.cache
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\UWP\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify_Lyrics.NET_Helper_UWP.exe
-C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\WinForms\UWP\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify_Lyrics.NET_Helper_UWP.pdb
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\bin\Debug\Spotify_Lyrics.NET_Helper_UWP.exe
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\bin\Debug\Spotify_Lyrics.NET_Helper_UWP.pdb
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify Lyrics .NET Helper UWP.csprojAssemblyReference.cache
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify_Lyrics.NET_Helper_UWP.exe
+C:\Users\jakub\source\Repos\Spotify Lyrics .NET Helper UWP\obj\Debug\Spotify_Lyrics.NET_Helper_UWP.pdb

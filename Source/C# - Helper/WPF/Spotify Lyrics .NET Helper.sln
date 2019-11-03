@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify Lyrics .NET Helper", "Spotify Lyrics .NET Helper.csproj", "{400EE289-1BC8-4F0B-A5A5-5FAC7C45A601}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify Lyrics .NET Helper", "Spotify Lyrics .NET Helper.csproj", "{461A87F3-0C68-47C8-9AAA-D3A70C2C5094}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{400EE289-1BC8-4F0B-A5A5-5FAC7C45A601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{400EE289-1BC8-4F0B-A5A5-5FAC7C45A601}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{400EE289-1BC8-4F0B-A5A5-5FAC7C45A601}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{400EE289-1BC8-4F0B-A5A5-5FAC7C45A601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461A87F3-0C68-47C8-9AAA-D3A70C2C5094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461A87F3-0C68-47C8-9AAA-D3A70C2C5094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461A87F3-0C68-47C8-9AAA-D3A70C2C5094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461A87F3-0C68-47C8-9AAA-D3A70C2C5094}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {72A0822E-B417-43D2-8A69-8F52EB36ABF4}
+		SolutionGuid = {A3C893E3-DF44-4C3B-B2E5-A43E0EB2D993}
 	EndGlobalSection
 EndGlobal

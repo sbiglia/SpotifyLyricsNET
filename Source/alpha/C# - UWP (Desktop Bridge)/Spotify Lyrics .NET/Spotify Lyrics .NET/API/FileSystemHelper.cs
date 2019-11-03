@@ -14,6 +14,8 @@ namespace Spotify_Lyrics.NET.API
 {
     class FileSystemHelper
     {
+        const string helperVERSION = "v1.1.0";
+        const string helperNAME = "Spotify_Lyrics.NET_Helper_UWP.exe";
         string localResourcesDirBase;
         string localResourcesDir;
         string localResourcesData;
@@ -32,11 +34,57 @@ namespace Spotify_Lyrics.NET.API
         {
             try
             {
-                if (!File.Exists(localResourcesDirBase + @"\Spotify_Lyrics.NET_Helper_UWP.exe"))
+                bool copyHelper = false;
+                if (!File.Exists(localResourcesDirBase + @"\" + helperNAME))
+                {
+                    copyHelper = true;
+                }
+                else 
+                {
+                    if (!File.Exists(localResourcesDirBase + @"\helper_version"))
+                    {
+                        copyHelper = true;
+                        File.WriteAllText(localResourcesDirBase + @"\helper_version", helperVERSION);
+                    }
+                    else
+                    {
+                        string currHelperVERSION = File.ReadAllText(localResourcesDirBase + @"\helper_version");
+
+                        if (currHelperVERSION != helperVERSION)
+                        {
+                            copyHelper = true;
+                            File.WriteAllText(localResourcesDirBase + @"\helper_version", helperVERSION);
+                        }
+                    }
+
+                    if (copyHelper)
+                    {
+                        // Delete older version
+                        try
+                        {
+                            Process helperProcess = Process.GetProcessesByName(helperNAME.Replace(".exe", "")).First();
+                            if (helperProcess != null)
+                                helperProcess.Kill();
+                        }
+                        catch (Exception ex)
+                        {
+                        }
+
+                        try
+                        {
+                            File.Delete(localResourcesDirBase + @"\" + helperNAME);
+                        }
+                        catch (Exception ex)
+                        {
+                        }
+                    }
+                }
+
+                if (copyHelper)
                 {
                     // Copy Helper
-                    File.WriteAllBytes(localResourcesDirBase + @"\Spotify_Lyrics.NET_Helper_UWP.exe", Resources.Spotify_Lyrics_NET_Helper_UWP);
-                    Process.Start(localResourcesDirBase + @"\Spotify_Lyrics.NET_Helper_UWP.exe");
+                    File.WriteAllBytes(localResourcesDirBase + @"\" + helperNAME, Resources.Spotify_Lyrics_NET_Helper_UWP);
+                    Process.Start(localResourcesDirBase + @"\" + helperNAME);
                 }
             }
             catch (Exception ex)
