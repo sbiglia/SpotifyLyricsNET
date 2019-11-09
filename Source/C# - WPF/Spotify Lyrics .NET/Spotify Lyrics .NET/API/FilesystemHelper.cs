@@ -15,7 +15,7 @@ namespace Spotify_Lyrics.NET.API
 {
     class FileSystemHelper
     {
-        const string helperVERSION = "v1.1.0";
+        const string helperVERSION = "v1.2.0";
         const string helperNAME = "Spotify_Lyrics.NET_Helper.exe";
         string localResourcesDirBase;
         string localResourcesDir;
@@ -39,6 +39,11 @@ namespace Spotify_Lyrics.NET.API
                 if (!File.Exists(localResourcesDirBase + @"\" + helperNAME))
                 {
                     copyHelper = true;
+
+                    if (!File.Exists(localResourcesDirBase + @"\helper_version"))
+                    {
+                        File.WriteAllText(localResourcesDirBase + @"\helper_version", helperVERSION);
+                    }
                 }
                 else
                 {
@@ -84,11 +89,15 @@ namespace Spotify_Lyrics.NET.API
                 if (copyHelper)
                 {
                     // Copy Helper
+                    Dialog diag = new Dialog(true, "This app uses a \"helper\" program that runs in the background and starts with the startup of Windows to make the \"Launch with Spotify\" feature possible.\n\nN.B.\nIf you'll decide to remove this software in the future, you can find and delete the helper in\n\"Documents\\Spotify Lyrics .NET\".\n\nThanks for your attention, enjoy!");
                     File.WriteAllBytes(localResourcesDirBase + @"\" + helperNAME, Resources.Spotify_Lyrics_NET_Helper);
-                    Process.Start(localResourcesDirBase + @"\" + helperNAME);
-                }
 
-                checkLnk();
+                    Process proc = new Process();
+                    proc.StartInfo.FileName = localResourcesDirBase + @"\" + helperNAME;
+                    proc.StartInfo.UseShellExecute = true;
+                    //proc.StartInfo.Verb = "runas";
+                    proc.Start();
+                }
             }
             catch (Exception ex)
             {

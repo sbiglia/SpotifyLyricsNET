@@ -15,6 +15,22 @@ namespace Spotify_Lyrics.NET
             newVersion = version;
             loadTheme(Properties.Settings.Default.theme);
 
+            this.yesNoBtnContainer.Visibility = Visibility.Visible;
+            this.okBtnContainer.Visibility = Visibility.Collapsed;
+            this.Show();
+        }
+
+        public Dialog(bool custom, string message)
+        {
+            InitializeComponent();
+            loadTheme(Properties.Settings.Default.theme);
+
+            this.Title = "Important info";
+            this.dialogTitle.Text = "Just to let you know:";
+            this.dialogText.Text = message;
+
+            this.yesNoBtnContainer.Visibility = Visibility.Collapsed;
+            this.okBtnContainer.Visibility = Visibility.Visible;
             this.Show();
         }
 

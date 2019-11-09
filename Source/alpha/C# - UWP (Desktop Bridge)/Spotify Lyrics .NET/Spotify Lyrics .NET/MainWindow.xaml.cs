@@ -21,8 +21,8 @@ namespace Spotify_Lyrics.NET
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string appVERSION = "v1.5.2-alpha";
-        const string appBUILD = "03.11.2019"; // DD.MM.YYYY
+        const string appVERSION = "v1.6.0-alpha";
+        const string appBUILD = "09.11.2019"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
 
@@ -383,8 +383,6 @@ namespace Spotify_Lyrics.NET
 
                 if (title.Contains(" - "))
                 {
-                    checkReview(); // Ask for review after 10 lyrics
-
                     string artist = title.Substring(0, title.IndexOf(" -"));
                     string songTitle = title.Replace(artist + " - ", "");
 
@@ -653,6 +651,8 @@ namespace Spotify_Lyrics.NET
 
                         if (lyricsText.Trim().Length > 0)
                         {
+                            checkReview(); // Ask for review after 10 lyrics
+
                             clearLyricsView();
                             addToLyricsView(lyricsText, false, false);
                         }

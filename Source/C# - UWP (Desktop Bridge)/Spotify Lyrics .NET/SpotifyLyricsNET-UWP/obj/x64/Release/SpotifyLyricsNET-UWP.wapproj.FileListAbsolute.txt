@@ -1061,8 +1061,8 @@ D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\SpotifyLyricsNET-UWP.wapproj.LastBuild.txt
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\ForBundle\AppxManifest.xml
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\ForUploadBundle\AppxManifest.xml
-D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\SpotifyLyricsNET-UWP_1.5.1.0_x64.appx
-D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.5.1.0_x64.appx
+D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\SpotifyLyricsNET-UWP_1.5.2.0_x64.appx
+D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.5.2.0_x64.appx
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\PackageLayout\Images\LargeTile.scale-100.png
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\PackageLayout\Images\LargeTile.scale-125.png
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\PackageLayout\Images\LargeTile.scale-150.png

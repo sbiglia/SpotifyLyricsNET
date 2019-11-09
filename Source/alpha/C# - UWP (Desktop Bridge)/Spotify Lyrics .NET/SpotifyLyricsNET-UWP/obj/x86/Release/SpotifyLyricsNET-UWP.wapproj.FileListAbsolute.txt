@@ -1016,5 +1016,5 @@ D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x86\Release\Upload.Symbols\Spotify_Lyrics.NET.pdb
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x86\Release\_pkginfo.txt
 D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x86\Release\_installerinfo.log
-D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x86\Release\SpotifyLyricsNET-UWP_1.5.1.0_x86.appx
-D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x86\Release\Upload\SpotifyLyricsNET-UWP_1.5.1.0_x86.appx
+D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x86\Release\SpotifyLyricsNET-UWP_1.5.2.0_x86.appx
+D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x86\Release\Upload\SpotifyLyricsNET-UWP_1.5.2.0_x86.appx

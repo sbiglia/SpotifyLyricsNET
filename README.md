@@ -1,6 +1,6 @@
 ![](/Screenshots/SpotifyLyricsNET-logo-v1.png)
 # Spotify Lyrics .NET
-![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.5.1-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.5.1-green.svg?style=flat)
+![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.5.2-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.5.2-green.svg?style=flat)
 > Get the lyrics of the song you're listening to on Spotify
 
 ![](/Screenshots/SpotifyLyricsNET-v1.5.0.png)
@@ -11,7 +11,7 @@
 - Spotify
 - Internet Connection
 
-> The software has been most recently tested with **Spotify 1.1.12.451.gdb77255f**.<br>I can't guarantee that it works with other versions.
+> The software has been most recently tested with **Spotify 1.1.19.480.g7d17e3ce**.<br>I can't guarantee that it works with other versions.
 
 Download the latest version from the [Releases](https://github.com/JakubSteplowski/SpotifyLyricsNET/releases) section.
 
@@ -26,6 +26,12 @@ Download the latest version from the [Releases](https://github.com/JakubSteplows
 
 > Notes:<br>
 > Date format: DD/MM/YYYY
+
+>v1.5.2 (09/11/2019):
+>- Fixed "Launch with Spotify"
+>- Added info message about the helper ("Launch with Spotify") and how to remove it after uninstalling the app
+>- The app should no longer ask you for review so often (UWP)<br>
+>*(the source of this version is available only in C#)*
 
 >v1.5.1 (03/11/2019):
 >- Added missing app name to the tile when pinned in the start menu (UWP)

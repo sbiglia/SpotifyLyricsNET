@@ -12,8 +12,8 @@ namespace Spotify_Lyrics.NET_Helper_UWP
 {
     class Program
     {
-        const string VERSION = "v1.1.0";
-        const string BUILD = "03.11.2019"; // DD.MM.YYYY
+        const string VERSION = "v1.2.0";
+        const string BUILD = "08.11.2019"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
         const string appHelperName = "Spotify_Lyrics.NET_Helper";

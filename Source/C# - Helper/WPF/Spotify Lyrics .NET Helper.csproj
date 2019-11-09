@@ -34,6 +34,9 @@
   <PropertyGroup>
     <ApplicationIcon>SpotifyLyricsNET-logo-v1.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SpotifyLyricsNET-logo-v1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

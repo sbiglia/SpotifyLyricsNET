@@ -1,2 +1,2 @@
-MainPackage=D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.5.1.0_x64.appx
-SymbolPackage=D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.5.1.0\SpotifyLyricsNET-UWP_1.5.1.0_x64.appxsym
+MainPackage=D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.5.2.0_x64.appx
+SymbolPackage=D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.5.2.0\SpotifyLyricsNET-UWP_1.5.2.0_x64.appxsym
