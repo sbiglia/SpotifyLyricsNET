@@ -8,13 +8,13 @@
 ## Sources of lyrics:
 | № | Source | Since | Status | Database Size |
 |     :---:      | ------------ |     :---:      |     :---:      |     :---:      |
-| 1 | **Musixmatch** | v0.1.0 | `available` | +14M lyrics |
-| 2 | **Genius** | v1.0.0 | `available` | +25M lyrics/annotations |
-| 3 | **Tekstowo.pl** | v1.6.0-alpha | `coming to v1.6.0` | +1.6M lyrics |
+| 1 | **Musixmatch** | v0.1.0 | `available` | 14M+ lyrics |
+| 2 | **Genius** | v1.0.0 | `available` | 25M+ lyrics/annotations |
+| 3 | **Tekstowo.pl** | v1.6.0-alpha | `coming to v1.6.0` | 1.6M+ lyrics |
 | 4 | **AZLyrics** | | `in development` | N.A. |
 | 5 | **SONGLYRICS.com** | | `in development` | N.A. |
 | 6 | **LyricsFreak** | | `in development` | N.A. |
-| 7 | **LyricWikia** | | `in development` | +1.6M lyrics |
+| 7 | **LyricWikia** | | `in development` | 1.6M+ lyrics |
 | 8 | **baebom** | | `in development` | N.A. |
 | 9 | **Absolute Lyrics** | | `in development` | N.A. |
 
