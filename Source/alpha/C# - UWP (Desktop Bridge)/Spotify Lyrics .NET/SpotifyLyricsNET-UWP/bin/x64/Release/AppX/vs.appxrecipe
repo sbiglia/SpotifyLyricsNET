@@ -20,18 +20,18 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B469E0F81D4BDF1F7A862D8BA414E3AC28B74E88AB5881423B8F52BE446C8221</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>2238JakubSteplowski.SpotifyLyrics.NET_1.5.2.0_x64__76k8dzmm3mrer</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>8E6EF4BB23A4C1E08FD64DFD12FBE175740C78E8E045BDC5887EFE60A1EB3DA8</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>2238JakubSteplowski.SpotifyLyrics.NET_1.6.0.0_x64__76k8dzmm3mrer</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2238JakubSteplowski.SpotifyLyrics.NET_76k8dzmm3mrer!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2238JakubSteplowski.SpotifyLyrics.NET</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710</RegisteredPackagePublisher>
-    <RegisteredVersion>1.5.2.0</RegisteredVersion>
+    <RegisteredVersion>1.6.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-09T11:47:06.532</Modified>
+      <Modified>2019-11-10T11:49:33.746</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -291,7 +291,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-03T00:49:13.852</Modified>
+      <Modified>2019-11-10T11:45:48.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\packages\Genius.NET.2.0.0\lib\netstandard1.1\Genius.dll">
       <PackagePath>Spotify Lyrics .NET\Genius.dll</PackagePath>
@@ -375,7 +375,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x64\Release\Spotify_Lyrics.NET.exe">
       <PackagePath>Spotify Lyrics .NET\Spotify_Lyrics.NET.exe</PackagePath>
-      <Modified>2019-11-09T11:47:05.263</Modified>
+      <Modified>2019-11-10T11:49:32.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP %28Desktop Bridge%29\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x64\Release\Spotify_Lyrics.NET.exe.config">
       <PackagePath>Spotify Lyrics .NET\Spotify_Lyrics.NET.exe.config</PackagePath>

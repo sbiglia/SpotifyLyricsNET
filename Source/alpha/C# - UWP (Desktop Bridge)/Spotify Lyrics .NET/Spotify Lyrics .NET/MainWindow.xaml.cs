@@ -22,7 +22,7 @@ namespace Spotify_Lyrics.NET
     public partial class MainWindow : Window
     {
         const string appVERSION = "v1.6.0-alpha";
-        const string appBUILD = "09.11.2019"; // DD.MM.YYYY
+        const string appBUILD = "10.11.2019"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
 
@@ -57,8 +57,11 @@ namespace Spotify_Lyrics.NET
         private SolidColorBrush spotifyGreen = new SolidColorBrush(System.Windows.Media.Color.FromRgb(57, 184, 91));
 
         private FileSystemHelper filesysH = new FileSystemHelper();
+
+        // Sources
         private MusixmatchAPI mmAPI = new MusixmatchAPI();
         private GeniusAPI geniusAPI;
+        private TekstowoplAPI tekstowoAPI = new TekstowoplAPI();
 
         public MainWindow()
         {
@@ -471,6 +474,9 @@ namespace Spotify_Lyrics.NET
             // Search the song on Musixmatch
             mmAPI.getLyrics(artist, song, ref lyricsURLs);
 
+            // Search the song on Tekstowo.pl
+            tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+
             // Search the song on Genius
             await geniusAPI.getLyrics(artist, song);
 
@@ -527,6 +533,9 @@ namespace Spotify_Lyrics.NET
                     case "Genius":
                         await geniusAPI.setLyrics(indx, true);
                         break;
+                    case "Tekstowo.pl":
+                        lyricsTextTemp = tekstowoAPI.setLyrics(indx, ref lyricsURLs);
+                        break;
                 }
 
                 if (lyricsTextTemp.Trim().Length == 0)
@@ -574,6 +583,9 @@ namespace Spotify_Lyrics.NET
                             break;
                         case "Genius":
                             await geniusAPI.setLyrics(indx, true);
+                            break;
+                        case "Tekstowo.pl":
+                            lyricsTextTemp = tekstowoAPI.setLyrics(indx, ref lyricsURLs);
                             break;
                     }
 
@@ -632,6 +644,9 @@ namespace Spotify_Lyrics.NET
                             case "Genius":
                                 await geniusAPI.setLyrics(indx);
                                 coverImg = lyricsURLs[indx].img;
+                                break;
+                            case "Tekstowo.pl":
+                                lyricsText = tekstowoAPI.setLyrics(indx, ref lyricsURLs);
                                 break;
                         }
 
