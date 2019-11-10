@@ -5,6 +5,17 @@
 
 ![](/Screenshots/SpotifyLyricsNET-v1.5.0.png)
 
+## Sources of lyrics:
+| № | Source | Since | Status
+|     :---:      | ------------ |     :---:      |     :---:      
+| 1 | **Musixmatch** | v0.1.0 | `available`
+| 2 | **Genius** | v1.0.0 | `available`
+| 3 | **Tekstowo.pl** | v1.6.0-alpha | `coming to v1.6.0`
+| 4 | **AZLyrics** | | `in development`
+| 5 | **SONGLYRICS.com** | | `in development`
+| 6 | **LyricsFreak** | | `in development`
+| 7 | **LyricWikia** | | `in development`
+
 # Requirements
 ## To use the software:
 - .NET Framework 4.6.1 or later
