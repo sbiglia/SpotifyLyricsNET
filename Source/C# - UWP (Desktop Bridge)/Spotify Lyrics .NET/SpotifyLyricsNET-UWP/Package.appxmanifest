@@ -9,7 +9,7 @@
   <Identity
     Name="2238JakubSteplowski.SpotifyLyrics.NET"
     Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710"
-    Version="1.5.2.0" />
+    Version="1.6.0.0" />
 
   <Properties>
     <DisplayName>Spotify Lyrics .NET</DisplayName>

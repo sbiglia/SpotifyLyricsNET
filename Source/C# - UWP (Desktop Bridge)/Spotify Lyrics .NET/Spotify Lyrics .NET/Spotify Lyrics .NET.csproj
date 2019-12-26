@@ -179,6 +179,7 @@
     <Compile Include="API\FileSystemHelper.cs" />
     <Compile Include="API\GeniusAPI.cs" />
     <Compile Include="API\MusixmatchAPI.cs" />
+    <Compile Include="API\TekstowoplAPI.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>

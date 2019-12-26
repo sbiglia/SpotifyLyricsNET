@@ -1,6 +1,6 @@
 ![](/Screenshots/SpotifyLyricsNET-logo-v1.png)
 # Spotify Lyrics .NET
-![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.5.2-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.5.2-green.svg?style=flat)
+![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.6.0-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.6.0-green.svg?style=flat)
 > Get the lyrics of the song you're listening to on Spotify
 
 ![](/Screenshots/SpotifyLyricsNET-v1.5.0.png)
@@ -10,7 +10,7 @@
 |     :---:      | ------------ |     :---:      |     :---:      |     :---:      |
 | 1 | **Musixmatch** | v0.1.0 | `available` | 14M+ lyrics |
 | 2 | **Genius** | v1.0.0 | `available` | 25M+ lyrics/annotations |
-| 3 | **Tekstowo.pl** | v1.6.0-alpha | `coming to v1.6.0` | 1.6M+ lyrics |
+| 3 | **Tekstowo.pl** | v1.6.0 | `available` | 1.6M+ lyrics |
 | 4 | **AZLyrics** | | `in development` | N.A. |
 | 5 | **SONGLYRICS.com** | | `in development` | N.A. |
 | 6 | **LyricsFreak** | | `in development` | N.A. |
@@ -39,6 +39,11 @@ Download the latest version from the [Releases](https://github.com/JakubSteplows
 
 > Notes:<br>
 > Date format: DD/MM/YYYY
+
+>v1.6.0 (26/12/2019):
+>- Added new source of lyrics: Tekstowo.pl
+>- Improved lyrics from Genius<br>
+>*(the source of this version is available only in C#)*
 
 >v1.5.2 (09/11/2019):
 >- Fixed "Launch with Spotify"

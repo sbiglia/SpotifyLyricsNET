@@ -7,7 +7,7 @@
 
     Per ulteriori informazioni sui file manifesto di pacchetto, vedere http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="2238JakubSteplowski.SpotifyLyrics.NET" Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" Version="1.5.2.0" ProcessorArchitecture="x86" />
+  <Identity Name="2238JakubSteplowski.SpotifyLyrics.NET" Publisher="CN=7981F0F6-E624-4A57-A40C-F32FC8A8D710" Version="1.6.0.0" ProcessorArchitecture="x86" />
   <Properties>
     <DisplayName>Spotify Lyrics .NET</DisplayName>
     <PublisherDisplayName>Jakub Steplowski</PublisherDisplayName>
@@ -43,8 +43,8 @@
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="16.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
-    <build:Item Name="OperatingSystem" Version="10.0.18362.418 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.29311.281" />
+    <build:Item Name="OperatingSystem" Version="10.0.18362.530 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.29507.95" />
     <build:Item Name="ProjectGUID" Value="30efb69d-1d2b-4bd4-bd3d-b523de96e91a" />
     <build:Item Name="MakePri.exe" Version="10.0.18362.1 (WinBuild.160101.0800)" />
   </build:Metadata>

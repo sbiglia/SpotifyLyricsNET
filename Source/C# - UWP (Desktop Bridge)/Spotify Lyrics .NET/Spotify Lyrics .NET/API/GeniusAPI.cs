@@ -34,6 +34,7 @@ namespace Spotify_Lyrics.NET.API
                 for (var r = 0; r < searchResult.Response.Count(); r++)
                 {
                     Hit h = searchResult.Response[r];
+                    if (h.Type != "song") break;
                     string[] hContent = h.Result.ToString().Replace('"', '\'').Split('\n');
 
                     MainWindow.lyricsURL lyricsObj = new MainWindow.lyricsURL();
