@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/spotify_lyrics.net_helper.exe")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("spotifylyricsnet-logo-v1-20x20.png")]
 
 

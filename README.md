@@ -24,12 +24,12 @@
 - Spotify
 - Internet Connection
 
-> The software has been most recently tested with **Spotify 1.1.19.480.g7d17e3ce**.<br>I can't guarantee that it works with other versions.
+> The software has been most recently tested with **Spotify 1.1.24.91.g4ca6d5eb**.<br>I can't guarantee that it works with other versions.
 
 Download the latest version from the [Releases](https://github.com/JakubSteplowski/SpotifyLyricsNET/releases) section.
 
 ## To use the source:
-- Visual Studio 2017 or later
+- Visual Studio 2019 or later
 - .NET Framework 4.6.1 or later
 - NuGet HtmlAgilityPack package
 - NuGet Genius.NET package
@@ -39,6 +39,10 @@ Download the latest version from the [Releases](https://github.com/JakubSteplows
 
 > Notes:<br>
 > Date format: DD/MM/YYYY
+
+>v1.7.0 (xx/xx/2020):
+>- ...in development...<br>
+>*(the source of this version is available only in C#)*
 
 >v1.6.0 (26/12/2019):
 >- Added new source of lyrics: Tekstowo.pl

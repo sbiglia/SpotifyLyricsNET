@@ -1,6 +1,2 @@
-MainPackage=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.6.0.0_x64.appx
-SymbolPackage=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.6.0.0\SpotifyLyricsNET-UWP_1.6.0.0_x64.appxsym
-ResourcePack=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.6.0.0_scale-100.appx
-ResourcePack=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.6.0.0_scale-125.appx
-ResourcePack=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.6.0.0_scale-150.appx
-ResourcePack=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.6.0.0_scale-400.appx
+MainPackage=D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.5.2.0_x64.appx
+SymbolPackage=D:\Documenti\Source\Repos\SpotifyLyricsNET\Source\alpha\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\x64\Release\Upload\SpotifyLyricsNET-UWP_1.5.2.0\SpotifyLyricsNET-UWP_1.5.2.0_x64.appxsym

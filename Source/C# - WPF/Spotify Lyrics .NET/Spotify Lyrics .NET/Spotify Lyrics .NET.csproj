@@ -212,7 +212,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Resource Include="Resources\spotify-lyrics-net-v1-5.ttf" />
+    <Resource Include="Resources\spotify-lyrics-net-v1-7.ttf" />
     <Resource Include="Resources\circular-pro-bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -247,7 +247,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Spotify_Lyrics.NET_Helper.exe" />
+    <None Include="Resources\SpotifyLyricsNET-logo-v1-20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SpotifyLyricsNET-logo-v1-20x20.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.5.0.0\build\Fody.targets" Condition="Exists('..\packages\Fody.5.0.0\build\Fody.targets')" />

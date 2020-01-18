@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'spotify-lyrics-net-v1-7';
+  src:  url('fonts/spotify-lyrics-net-v1-7.eot?4n5jtq');
+  src:  url('fonts/spotify-lyrics-net-v1-7.eot?4n5jtq#iefix') format('embedded-opentype'),
+    url('fonts/spotify-lyrics-net-v1-7.ttf?4n5jtq') format('truetype'),
+    url('fonts/spotify-lyrics-net-v1-7.woff?4n5jtq') format('woff'),
+    url('fonts/spotify-lyrics-net-v1-7.svg?4n5jtq#spotify-lyrics-net-v1-7') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'spotify-lyrics-net-v1-7' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spotify-lyrics-net-wrong:before {
+  content: "\e914";
+}
+.icon-spotify-lyrics-net-bold:before {
+  content: "\e900";
+}
+.icon-spotify-lyrics-net-checkmark1:before {
+  content: "\e901";
+}
+.icon-spotify-lyrics-net-checkmark1bold:before {
+  content: "\e902";
+}
+.icon-spotify-lyrics-net-checkmark2:before {
+  content: "\e903";
+}
+.icon-spotify-lyrics-net-checkmark2bold:before {
+  content: "\e904";
+}
+.icon-spotify-lyrics-net-checkmark3:before {
+  content: "\e905";
+}
+.icon-spotify-lyrics-net-checkmark3bold:before {
+  content: "\e906";
+}
+.icon-spotify-lyrics-net-day:before {
+  content: "\e907";
+}
+.icon-spotify-lyrics-net-daybold:before {
+  content: "\e908";
+}
+.icon-spotify-lyrics-net-expand:before {
+  content: "\e909";
+}
+.icon-spotify-lyrics-net-fontdown:before {
+  content: "\e90a";
+}
+.icon-spotify-lyrics-net-fontup:before {
+  content: "\e90b";
+}
+.icon-spotify-lyrics-net-night:before {
+  content: "\e90c";
+}
+.icon-spotify-lyrics-net-nightbold:before {
+  content: "\e90d";
+}
+.icon-spotify-lyrics-net-pin:before {
+  content: "\e90e";
+}
+.icon-spotify-lyrics-net-pinbold:before {
+  content: "\e90f";
+}
+.icon-spotify-lyrics-net-sad:before {
+  content: "\e910";
+}
+.icon-spotify-lyrics-net-sad2:before {
+  content: "\e911";
+}
+.icon-spotify-lyrics-net-spotify:before {
+  content: "\e915";
+}
+.icon-spotify-lyrics-net-unpin:before {
+  content: "\e912";
+}
+.icon-spotify-lyrics-net-unpinbold:before {
+  content: "\e913";
+}

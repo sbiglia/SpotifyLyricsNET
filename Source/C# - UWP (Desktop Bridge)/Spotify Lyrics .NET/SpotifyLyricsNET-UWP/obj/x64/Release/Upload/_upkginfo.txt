@@ -1,1 +1,0 @@
-J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\AppPackages\SpotifyLyricsNET-UWP_1.6.0.0_x86_x64_bundle.appxupload

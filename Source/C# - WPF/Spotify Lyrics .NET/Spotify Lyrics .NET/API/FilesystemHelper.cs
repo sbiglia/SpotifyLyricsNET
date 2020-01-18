@@ -15,7 +15,6 @@ namespace Spotify_Lyrics.NET.API
 {
     class FileSystemHelper
     {
-        const string helperVERSION = "v1.2.0";
         const string helperNAME = "Spotify_Lyrics.NET_Helper.exe";
         string localResourcesDirBase;
         string localResourcesDir;
@@ -29,95 +28,50 @@ namespace Spotify_Lyrics.NET.API
 
             checkLocalResources();
             checkHelper();
+            checkLnk();
         }
 
         private void checkHelper()
         {
             try
             {
-                bool copyHelper = false;
-                if (!File.Exists(localResourcesDirBase + @"\" + helperNAME))
+                // Delete helper
+                if (File.Exists(localResourcesDirBase + @"\" + helperNAME))
                 {
-                    copyHelper = true;
+                    Process helperProcess = Process.GetProcessesByName(helperNAME.Replace(".exe", "")).First();
+                    if (helperProcess != null)
+                        helperProcess.Kill();
 
-                    if (!File.Exists(localResourcesDirBase + @"\helper_version"))
+                    try
                     {
-                        File.WriteAllText(localResourcesDirBase + @"\helper_version", helperVERSION);
+                        File.Delete(localResourcesDirBase + @"\" + helperNAME);
                     }
-                }
-                else
-                {
-                    if (!File.Exists(localResourcesDirBase + @"\helper_version"))
-                    {
-                        copyHelper = true;
-                        File.WriteAllText(localResourcesDirBase + @"\helper_version", helperVERSION);
-                    }
-                    else
-                    {
-                        string currHelperVERSION = File.ReadAllText(localResourcesDirBase + @"\helper_version");
-
-                        if (currHelperVERSION != helperVERSION)
-                        {
-                            copyHelper = true;
-                            File.WriteAllText(localResourcesDirBase + @"\helper_version", helperVERSION);
-                        }
-                    }
-
-                    if (copyHelper)
-                    {
-                        // Delete older version
-                        try
-                        {
-                            Process helperProcess = Process.GetProcessesByName(helperNAME.Replace(".exe", "")).First();
-                            if (helperProcess != null)
-                                helperProcess.Kill();
-                        }
-                        catch (Exception ex)
-                        {
-                        }
-
-                        try
-                        {
-                            File.Delete(localResourcesDirBase + @"\" + helperNAME);
-                        }
-                        catch (Exception ex)
-                        {
-                        }
-                    }
+                    catch { }
                 }
 
-                if (copyHelper)
+                // Delete helper version info
+                if (File.Exists(localResourcesDirBase + @"\helper_version"))
                 {
-                    // Copy Helper
-                    Dialog diag = new Dialog(true, "This app uses a \"helper\" program that runs in the background and starts with the startup of Windows to make the \"Launch with Spotify\" feature possible.\n\nN.B.\nIf you'll decide to remove this software in the future, you can find and delete the helper in\n\"Documents\\Spotify Lyrics .NET\".\n\nThanks for your attention, enjoy!");
-                    File.WriteAllBytes(localResourcesDirBase + @"\" + helperNAME, Resources.Spotify_Lyrics_NET_Helper);
-
-                    Process proc = new Process();
-                    proc.StartInfo.FileName = localResourcesDirBase + @"\" + helperNAME;
-                    proc.StartInfo.UseShellExecute = true;
-                    //proc.StartInfo.Verb = "runas";
-                    proc.Start();
+                    try
+                    {
+                        File.Delete(localResourcesDirBase + @"\helper_version");
+                    } catch { }
                 }
             }
-            catch (Exception ex)
-            {
-            }
+            catch { }
         }
 
         private void checkLnk()
         {
             try
             {
-                if (!File.Exists(localResourcesDirBase + @"\Spotify_Lyrics.NET.exe.lnk"))
+                if (File.Exists(localResourcesDirBase + @"\Spotify_Lyrics.NET.exe.lnk"))
                 {
-                    // Create shorcut of yourself for the Helper
-                    WshShell shell = new WshShell();
-                    IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(localResourcesDirBase + @"\Spotify_Lyrics.NET.exe.lnk");
-                    shortcut.TargetPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                    shortcut.Save();
+                    // Delete shortcut
+                    File.Delete(localResourcesDirBase + @"\Spotify_Lyrics.NET.exe.lnk");
                 }
             }
-            catch (Exception ex)
+            catch
             {
             }
         }
@@ -161,7 +115,7 @@ namespace Spotify_Lyrics.NET.API
                     else break;
                 }
             }
-            catch (Exception ex) { }
+            catch { }
             return new List<String>();
         }
 
@@ -173,7 +127,7 @@ namespace Spotify_Lyrics.NET.API
                 File.AppendAllText(localResourcesData, title + "=" + id + "," + coverImg + "," + url + '\n');
 
                 return true;
-            } catch (Exception ex) { }
+            } catch { }
             return false;
         }
 
@@ -202,24 +156,26 @@ namespace Spotify_Lyrics.NET.API
 
                 return true;
             }
-            catch (Exception ex) { }
+            catch { }
             return false;
         }
 
         public bool updateLaunchFlag(bool flag)
         {
-            try
-            {
-                if (flag)
-                    File.Create(localResourcesDirBase + @"\launch_flag");
-                else
-                    File.Delete(localResourcesDirBase + @"\launch_flag");
-                return true;
-            } 
-            catch (Exception ex)
-            {
-                return false;
-            }
+            return false; // function disabled since v1.7.0
+
+            //try
+            //{
+            //    if (flag)
+            //        File.Create(localResourcesDirBase + @"\launch_flag");
+            //    else
+            //        File.Delete(localResourcesDirBase + @"\launch_flag");
+            //    return true;
+            //} 
+            //catch
+            //{
+            //    return false;
+            //}
         }
     }
 }

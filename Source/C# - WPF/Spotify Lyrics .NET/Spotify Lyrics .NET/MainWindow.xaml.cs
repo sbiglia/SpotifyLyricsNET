@@ -21,8 +21,8 @@ namespace Spotify_Lyrics.NET
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string appVERSION = "v1.6.0";
-        const string appBUILD = "26.12.2019"; // DD.MM.YYYY
+        const string appVERSION = "v1.7.0 beta";
+        const string appBUILD = "17.01.2020"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
 
@@ -190,6 +190,7 @@ namespace Spotify_Lyrics.NET
             songTitleLabel.Foreground = textColor;
             artistLabel.Foreground = textColor2;
             if (correctMarkBtnFlag.Visibility == Visibility.Collapsed) correctMarkBtnText.Foreground = textColor2;
+            wrongMarkBtnText.Foreground = textColor2;
             correctMarkDescriptionLabel.Foreground = textColor;
             versionLabel.Foreground = textColor2;
             smallerFontBtnText.Foreground = textColor2;
@@ -321,7 +322,7 @@ namespace Spotify_Lyrics.NET
                 Run emoji = new Run();
                 emoji.Style = (Style)Application.Current.FindResource("IconFont");
                 emoji.FontSize = Properties.Settings.Default.textSize + 40;
-                emoji.Text = ""; // Sad1: , Sad2: 
+                emoji.Text = ""; // Sad1: , Sad2: 
                 lString.Inlines.Add(new LineBreak());
                 lString.Inlines.Add(emoji);
             }
@@ -372,6 +373,9 @@ namespace Spotify_Lyrics.NET
                     correctMarkBtnText.Foreground = textColor2;
                     correctMarkBtnFlag.Visibility = Visibility.Collapsed;
                     correctMarkBtn.ToolTip = "Mark as \"Correct Lyrics\"";
+
+                    wrongMarkBtnText.Foreground = textColor2;
+                    wrongMarkBtn.ToolTip = "Mark as \"Wrong Lyrics\"";
 
                     songTitleLabel.Text = songTitle; //.Replace("&", "&&");
                     songTitleLabel.ToolTip = songTitle;
@@ -864,6 +868,11 @@ namespace Spotify_Lyrics.NET
             }
         }
 
+        private void WrongMarkBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("In Development...");
+        }
+
         private void focusModeBtn_Click(object sender, RoutedEventArgs e)
         {
             DoubleAnimation animationHeader = new DoubleAnimation(95, 0, TimeSpan.FromSeconds(0.2));
@@ -907,6 +916,26 @@ namespace Spotify_Lyrics.NET
 
                 filesysH.updateLaunchFlag(Properties.Settings.Default.launchFlag);
             }
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
+        private void minimizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void maximizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = (this.WindowState == WindowState.Maximized) ? WindowState.Normal : WindowState.Maximized;
+        }
+
+        private void closeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

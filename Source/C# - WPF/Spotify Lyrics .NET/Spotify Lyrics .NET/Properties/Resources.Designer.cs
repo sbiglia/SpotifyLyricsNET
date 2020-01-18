@@ -113,10 +113,20 @@ namespace Spotify_Lyrics.NET.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Byte[].
         /// </summary>
-        internal static byte[] Spotify_Lyrics_NET_Helper {
+        internal static byte[] spotify_lyrics_net_v1_7 {
             get {
-                object obj = ResourceManager.GetObject("Spotify_Lyrics_NET_Helper", resourceCulture);
+                object obj = ResourceManager.GetObject("spotify_lyrics_net_v1_7", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SpotifyLyricsNET_logo_v1_20x20 {
+            get {
+                object obj = ResourceManager.GetObject("SpotifyLyricsNET_logo_v1_20x20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
