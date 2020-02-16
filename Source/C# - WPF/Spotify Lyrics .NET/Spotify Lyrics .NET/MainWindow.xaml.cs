@@ -303,7 +303,7 @@ namespace Spotify_Lyrics.NET
             }
 
             Grid lGrid = new Grid();
-            lGrid.Width = this.Width - 50;
+            lGrid.Width = this.ActualWidth - 50;
             TextBlock lString = new TextBlock();
             lString.Style = Properties.Settings.Default.boldFont ? (Style)Application.Current.FindResource("BoldFont") : (Style)Application.Current.FindResource("BookFont");
             lString.Foreground = textColor;
