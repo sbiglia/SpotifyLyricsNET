@@ -1,6 +1,6 @@
 ![](/Screenshots/SpotifyLyricsNET-logo-v1.png)
 # Spotify Lyrics .NET
-![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.6.0-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.6.0-green.svg?style=flat)
+![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.6.1-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.6.1-green.svg?style=flat)
 > Get the lyrics of the song you're listening to on Spotify
 
 ![](/Screenshots/SpotifyLyricsNET-v1.5.0.png)
@@ -24,7 +24,7 @@
 - Spotify
 - Internet Connection
 
-> The software has been most recently tested with **Spotify 1.1.19.480.g7d17e3ce**.<br>I can't guarantee that it works with other versions.
+> The software has been most recently tested with **Spotify 1.1.27.472.gf6574b97**.<br>I can't guarantee that it works with other versions.
 
 Download the latest version from the [Releases](https://github.com/JakubSteplowski/SpotifyLyricsNET/releases) section.
 
@@ -39,6 +39,10 @@ Download the latest version from the [Releases](https://github.com/JakubSteplows
 
 > Notes:<br>
 > Date format: DD/MM/YYYY
+
+>v1.6.1 (08/03/2020):
+>- Fixed random crashes<br>
+>*(the source of this version is available only in C#)*
 
 >v1.6.0 (26/12/2019):
 >- Added new source of lyrics: Tekstowo.pl

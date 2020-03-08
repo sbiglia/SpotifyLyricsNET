@@ -64,28 +64,36 @@ namespace Spotify_Lyrics.NET.API
 
             var nodes = lyricsDoc.DocumentNode.SelectNodes("//p");
             string lyricsText = "";
-            foreach (HtmlNode p in nodes)
+
+            if (nodes != null)
             {
-                try
+                foreach (HtmlNode p in nodes)
                 {
-                    if (p.HasClass("mxm-lyrics__content"))
-                        lyricsText += p.InnerText + Environment.NewLine;
-                }
-                catch { }
-            }
-            nodes = lyricsDoc.DocumentNode.SelectNodes("//img");
-            foreach (HtmlNode img in nodes)
-            {
-                try
-                {
-                    if (img.OuterHtml.Contains("images-storage/albums"))
+                    try
                     {
-                        coverImg = img.OuterHtml.Replace("<img src=\"", "").Replace("//", "");
-                        coverImg = "http://" + coverImg.Substring(0, coverImg.IndexOf("\""));
-                        break;
+                        if (p.HasClass("mxm-lyrics__content"))
+                            lyricsText += p.InnerText + Environment.NewLine;
                     }
+                    catch { }
                 }
-                catch (Exception ex) { break; }
+            }
+
+            nodes = lyricsDoc.DocumentNode.SelectNodes("//img");
+            if (nodes != null)
+            {
+                foreach (HtmlNode img in nodes)
+                {
+                    try
+                    {
+                        if (img.OuterHtml.Contains("images-storage/albums"))
+                        {
+                            coverImg = img.OuterHtml.Replace("<img src=\"", "").Replace("//", "");
+                            coverImg = "http://" + coverImg.Substring(0, coverImg.IndexOf("\""));
+                            break;
+                        }
+                    }
+                    catch (Exception ex) { break; }
+                }
             }
 
             return lyricsText;
