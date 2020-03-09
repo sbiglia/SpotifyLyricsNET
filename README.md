@@ -13,10 +13,11 @@
 | 3 | **Tekstowo.pl** | v1.6.0 | `available` | 1.6M+ lyrics |
 | 4 | **AZLyrics** | | `in development` | N.A. |
 | 5 | **SONGLYRICS.com** | | `in development` | N.A. |
-| 6 | **LyricsFreak** | | `in development` | N.A. |
-| 7 | **LyricWikia** | | `in development` | 1.6M+ lyrics |
-| 8 | **baebom** | | `in development` | N.A. |
-| 9 | **Absolute Lyrics** | | `in development` | N.A. |
+| 6 | **LETRAS.com** | | `in development` | 2.8M+ lyrics |
+| 7 | **LyricsFreak** | | `in development` | N.A. |
+| 8 | **LyricWikia** | | `in development` | 1.6M+ lyrics |
+| 9 | **baebom** | | `in development` | N.A. |
+| 10 | **Absolute Lyrics** | | `in development` | N.A. |
 
 # Requirements
 ## To use the software:
