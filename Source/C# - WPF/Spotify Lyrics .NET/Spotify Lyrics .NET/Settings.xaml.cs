@@ -12,6 +12,7 @@ namespace Spotify_Lyrics.NET
         {
             InitializeComponent();
 
+            loadSettings();
             loadCheckboxes();
             loadTheme(Properties.Settings.Default.theme);
             this.ShowDialog();
@@ -59,22 +60,47 @@ namespace Spotify_Lyrics.NET
             this.tekstowoCheckBtn.Foreground = textColor2;
         }
 
-        private bool loadingCheckboxesFlag = false;
+        private int musixmatchPriority;
+        private int geniusPriority;
+        private int tekstowoPriority;
+
+        private void loadSettings()
+        {
+            musixmatchCheck.IsChecked = Properties.Settings.Default.musixmatchFlag;
+            geniusCheck.IsChecked = Properties.Settings.Default.geniusFlag;
+            tekstowoCheck.IsChecked = Properties.Settings.Default.tekstowoFlag;
+
+            musixmatchPriority = Properties.Settings.Default.musixmatchPriority;
+            geniusPriority = Properties.Settings.Default.geniusPriority;
+            tekstowoPriority = Properties.Settings.Default.tekstowoPriority;
+        }
+
+        private void saveSettings()
+        {
+            Properties.Settings.Default.musixmatchFlag = (bool)musixmatchCheck.IsChecked;
+            Properties.Settings.Default.geniusFlag = (bool)geniusCheck.IsChecked;
+            Properties.Settings.Default.tekstowoFlag = (bool)tekstowoCheck.IsChecked;
+
+            Properties.Settings.Default.musixmatchPriority = musixmatchPriority;
+            Properties.Settings.Default.geniusPriority = geniusPriority;
+            Properties.Settings.Default.tekstowoPriority = tekstowoPriority;
+
+            Properties.Settings.Default.Save();
+        }
+
         private void loadCheckboxes()
         {
-            loadingCheckboxesFlag = true;
+            musixmatchCheck.SetValue(Grid.RowProperty, musixmatchPriority);
+            geniusCheck.SetValue(Grid.RowProperty, geniusPriority);
+            tekstowoCheck.SetValue(Grid.RowProperty, tekstowoPriority);
 
-            musixmatchCheck.SetValue(Grid.RowProperty, Properties.Settings.Default.musixmatchPriority);
-            geniusCheck.SetValue(Grid.RowProperty, Properties.Settings.Default.geniusPriority);
-            tekstowoCheck.SetValue(Grid.RowProperty, Properties.Settings.Default.tekstowoPriority);
-
-            if (Properties.Settings.Default.musixmatchPriority == 0)
+            if (musixmatchPriority == 0)
             {
                 musixmatchCheckBtn.IsEnabled = false;
                 geniusCheckBtn.IsEnabled = true;
                 tekstowoCheckBtn.IsEnabled = true;
             } 
-            else if (Properties.Settings.Default.geniusPriority == 0)
+            else if (geniusPriority == 0)
             {
                 musixmatchCheckBtn.IsEnabled = true;
                 geniusCheckBtn.IsEnabled = false;
@@ -86,38 +112,86 @@ namespace Spotify_Lyrics.NET
                 geniusCheckBtn.IsEnabled = true;
                 tekstowoCheckBtn.IsEnabled = false;
             }
-
-            musixmatchCheck.IsChecked = Properties.Settings.Default.musixmatchFlag;
-            geniusCheck.IsChecked = Properties.Settings.Default.geniusFlag;
-            tekstowoCheck.IsChecked = Properties.Settings.Default.tekstowoFlag;
-
-            loadingCheckboxesFlag = false;
         }
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
-            //
+            bool mFlag = (bool)musixmatchCheck.IsChecked;
+            bool gFlag = (bool)geniusCheck.IsChecked;
+            bool tFlag = (bool)tekstowoCheck.IsChecked;
+
+            if (!mFlag && !gFlag && !tFlag)
+            {
+                MessageBox.Show("You have to enable at least one source.", "Not allowed", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            saveSettings();
+
+            MessageBox.Show("The changes will be visible from the next search.", "Settings saved", MessageBoxButton.OK, MessageBoxImage.Information);
+
             this.Close();
         }
 
-        private void tekstowoCheckBtn_Click(object sender, RoutedEventArgs e)
+        private void musixmatchCheckBtn_Click(object sender, RoutedEventArgs e)
         {
-            int oldPriority = Properties.Settings.Default.tekstowoPriority;
+            int oldPriority = musixmatchPriority;
             int newPriority = oldPriority - 1;
 
             if (newPriority < 0) return;
 
-            if (Properties.Settings.Default.musixmatchPriority == newPriority)
+            if (tekstowoPriority == newPriority)
             {
-                Properties.Settings.Default.musixmatchPriority = oldPriority;
-            } 
+                tekstowoPriority = oldPriority;
+            }
             else
             {
-                Properties.Settings.Default.geniusPriority = oldPriority;
+                geniusPriority = oldPriority;
             }
 
-            Properties.Settings.Default.tekstowoPriority = newPriority;
-            Properties.Settings.Default.Save();
+            musixmatchPriority = newPriority;
+
+            loadCheckboxes();
+        }
+
+        private void geniusCheckBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int oldPriority = geniusPriority;
+            int newPriority = oldPriority - 1;
+
+            if (newPriority < 0) return;
+
+            if (musixmatchPriority == newPriority)
+            {
+                musixmatchPriority = oldPriority;
+            }
+            else
+            {
+                tekstowoPriority = oldPriority;
+            }
+
+            geniusPriority = newPriority;
+
+            loadCheckboxes();
+        }
+
+        private void tekstowoCheckBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int oldPriority = tekstowoPriority;
+            int newPriority = oldPriority - 1;
+
+            if (newPriority < 0) return;
+
+            if (musixmatchPriority == newPriority)
+            {
+                musixmatchPriority = oldPriority;
+            }
+            else
+            {
+                geniusPriority = oldPriority;
+            }
+
+            tekstowoPriority = newPriority;
 
             loadCheckboxes();
         }

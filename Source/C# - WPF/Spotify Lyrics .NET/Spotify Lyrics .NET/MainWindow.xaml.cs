@@ -467,14 +467,69 @@ namespace Spotify_Lyrics.NET
 
             lyricsURLs = new List<lyricsURL>();
 
-            // Search the song on Musixmatch
-            mmAPI.getLyrics(artist, song, ref lyricsURLs);
+            //
+            // UGLY SOLUTION AF, TOO LAZY AT THIS MOMENT (TO IMPROVE FOR SURE)
+            //
 
-            // Search the song on Tekstowo.pl
-            tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+            // 0
+            if (Properties.Settings.Default.musixmatchPriority == 0)
+            {
+                // Search the song on Musixmatch
+                if (Properties.Settings.Default.musixmatchFlag)
+                    mmAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
+            else if (Properties.Settings.Default.geniusPriority == 0)
+            {
+                // Search the song on Genius
+                if (Properties.Settings.Default.geniusFlag)
+                    await geniusAPI.getLyrics(artist, song);
+            }
+            else
+            {
+                // Search the song on Tekstowo.pl
+                if (Properties.Settings.Default.tekstowoFlag)
+                    tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
 
-            // Search the song on Genius
-            await geniusAPI.getLyrics(artist, song);
+            // 1
+            if (Properties.Settings.Default.musixmatchPriority == 1)
+            {
+                // Search the song on Musixmatch
+                if (Properties.Settings.Default.musixmatchFlag)
+                    mmAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
+            else if (Properties.Settings.Default.geniusPriority == 1)
+            {
+                // Search the song on Genius
+                if (Properties.Settings.Default.geniusFlag)
+                    await geniusAPI.getLyrics(artist, song);
+            }
+            else
+            {
+                // Search the song on Tekstowo.pl
+                if (Properties.Settings.Default.tekstowoFlag)
+                    tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
+
+            // 2
+            if (Properties.Settings.Default.musixmatchPriority == 2)
+            {
+                // Search the song on Musixmatch
+                if (Properties.Settings.Default.musixmatchFlag)
+                    mmAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
+            else if (Properties.Settings.Default.geniusPriority == 2)
+            {
+                // Search the song on Genius
+                if (Properties.Settings.Default.geniusFlag)
+                    await geniusAPI.getLyrics(artist, song);
+            }
+            else
+            {
+                // Search the song on Tekstowo.pl
+                if (Properties.Settings.Default.tekstowoFlag)
+                    tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
 
             // Display the first result if found
             await findFirstLyrics();
