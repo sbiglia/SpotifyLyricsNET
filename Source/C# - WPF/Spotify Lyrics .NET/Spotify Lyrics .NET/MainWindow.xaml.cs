@@ -21,10 +21,10 @@ namespace Spotify_Lyrics.NET
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string appVERSION = "v1.6.1";
-        const string appBUILD = "08.03.2020"; // DD.MM.YYYY
+        const string appVERSION = "v1.7.0 BETA";
+        const string appBUILD = "15.04.2020"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
-        const string appAuthorWebsite = "https://jakubsteplowski.com";
+        const string appAuthorWebsite = "https://jakubsteplow.ski";
 
         const int fontSizeMIN = 8;
         const int fontSizeMAX = 42;
@@ -165,21 +165,21 @@ namespace Spotify_Lyrics.NET
             switch (themeID)
             {
                 case 0: // Light
-                    {
-                        bgColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                        bgColor2 = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                        textColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
-                        textColor2 = new SolidColorBrush(Color.FromRgb(10, 10, 10));
-                        break;
-                    }
+                {
+                    bgColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                    bgColor2 = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                    textColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
+                    textColor2 = new SolidColorBrush(Color.FromRgb(10, 10, 10));
+                    break;
+                }
                 case 1: // Dark
-                    {
-                        bgColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
-                        bgColor2 = new SolidColorBrush(Color.FromRgb(61, 61, 61));
-                        textColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                        textColor2 = new SolidColorBrush(Color.FromRgb(179, 179, 179));
-                        break;
-                    }
+                {
+                    bgColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
+                    bgColor2 = new SolidColorBrush(Color.FromRgb(61, 61, 61));
+                    textColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                    textColor2 = new SolidColorBrush(Color.FromRgb(179, 179, 179));
+                    break;
+                }
             }
 
             // Set colors
@@ -302,13 +302,16 @@ namespace Spotify_Lyrics.NET
             }
 
             Grid lGrid = new Grid();
-            lGrid.Width = this.Width - 50;
-            TextBlock lString = new TextBlock();
+            lGrid.Width = this.ActualWidth - 50;
+            TextBox lString = new TextBox();
             lString.Style = Properties.Settings.Default.boldFont ? (Style)Application.Current.FindResource("BoldFont") : (Style)Application.Current.FindResource("BookFont");
             lString.Foreground = textColor;
             lString.FontSize = Properties.Settings.Default.textSize;
             lString.FontStretch = FontStretches.UltraExpanded;
-            lString.LineHeight = 15;
+            lString.IsEnabled = true;
+            lString.IsReadOnly = true;
+            lString.Background = new SolidColorBrush(Color.FromArgb(0,0,0,0));
+            lString.BorderThickness = new Thickness(0);
             lString.TextAlignment = TextAlignment.Center;
             lString.Text = s;
             lString.TextWrapping = TextWrapping.WrapWithOverflow;
@@ -317,16 +320,25 @@ namespace Spotify_Lyrics.NET
             if (error)
             {
                 lString.Text = "I can't find the lyrics, sorry.";
-                lString.LineHeight = 30;
-                Run emoji = new Run();
+                TextBox emoji = new TextBox();
                 emoji.Style = (Style)Application.Current.FindResource("IconFont");
                 emoji.FontSize = Properties.Settings.Default.textSize + 40;
                 emoji.Text = ""; // Sad1: , Sad2: 
-                lString.Inlines.Add(new LineBreak());
-                lString.Inlines.Add(emoji);
+                emoji.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+                emoji.BorderThickness = new Thickness(0);
+                emoji.Foreground = textColor;
+                emoji.FontStretch = FontStretches.UltraExpanded;
+                emoji.TextAlignment = TextAlignment.Center;
+                emoji.Padding = new Thickness(20, 25, 20, 0);
+
+                lGrid.Children.Add(lString);
+                lGrid.Children.Add(emoji);
+            }
+            else
+            {
+                lGrid.Children.Add(lString);
             }
 
-            lGrid.Children.Add(lString);
             lContainer.Content = lGrid;
             lyricsView.Items.Add(lContainer);
 
