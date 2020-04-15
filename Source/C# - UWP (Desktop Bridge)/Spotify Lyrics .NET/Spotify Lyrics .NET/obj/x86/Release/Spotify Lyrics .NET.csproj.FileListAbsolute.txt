@@ -296,3 +296,50 @@ J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyri
 J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify Lyrics .NET.csproj.CopyComplete
 J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify_Lyrics.NET.exe
 J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify_Lyrics.NET.pdb
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Spotify_Lyrics.NET.exe.config
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Spotify_Lyrics.NET.exe
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Spotify_Lyrics.NET.pdb
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Genius.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\HtmlAgilityPack.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Microsoft.Win32.Primitives.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Newtonsoft.Json.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.AppContext.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Console.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Globalization.Calendars.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.IO.Compression.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.IO.Compression.ZipFile.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.IO.FileSystem.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.IO.FileSystem.Primitives.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Net.Http.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Net.Sockets.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Runtime.WindowsRuntime.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Security.Cryptography.Algorithms.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Security.Cryptography.Encoding.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Security.Cryptography.Primitives.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Xml.ReaderWriter.dll
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Windows.WinMD
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Genius.xml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\HtmlAgilityPack.pdb
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\HtmlAgilityPack.xml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\Newtonsoft.Json.xml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x86\Release\System.Runtime.WindowsRuntime.xml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify Lyrics .NET.csprojAssemblyReference.cache
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Settings.baml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Dialog.baml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Settings.g.cs
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Dialog.g.cs
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\MainWindow.g.cs
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\App.g.cs
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify_Lyrics.NET_MarkupCompile.cache
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify_Lyrics.NET_MarkupCompile.lref
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\App.baml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\MainWindow.baml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify_Lyrics.NET.g.resources
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify_Lyrics.NET.Properties.Resources.resources
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify Lyrics .NET.csproj.GenerateResource.cache
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify Lyrics .NET.csproj.CoreCompileInputs.cache
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify Lyrics .NET.csproj.CopyComplete
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify_Lyrics.NET.exe
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x86\Release\Spotify_Lyrics.NET.pdb
