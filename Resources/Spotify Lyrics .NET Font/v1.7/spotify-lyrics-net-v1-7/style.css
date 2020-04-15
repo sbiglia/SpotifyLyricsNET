@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'spotify-lyrics-net-v1-7';
+  src:
+    url('fonts/spotify-lyrics-net-v1-7.ttf?k9h5n9') format('truetype'),
+    url('fonts/spotify-lyrics-net-v1-7.woff?k9h5n9') format('woff'),
+    url('fonts/spotify-lyrics-net-v1-7.svg?k9h5n9#spotify-lyrics-net-v1-7') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'spotify-lyrics-net-v1-7' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-top-arrow-from-top:before {
+  content: "\e910";
+  color: #6563ff;
+}
+.icon-cog:before {
+  content: "\e90f";
+  color: #6563ff;
+}
+.icon-map-marker-question:before {
+  content: "\e90d";
+  color: #6563ff;
+}
+.icon-question-circle:before {
+  content: "\e90e";
+  color: #6563ff;
+}
+.icon-search:before {
+  content: "\e900";
+  color: #6563ff;
+}
+.icon-search-alt:before {
+  content: "\e901";
+  color: #6563ff;
+}
+.icon-search-minus:before {
+  content: "\e902";
+  color: #6563ff;
+}
+.icon-search-plus:before {
+  content: "\e903";
+  color: #6563ff;
+}
+.icon-spotify:before {
+  content: "\e904";
+}
+.icon-times-circle:before {
+  content: "\e905";
+  color: #6563ff;
+}
+.icon-sad-squint:before {
+  content: "\e906";
+  color: #6563ff;
+}
+.icon-moon:before {
+  content: "\e907";
+  color: #6563ff;
+}
+.icon-map-pin:before {
+  content: "\e908";
+  color: #6563ff;
+}
+.icon-expand-arrows-alt:before {
+  content: "\e909";
+  color: #6563ff;
+}
+.icon-ellipsis-h:before {
+  content: "\e90a";
+  color: #6563ff;
+}
+.icon-check-circle:before {
+  content: "\e90b";
+  color: #6563ff;
+}
+.icon-bold:before {
+  content: "\e90c";
+  color: #6563ff;
+}

@@ -200,6 +200,7 @@ namespace Spotify_Lyrics.NET
             if (themeID == 0) darkModeBtnText.Foreground = textColor2;
             if (!Properties.Settings.Default.topMost) topModeBtnText.Foreground = textColor2;
             if (!Properties.Settings.Default.launchFlag) launchFlagBtnText.Foreground = textColor2;
+            settingsBtnText.Foreground = textColor2;
             focusModeBtnText.Foreground = textColor2;
             countLabel.Foreground = textColor2;
             gradient0.Color = bgColor.Color;
@@ -212,8 +213,12 @@ namespace Spotify_Lyrics.NET
             foreach (ListViewItem s in lyricsView.Items)
             {
                 Grid g = (Grid)s.Content;
-                TextBox t = (TextBox)g.Children[0];
-                t.Foreground = textColor;
+
+                foreach (UIElement u in g.Children)
+                {
+                    TextBox t = (TextBox)u;
+                    t.Foreground = textColor;
+                }
             }
 
             // Save settings
@@ -324,7 +329,7 @@ namespace Spotify_Lyrics.NET
                 TextBox emoji = new TextBox();
                 emoji.Style = (Style)Application.Current.FindResource("IconFont");
                 emoji.FontSize = Properties.Settings.Default.textSize + 40;
-                emoji.Text = ""; // Sad1: , Sad2: 
+                emoji.Text = "";
                 emoji.IsReadOnly = true;
                 emoji.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
                 emoji.BorderThickness = new Thickness(0);
@@ -747,9 +752,15 @@ namespace Spotify_Lyrics.NET
             foreach (ListViewItem s in lyricsView.Items)
             {
                 Grid g = (Grid)s.Content;
-                TextBox t = (TextBox)g.Children[0];
-                t.Style = Properties.Settings.Default.boldFont ? (Style)Application.Current.FindResource("BoldFont") : (Style)Application.Current.FindResource("BookFont");
-                t.FontSize = Properties.Settings.Default.textSize;
+                foreach (UIElement u in g.Children)
+                {
+                    TextBox t = (TextBox)u;
+                    if (t.Style != (Style)Application.Current.FindResource("IconFont"))
+                    {
+                        t.Style = Properties.Settings.Default.boldFont ? (Style)Application.Current.FindResource("BoldFont") : (Style)Application.Current.FindResource("BookFont");
+                        t.FontSize = Properties.Settings.Default.textSize;
+                    }
+                }
             }
         }
 
@@ -844,35 +855,38 @@ namespace Spotify_Lyrics.NET
 
         private void CorrectMarkBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (isMarked)
+            if (currentLyricsIndx != -1)
             {
-                filesysH.removeLyrics(currentSongTitle);
-                setSong(currentSongTitle, true);
-            }
-            else
-            {
-                if (isMarkedFlag)
+                if (isMarked)
                 {
-                    if (filesysH.removeLyrics(currentSongTitle))
-                    {
-                        correctMarkDescription.Visibility = Visibility.Collapsed;
-                        navigationGrid.Visibility = Visibility.Visible;
-                        correctMarkBtnText.Foreground = textColor2;
-                        correctMarkBtnFlag.Visibility = Visibility.Collapsed;
-                        correctMarkBtn.ToolTip = "Mark as \"Correct Lyrics\"";
-                        isMarkedFlag = false;
-                    }
+                    filesysH.removeLyrics(currentSongTitle);
+                    setSong(currentSongTitle, true);
                 }
-                else if (lyricsURLs.Count > 0)
+                else
                 {
-                    if (filesysH.saveLyrics(currentSongTitle, lyricsURLs[currentLyricsIndx].id, lyricsURLs[currentLyricsIndx].img, lyricsURLs[currentLyricsIndx].url))
+                    if (isMarkedFlag)
                     {
-                        correctMarkDescription.Visibility = Visibility.Visible;
-                        navigationGrid.Visibility = Visibility.Collapsed;
-                        correctMarkBtnText.Foreground = spotifyGreen;
-                        correctMarkBtnFlag.Visibility = Visibility.Visible;
-                        correctMarkBtn.ToolTip = "Remove \"Correct Lyrics\" mark";
-                        isMarkedFlag = true;
+                        if (filesysH.removeLyrics(currentSongTitle))
+                        {
+                            correctMarkDescription.Visibility = Visibility.Collapsed;
+                            navigationGrid.Visibility = Visibility.Visible;
+                            correctMarkBtnText.Foreground = textColor2;
+                            correctMarkBtnFlag.Visibility = Visibility.Collapsed;
+                            correctMarkBtn.ToolTip = "Mark as \"Correct Lyrics\"";
+                            isMarkedFlag = false;
+                        }
+                    }
+                    else if (lyricsURLs.Count > 0)
+                    {
+                        if (filesysH.saveLyrics(currentSongTitle, lyricsURLs[currentLyricsIndx].id, lyricsURLs[currentLyricsIndx].img, lyricsURLs[currentLyricsIndx].url))
+                        {
+                            correctMarkDescription.Visibility = Visibility.Visible;
+                            navigationGrid.Visibility = Visibility.Collapsed;
+                            correctMarkBtnText.Foreground = spotifyGreen;
+                            correctMarkBtnFlag.Visibility = Visibility.Visible;
+                            correctMarkBtn.ToolTip = "Remove \"Correct Lyrics\" mark";
+                            isMarkedFlag = true;
+                        }
                     }
                 }
             }
@@ -921,6 +935,11 @@ namespace Spotify_Lyrics.NET
 
                 filesysH.updateLaunchFlag(Properties.Settings.Default.launchFlag);
             }
+        }
+
+        private void settingsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Settings diag = new Settings();
         }
     }
 }

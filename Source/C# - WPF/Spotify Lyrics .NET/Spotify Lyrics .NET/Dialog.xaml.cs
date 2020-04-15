@@ -17,7 +17,7 @@ namespace Spotify_Lyrics.NET
 
             this.yesNoBtnContainer.Visibility = Visibility.Visible;
             this.okBtnContainer.Visibility = Visibility.Collapsed;
-            this.Show();
+            this.ShowDialog();
         }
 
         public Dialog(bool custom, string message)
@@ -31,7 +31,7 @@ namespace Spotify_Lyrics.NET
 
             this.yesNoBtnContainer.Visibility = Visibility.Collapsed;
             this.okBtnContainer.Visibility = Visibility.Visible;
-            this.Show();
+            this.ShowDialog();
         }
 
         private string newVersion = "";
