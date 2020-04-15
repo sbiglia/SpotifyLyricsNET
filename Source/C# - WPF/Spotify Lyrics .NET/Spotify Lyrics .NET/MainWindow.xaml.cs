@@ -156,7 +156,7 @@ namespace Spotify_Lyrics.NET
             sTimer.Tick += timerTitle_Tick;
             sTimer.Start();
 
-            addToLyricsView("Play a song on Spotify to see the lyrics.");
+            addToLyricsView("Play a song on Spotify to see the lyrics." + Environment.NewLine + Environment.NewLine + "If you already did and still can't see the lyrics" + Environment.NewLine + "try to change the song." + Environment.NewLine + Environment.NewLine + "This app looks at the title of the Spotify window," + Environment.NewLine + "where the title and artist of the song should be displayed," + Environment.NewLine + "but not always are." + Environment.NewLine + Environment.NewLine + "Sorry for the inconvenience.");
         }
 
         // Themes
