@@ -114,10 +114,11 @@ C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics 
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x64\Debug\Genius.xml
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x64\Debug\HtmlAgilityPack.xml
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\bin\x64\Debug\Newtonsoft.Json.xml
-C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify Lyrics .NET.csprojAssemblyReference.cache
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify Lyrics .NET.csproj.ResolveComReference.cache
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Settings.baml
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Dialog.baml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Settings.g.cs
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Dialog.g.cs
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\MainWindow.g.cs
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\App.g.cs
@@ -133,5 +134,3 @@ C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics 
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify Lyrics .NET.csproj.CopyComplete
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify_Lyrics.NET.exe
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Spotify_Lyrics.NET.pdb
-C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Settings.baml
-C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Debug\Settings.g.cs

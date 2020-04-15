@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Drawing;
 using System.Windows.Media.Animation;
+using Color = System.Windows.Media.Color;
 
 namespace Spotify_Lyrics.NET
 {
@@ -21,8 +22,8 @@ namespace Spotify_Lyrics.NET
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string appVERSION = "v1.6.1";
-        const string appBUILD = "08.03.2020"; // DD.MM.YYYY
+        const string appVERSION = "v1.7.0";
+        const string appBUILD = "15.04.2020"; // DD.MM.YYYY
         const string appAuthor = "Jakub Stęplowski";
         const string appAuthorWebsite = "https://jakubsteplowski.com";
 
@@ -179,7 +180,7 @@ namespace Spotify_Lyrics.NET
             sTimer.Tick += timerTitle_Tick;
             sTimer.Start();
 
-            addToLyricsView("Play a song on Spotify to see the lyrics.");
+            addToLyricsView("Play a song on Spotify to see the lyrics." + Environment.NewLine + Environment.NewLine + "If you already did and still can't see the lyrics" + Environment.NewLine + "try to change the song." + Environment.NewLine + Environment.NewLine + "This app looks at the title of the Spotify window," + Environment.NewLine + "where the title and artist of the song should be displayed," + Environment.NewLine + "but not always are." + Environment.NewLine + Environment.NewLine + "Sorry for the inconvenience.");
         }
 
         // Themes
@@ -189,18 +190,18 @@ namespace Spotify_Lyrics.NET
             {
                 case 0: // Light
                     {
-                        bgColor = new SolidColorBrush(System.Windows.Media.Color.FromRgb(255, 255, 255));
-                        bgColor2 = new SolidColorBrush(System.Windows.Media.Color.FromRgb(255, 255, 255));
-                        textColor = new SolidColorBrush(System.Windows.Media.Color.FromRgb(24, 24, 24));
-                        textColor2 = new SolidColorBrush(System.Windows.Media.Color.FromRgb(10, 10, 10));
+                        bgColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                        bgColor2 = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                        textColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
+                        textColor2 = new SolidColorBrush(Color.FromRgb(10, 10, 10));
                         break;
                     }
                 case 1: // Dark
                     {
-                        bgColor = new SolidColorBrush(System.Windows.Media.Color.FromRgb(24, 24, 24));
-                        bgColor2 = new SolidColorBrush(System.Windows.Media.Color.FromRgb(61, 61, 61));
-                        textColor = new SolidColorBrush(System.Windows.Media.Color.FromRgb(255, 255, 255));
-                        textColor2 = new SolidColorBrush(System.Windows.Media.Color.FromRgb(179, 179, 179));
+                        bgColor = new SolidColorBrush(Color.FromRgb(24, 24, 24));
+                        bgColor2 = new SolidColorBrush(Color.FromRgb(61, 61, 61));
+                        textColor = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                        textColor2 = new SolidColorBrush(Color.FromRgb(179, 179, 179));
                         break;
                     }
             }
@@ -214,6 +215,7 @@ namespace Spotify_Lyrics.NET
             artistLabel.Foreground = textColor2;
             if (correctMarkBtnFlag.Visibility == Visibility.Collapsed) correctMarkBtnText.Foreground = textColor2;
             correctMarkDescriptionLabel.Foreground = textColor;
+            correctMarkDescriptionBtn.Foreground = textColor;
             versionLabel.Foreground = textColor2;
             smallerFontBtnText.Foreground = textColor2;
             biggerFontBtnText.Foreground = textColor2;
@@ -222,11 +224,12 @@ namespace Spotify_Lyrics.NET
             if (themeID == 0) darkModeBtnText.Foreground = textColor2;
             if (!Properties.Settings.Default.topMost) topModeBtnText.Foreground = textColor2;
             if (!Properties.Settings.Default.launchFlag) launchFlagBtnText.Foreground = textColor2;
+            settingsBtnText.Foreground = textColor2;
             focusModeBtnText.Foreground = textColor2;
             countLabel.Foreground = textColor2;
             gradient0.Color = bgColor.Color;
-            gradient1.Color = System.Windows.Media.Color.FromArgb(0, bgColor.Color.R, bgColor.Color.G, bgColor.Color.B);
-            gradient2.Color = System.Windows.Media.Color.FromArgb(0, bgColor.Color.R, bgColor.Color.G, bgColor.Color.B);
+            gradient1.Color = Color.FromArgb(0, bgColor.Color.R, bgColor.Color.G, bgColor.Color.B);
+            gradient2.Color = Color.FromArgb(0, bgColor.Color.R, bgColor.Color.G, bgColor.Color.B);
             gradient3.Color = bgColor.Color;
             gradient4.Color = bgColor2.Color;
             gradient5.Color = bgColor.Color;
@@ -234,8 +237,12 @@ namespace Spotify_Lyrics.NET
             foreach (ListViewItem s in lyricsView.Items)
             {
                 Grid g = (Grid)s.Content;
-                TextBlock t = (TextBlock)g.Children[0];
-                t.Foreground = textColor;
+
+                foreach (UIElement u in g.Children)
+                {
+                    TextBox t = (TextBox)u;
+                    t.Foreground = textColor;
+                }
             }
 
             // Save settings
@@ -313,7 +320,8 @@ namespace Spotify_Lyrics.NET
         private void addToLyricsView(string s, bool error = false, bool topCenter = true)
         {
             ListViewItem lContainer = new ListViewItem();
-            lContainer.IsEnabled = false;
+            lContainer.Style = (Style)Application.Current.FindResource("ListViewContainerStyle");
+            lContainer.IsEnabled = true;
             lContainer.HorizontalAlignment = HorizontalAlignment.Center;
 
             if (s.Contains("\r\n") && s.Length > 4)
@@ -325,13 +333,15 @@ namespace Spotify_Lyrics.NET
             }
 
             Grid lGrid = new Grid();
-            lGrid.Width = this.Width - 50;
-            TextBlock lString = new TextBlock();
+            lGrid.Width = this.ActualWidth - 50;
+            TextBox lString = new TextBox();
             lString.Style = Properties.Settings.Default.boldFont ? (Style)Application.Current.FindResource("BoldFont") : (Style)Application.Current.FindResource("BookFont");
             lString.Foreground = textColor;
             lString.FontSize = Properties.Settings.Default.textSize;
             lString.FontStretch = FontStretches.UltraExpanded;
-            lString.LineHeight = 15;
+            lString.IsReadOnly = true;
+            lString.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            lString.BorderThickness = new Thickness(0);
             lString.TextAlignment = TextAlignment.Center;
             lString.Text = s;
             lString.TextWrapping = TextWrapping.WrapWithOverflow;
@@ -340,23 +350,38 @@ namespace Spotify_Lyrics.NET
             if (error)
             {
                 lString.Text = "I can't find the lyrics, sorry.";
-                lString.LineHeight = 30;
-                Run emoji = new Run();
+                TextBox emoji = new TextBox();
                 emoji.Style = (Style)Application.Current.FindResource("IconFont");
                 emoji.FontSize = Properties.Settings.Default.textSize + 40;
-                emoji.Text = ""; // Sad1: , Sad2: 
-                lString.Inlines.Add(new LineBreak());
-                lString.Inlines.Add(emoji);
+                emoji.Text = "";
+                emoji.IsReadOnly = true;
+                emoji.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+                emoji.BorderThickness = new Thickness(0);
+                emoji.Foreground = textColor;
+                emoji.FontStretch = FontStretches.UltraExpanded;
+                emoji.TextAlignment = TextAlignment.Center;
+                emoji.Padding = new Thickness(20, 25, 20, 0);
+
+                lGrid.Children.Add(lString);
+                lGrid.Children.Add(emoji);
+            }
+            else
+            {
+                lGrid.Children.Add(lString);
             }
 
-            lGrid.Children.Add(lString);
             lContainer.Content = lGrid;
-            lyricsView.Items.Add(lContainer);
 
             if (topCenter)
+            {
                 lyricsView.VerticalAlignment = VerticalAlignment.Top;
+            }
             else
+            {
                 lyricsView.VerticalAlignment = VerticalAlignment.Center;
+            }
+
+            lyricsView.Items.Add(lContainer);
         }
 
         private void ListViewScrollViewer_PreviewMouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
@@ -471,14 +496,69 @@ namespace Spotify_Lyrics.NET
 
             lyricsURLs = new List<lyricsURL>();
 
-            // Search the song on Musixmatch
-            mmAPI.getLyrics(artist, song, ref lyricsURLs);
+            //
+            // UGLY SOLUTION AF, TOO LAZY AT THIS MOMENT (TO IMPROVE FOR SURE)
+            //
 
-            // Search the song on Tekstowo.pl
-            tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+            // 0
+            if (Properties.Settings.Default.musixmatchPriority == 0)
+            {
+                // Search the song on Musixmatch
+                if (Properties.Settings.Default.musixmatchFlag)
+                    mmAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
+            else if (Properties.Settings.Default.geniusPriority == 0)
+            {
+                // Search the song on Genius
+                if (Properties.Settings.Default.geniusFlag)
+                    await geniusAPI.getLyrics(artist, song);
+            }
+            else
+            {
+                // Search the song on Tekstowo.pl
+                if (Properties.Settings.Default.tekstowoFlag)
+                    tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
 
-            // Search the song on Genius
-            await geniusAPI.getLyrics(artist, song);
+            // 1
+            if (Properties.Settings.Default.musixmatchPriority == 1)
+            {
+                // Search the song on Musixmatch
+                if (Properties.Settings.Default.musixmatchFlag)
+                    mmAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
+            else if (Properties.Settings.Default.geniusPriority == 1)
+            {
+                // Search the song on Genius
+                if (Properties.Settings.Default.geniusFlag)
+                    await geniusAPI.getLyrics(artist, song);
+            }
+            else
+            {
+                // Search the song on Tekstowo.pl
+                if (Properties.Settings.Default.tekstowoFlag)
+                    tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
+
+            // 2
+            if (Properties.Settings.Default.musixmatchPriority == 2)
+            {
+                // Search the song on Musixmatch
+                if (Properties.Settings.Default.musixmatchFlag)
+                    mmAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
+            else if (Properties.Settings.Default.geniusPriority == 2)
+            {
+                // Search the song on Genius
+                if (Properties.Settings.Default.geniusFlag)
+                    await geniusAPI.getLyrics(artist, song);
+            }
+            else
+            {
+                // Search the song on Tekstowo.pl
+                if (Properties.Settings.Default.tekstowoFlag)
+                    tekstowoAPI.getLyrics(artist, song, ref lyricsURLs);
+            }
 
             // Display the first result if found
             await findFirstLyrics();
@@ -758,9 +838,15 @@ namespace Spotify_Lyrics.NET
             foreach (ListViewItem s in lyricsView.Items)
             {
                 Grid g = (Grid)s.Content;
-                TextBlock t = (TextBlock)g.Children[0];
-                t.Style = Properties.Settings.Default.boldFont ? (Style)Application.Current.FindResource("BoldFont") : (Style)Application.Current.FindResource("BookFont");
-                t.FontSize = Properties.Settings.Default.textSize;
+                foreach (UIElement u in g.Children)
+                {
+                    TextBox t = (TextBox)u;
+                    if (t.Style != (Style)Application.Current.FindResource("IconFont"))
+                    {
+                        t.Style = Properties.Settings.Default.boldFont ? (Style)Application.Current.FindResource("BoldFont") : (Style)Application.Current.FindResource("BookFont");
+                        t.FontSize = Properties.Settings.Default.textSize;
+                    }
+                }
             }
         }
 
@@ -769,7 +855,6 @@ namespace Spotify_Lyrics.NET
             // Set bigger font
             if (settingsLoaded && Properties.Settings.Default.textSize < fontSizeMAX)
             {
-
                 Properties.Settings.Default.textSize++;
                 Properties.Settings.Default.Save();
 
@@ -932,6 +1017,11 @@ namespace Spotify_Lyrics.NET
 
                 filesysH.updateLaunchFlag(Properties.Settings.Default.launchFlag);
             }
+        }
+
+        private void settingsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Settings diag = new Settings();
         }
     }
 }

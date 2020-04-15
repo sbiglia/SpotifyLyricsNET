@@ -1153,3 +1153,5 @@ J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyri
 J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\MultipleQualifiersPerDimensionFound.txt
 J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\ProjectArchitectures.txt
 J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\SpotifyLyricsNET-UWP.wapproj.LastBuild.txt
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\SpotifyLyricsNET-UWP.wapprojAssemblyReference.cache
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\x64\Release\SpotifyLyricsNET-UWP.wapproj.CoreCompileInputs.cache

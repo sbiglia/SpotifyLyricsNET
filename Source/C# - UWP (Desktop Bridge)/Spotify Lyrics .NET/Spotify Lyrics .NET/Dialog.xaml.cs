@@ -16,7 +16,7 @@ namespace Spotify_Lyrics.NET
             this.noBtn.Visibility = Visibility.Visible;
             this.yesBtn.Visibility = Visibility.Visible;
             this.okBtn.Visibility = Visibility.Collapsed;
-            this.Show();
+            this.ShowDialog();
         }
 
         public Dialog(string message)
@@ -32,7 +32,7 @@ namespace Spotify_Lyrics.NET
             this.noBtn.Visibility = Visibility.Collapsed;
             this.yesBtn.Visibility = Visibility.Collapsed;
             this.okBtn.Visibility = Visibility.Visible;  
-            this.Show();
+            this.ShowDialog();
         }
 
         private SolidColorBrush bgColor = new SolidColorBrush();

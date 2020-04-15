@@ -347,12 +347,17 @@ namespace Spotify_Lyrics.NET
             }
 
             lContainer.Content = lGrid;
-            lyricsView.Items.Add(lContainer);
 
             if (topCenter)
+            {
                 lyricsView.VerticalAlignment = VerticalAlignment.Top;
+            }
             else
+            {
                 lyricsView.VerticalAlignment = VerticalAlignment.Center;
+            }
+
+            lyricsView.Items.Add(lContainer);
         }
 
         private void ListViewScrollViewer_PreviewMouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
@@ -824,7 +829,6 @@ namespace Spotify_Lyrics.NET
             // Set bigger font
             if (settingsLoaded && Properties.Settings.Default.textSize < fontSizeMAX)
             {
-
                 Properties.Settings.Default.textSize++;
                 Properties.Settings.Default.Save();
 
