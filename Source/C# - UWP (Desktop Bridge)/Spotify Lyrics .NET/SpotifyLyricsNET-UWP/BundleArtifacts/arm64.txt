@@ -1,6 +1,6 @@
-MainPackage=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.6.1.0_ARM64.appx
-SymbolPackage=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\ARM64\Release\Symbols\SpotifyLyricsNET-UWP_1.6.1.0_ARM64.appxsym
-ResourcePack=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.6.1.0_scale-100.appx
-ResourcePack=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.6.1.0_scale-125.appx
-ResourcePack=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.6.1.0_scale-150.appx
-ResourcePack=J:\Projects\Repos\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.6.1.0_scale-400.appx
+MainPackage=C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.7.0.0_ARM64.appx
+SymbolPackage=C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\obj\ARM64\Release\Symbols\SpotifyLyricsNET-UWP_1.7.0.0_ARM64.appxsym
+ResourcePack=C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.7.0.0_scale-100.appx
+ResourcePack=C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.7.0.0_scale-125.appx
+ResourcePack=C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.7.0.0_scale-150.appx
+ResourcePack=C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - UWP (Desktop Bridge)\Spotify Lyrics .NET\SpotifyLyricsNET-UWP\bin\ARM64\Release\SpotifyLyricsNET-UWP_1.7.0.0_scale-400.appx

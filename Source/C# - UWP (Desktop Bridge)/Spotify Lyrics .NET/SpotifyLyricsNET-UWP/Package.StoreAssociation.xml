@@ -241,6 +241,8 @@
     <Language Code="no-no" InMinimumRequirementSet="true" />
     <Language Code="nso" InMinimumRequirementSet="true" />
     <Language Code="nso-za" InMinimumRequirementSet="true" />
+    <Language Code="om" InMinimumRequirementSet="false" />
+    <Language Code="om-et" InMinimumRequirementSet="false" />
     <Language Code="or" InMinimumRequirementSet="true" />
     <Language Code="or-in" InMinimumRequirementSet="true" />
     <Language Code="pa" InMinimumRequirementSet="true" />
@@ -366,12 +368,48 @@
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
     <MainPackageIdentityName>2238JakubSteplowski.MBOX</MainPackageIdentityName>
+    <MainPackageIdentityName>2238JakubSteplowski.AppleLyrics.NET</MainPackageIdentityName>
+    <MainPackageIdentityName>2238JakubSteplowski.DeezerLyrics.NET</MainPackageIdentityName>
     <MainPackageIdentityName>2238JakubSteplowski.devFeed</MainPackageIdentityName>
     <MainPackageIdentityName>2238JakubSteplowski.devRantunofficialUWP</MainPackageIdentityName>
     <MainPackageIdentityName>2238JakubSteplowski.easyfit</MainPackageIdentityName>
     <MainPackageIdentityName>2238JakubSteplowski.getLyrics</MainPackageIdentityName>
     <MainPackageIdentityName>2238JakubSteplowski.JRADIOPLAYER</MainPackageIdentityName>
     <MainPackageIdentityName>2238JakubSteplowski.KubeX</MainPackageIdentityName>
+    <MainPackageIdentityName>2238JakubSteplowski.TIDALLyrics.NET</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9NBHSJ3WW3MJ" />
+  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9NBHSJ3WW3MJ">
+    <BundleInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>X86</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.6.1.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>X64</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.6.1.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.6.1.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.6.1.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.6.1.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>0.0.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.6.1.0</PackageMaxArchitectureVersion>
+      </PackageInfo>
+    </BundleInfo>
+  </PackageInfoList>
 </StoreAssociation>

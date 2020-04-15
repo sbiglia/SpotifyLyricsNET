@@ -84,15 +84,7 @@
                         </Grid.RowDefinitions>
 
                         <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                            <TextBlock x:Name="correctMarkBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="24" Foreground="#8d8d8d"/>
-                            <!--
-                            Checkmark icon 1: 
-                            Checkmark icon 2: 
-                            Checkmark icon 3: 
-                            Checkmark icon 4: 
-                            Checkmark icon 5: 
-                            Checkmark icon 6: 
-                        -->
+                            <TextBlock x:Name="correctMarkBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="24" Foreground="#8d8d8d"/>
                         </Grid>
 
                         <Ellipse x:Name="correctMarkBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
@@ -100,8 +92,21 @@
                 </Button>
             </Grid>
 
-            <Grid x:Name="correctMarkDescription" Visibility="Collapsed" Grid.Column="3" Margin="10,0,20,0" VerticalAlignment="Center">
-                <TextBlock x:Name="correctMarkDescriptionLabel" Style="{DynamicResource BoldFont}" Foreground="#FFF" FontSize="12" TextAlignment="Left" TextWrapping="Wrap">
+            <Grid x:Name="correctMarkDescription" Visibility="Collapsed" Grid.Column="3" Margin="10,0,20,8" VerticalAlignment="Center">
+                <Button Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButtonStatic}" ToolTip="These lyrics have been marked as correct.&#x0a;Remove the mark to search for others.">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="19"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" VerticalAlignment="Bottom">
+                            <TextBlock x:Name="correctMarkDescriptionBtn" Style="{DynamicResource IconFont}" Text="" FontSize="18" Foreground="#8d8d8d"/>
+                        </Grid>
+                    </Grid>
+                </Button>
+                
+                <TextBlock x:Name="correctMarkDescriptionLabel" Style="{DynamicResource BoldFont}" Foreground="#FFF" FontSize="12" TextAlignment="Left" TextWrapping="Wrap" Visibility="Collapsed">
                     <Run Text="These lyrics have been marked as correct."/>
                     <LineBreak/>
                     <Run Text="Remove the mark to search for others."/>
@@ -136,11 +141,11 @@
 
         <!-- Body -->
         <Grid x:Name="bodyGrid" Grid.Row="3" Background="#181818">
-            <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
-                <ListView Padding="0,15" x:Name="lyricsView" BorderThickness="0" Background="Transparent" VerticalAlignment="Top"/>
+            <ScrollViewer x:Name="lyricsViewScroll" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+                <ListView Padding="0,15" x:Name="lyricsView" BorderThickness="0" Background="Transparent" VerticalAlignment="Stretch"/>
             </ScrollViewer>
-
-            <Grid Height="20" Margin="0,0,17,0" VerticalAlignment="Top">
+            
+            <Grid Height="20" Margin="0,0,0,0" VerticalAlignment="Top">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop x:Name="gradient0" Color="#FF181818"/>
@@ -149,7 +154,7 @@
                 </Grid.Background>
             </Grid>
 
-            <Grid Height="20" Margin="0,0,17,0" VerticalAlignment="Bottom">
+            <Grid Height="20" Margin="0,0,0,0" VerticalAlignment="Bottom">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop x:Name="gradient2" Color="#00181818"/>
@@ -169,7 +174,7 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="exitFocusModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#39b85b"/>
+                        <TextBlock x:Name="exitFocusModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#39b85b"/>
                     </Grid>
 
                     <Ellipse x:Name="exitFocusModeBtnFlag" Visibility="Visible" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
@@ -181,6 +186,7 @@
         <Grid x:Name="footerGrid" Grid.Row="4" Background="#181818" Height="62" VerticalAlignment="Bottom">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
@@ -201,29 +207,29 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="focusModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
+                        <TextBlock x:Name="focusModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
                     </Grid>
 
                     <Ellipse x:Name="focusModeBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
                 </Grid>
             </Button>
 
-            <Button x:Name="launchFlagBtn" Grid.Column="2" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Launch with Spotify&quot;" Click="launchFlagBtn_Click">
-                <Grid VerticalAlignment="Center" Margin="10,8,10,10">
+            <Button x:Name="launchFlagBtn" Grid.Column="3" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Launch with Spotify&quot;" Click="launchFlagBtn_Click">
+                <Grid VerticalAlignment="Center" Margin="10,7,10,10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="25"/>
                         <RowDefinition Height="19"/>
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="launchFlagBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
+                        <TextBlock x:Name="launchFlagBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
                     </Grid>
 
                     <Ellipse x:Name="launchFlagBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
                 </Grid>
             </Button>
 
-            <Button x:Name="boldFontBtn" Grid.Column="3" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Bold font&quot;" Click="BoldFontBtn_Click">
+            <Button x:Name="settingsBtn" Grid.Column="2" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Settings" Click="settingsBtn_Click">
                 <Grid VerticalAlignment="Center" Margin="10,8,10,10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="25"/>
@@ -231,14 +237,29 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="boldFontBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
+                        <TextBlock x:Name="settingsBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="16" Margin="0,8,0,0" Foreground="#8d8d8d"/>
+                    </Grid>
+
+                    <Ellipse Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,5" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
+                </Grid>
+            </Button>
+
+            <Button x:Name="boldFontBtn" Grid.Column="4" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Bold font&quot;" Click="BoldFontBtn_Click">
+                <Grid VerticalAlignment="Center" Margin="5,8,10,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="19"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" VerticalAlignment="Bottom">
+                        <TextBlock x:Name="boldFontBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="22" Margin="0,7,0,0" Foreground="#8d8d8d"/>
                     </Grid>
 
                     <Ellipse x:Name="boldFontBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
                 </Grid>
             </Button>
 
-            <Grid Grid.Column="4">
+            <Grid Grid.Column="5">
                 <!-- Text formatting -->
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
@@ -258,7 +279,7 @@
                             </Grid.RowDefinitions>
 
                             <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                                <TextBlock x:Name="biggerFontBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
+                                <TextBlock x:Name="biggerFontBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
                             </Grid>
                         </Grid>
                     </Button>
@@ -270,7 +291,7 @@
                             </Grid.RowDefinitions>
 
                             <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                                <TextBlock x:Name="smallerFontBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
+                                <TextBlock x:Name="smallerFontBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
                             </Grid>
                         </Grid>
                     </Button>
@@ -281,7 +302,7 @@
                 </Grid>
             </Grid>
 
-            <Button x:Name="darkModeBtn" Grid.Column="5" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Disable &quot;Dark Mode&quot;" Click="DarkModeBtn_Click">
+            <Button x:Name="darkModeBtn" Grid.Column="6" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Disable &quot;Dark Mode&quot;" Click="DarkModeBtn_Click">
                 <Grid VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,8,10,10">
                     <!-- Dark theme -->
                     <Grid.RowDefinitions>
@@ -290,14 +311,14 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="darkModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="16" Foreground="#8d8d8d"/>
+                        <TextBlock x:Name="darkModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
                     </Grid>
 
                     <Ellipse x:Name="darkModeBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25" />
                 </Grid>
             </Button>
 
-            <Button x:Name="topModeBtn" Grid.Column="6" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Always on Top&quot;" Click="TopModeBtn_Click">
+            <Button x:Name="topModeBtn" Grid.Column="7" Background="Transparent" BorderThickness="0" Style="{DynamicResource TransparentButton}" ToolTip="Enable &quot;Always on Top&quot;" Click="TopModeBtn_Click">
                 <Grid VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,8,18,10">
                     <!-- Always on Top -->
                     <Grid.RowDefinitions>
@@ -306,7 +327,7 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" VerticalAlignment="Bottom">
-                        <TextBlock x:Name="topModeBtnText" Style="{DynamicResource IconFont}" Text="" Margin="0,0,0,2" FontSize="10" Foreground="#8d8d8d"/>
+                        <TextBlock x:Name="topModeBtnText" Style="{DynamicResource IconFont}" Text="" FontSize="14" Foreground="#8d8d8d"/>
                     </Grid>
 
                     <Ellipse x:Name="topModeBtnFlag" Visibility="Collapsed" Grid.Row="1" Width="4" Height="4" VerticalAlignment="Bottom" Margin="0,0,0,8" Fill="#39b85b" Canvas.Left="12" Canvas.Top="25"/>
