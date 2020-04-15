@@ -220,3 +220,5 @@ C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics 
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Release\Spotify Lyrics .NET.csproj.CopyComplete
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Release\Spotify_Lyrics.NET.exe
 C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Release\Spotify_Lyrics.NET.pdb
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Release\Settings.baml
+C:\Users\jakub\Documents\GitHub\SpotifyLyricsNET\Source\C# - WPF\Spotify Lyrics .NET\Spotify Lyrics .NET\obj\x64\Release\Settings.g.cs
