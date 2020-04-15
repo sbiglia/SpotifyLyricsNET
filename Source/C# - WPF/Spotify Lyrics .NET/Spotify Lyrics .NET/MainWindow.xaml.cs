@@ -191,6 +191,7 @@ namespace Spotify_Lyrics.NET
             artistLabel.Foreground = textColor2;
             if (correctMarkBtnFlag.Visibility == Visibility.Collapsed) correctMarkBtnText.Foreground = textColor2;
             correctMarkDescriptionLabel.Foreground = textColor;
+            correctMarkDescriptionBtn.Foreground = textColor;
             versionLabel.Foreground = textColor2;
             smallerFontBtnText.Foreground = textColor2;
             biggerFontBtnText.Foreground = textColor2;
@@ -211,7 +212,7 @@ namespace Spotify_Lyrics.NET
             foreach (ListViewItem s in lyricsView.Items)
             {
                 Grid g = (Grid)s.Content;
-                TextBlock t = (TextBlock)g.Children[0];
+                TextBox t = (TextBox)g.Children[0];
                 t.Foreground = textColor;
             }
 
@@ -290,7 +291,8 @@ namespace Spotify_Lyrics.NET
         private void addToLyricsView(string s, bool error = false, bool topCenter = true)
         {
             ListViewItem lContainer = new ListViewItem();
-            lContainer.IsEnabled = false;
+            lContainer.Style = (Style)Application.Current.FindResource("ListViewContainerStyle");
+            lContainer.IsEnabled = true;
             lContainer.HorizontalAlignment = HorizontalAlignment.Center;
 
             if (s.Contains("\r\n") && s.Length > 4)
@@ -308,7 +310,6 @@ namespace Spotify_Lyrics.NET
             lString.Foreground = textColor;
             lString.FontSize = Properties.Settings.Default.textSize;
             lString.FontStretch = FontStretches.UltraExpanded;
-            lString.IsEnabled = true;
             lString.IsReadOnly = true;
             lString.Background = new SolidColorBrush(Color.FromArgb(0,0,0,0));
             lString.BorderThickness = new Thickness(0);
@@ -324,6 +325,7 @@ namespace Spotify_Lyrics.NET
                 emoji.Style = (Style)Application.Current.FindResource("IconFont");
                 emoji.FontSize = Properties.Settings.Default.textSize + 40;
                 emoji.Text = ""; // Sad1: , Sad2: 
+                emoji.IsReadOnly = true;
                 emoji.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
                 emoji.BorderThickness = new Thickness(0);
                 emoji.Foreground = textColor;
@@ -745,7 +747,7 @@ namespace Spotify_Lyrics.NET
             foreach (ListViewItem s in lyricsView.Items)
             {
                 Grid g = (Grid)s.Content;
-                TextBlock t = (TextBlock)g.Children[0];
+                TextBox t = (TextBox)g.Children[0];
                 t.Style = Properties.Settings.Default.boldFont ? (Style)Application.Current.FindResource("BoldFont") : (Style)Application.Current.FindResource("BookFont");
                 t.FontSize = Properties.Settings.Default.textSize;
             }
